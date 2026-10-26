@@ -15,8 +15,14 @@ export function catalogNumber(iso: string) {
   return `${year}.${month}.${day}`
 }
 
+function pluralize(noun: string) {
+  if (/(?:s|x|z|ch|sh)$/i.test(noun)) return `${noun}es`
+  if (/[^aeiou]y$/i.test(noun)) return `${noun.slice(0, -1)}ies`
+  return `${noun}s`
+}
+
 export function formatCount(count: number, noun: string) {
-  return `${count} ${noun}${count === 1 ? "" : "s"}`
+  return `${count} ${count === 1 ? noun : pluralize(noun)}`
 }
 
 /** Turns a YouTube or Internet Archive page URL into an embeddable src. */

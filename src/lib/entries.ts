@@ -1,7 +1,7 @@
 import fs from "fs"
 import path from "path"
 import rawEntries from "@/data/entries.json"
-import { getCategory, getEra, eras } from "@/lib/taxonomy"
+import { categories, eras, getCategory, getEra } from "@/lib/taxonomy"
 import type { CategoryId, Entry, EntryFilters, EraId, SortId } from "@/lib/types"
 import { categoryIds, eraIds, sortIds } from "@/lib/types"
 
@@ -15,6 +15,27 @@ function isEra(value: string | undefined): value is EraId {
 
 function isSort(value: string | undefined): value is SortId {
   return sortIds.includes(value as SortId)
+}
+
+function filterToken(value: string) {
+  return value
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()
+}
+
+function resolveListedId<T extends { id: string; label: string }>(
+  value: string | undefined,
+  items: T[],
+): T["id"] | undefined {
+  if (!value) return undefined
+  const direct = items.find((item) => item.id === value)
+  if (direct) return direct.id
+  const token = filterToken(value)
+  return items.find(
+    (item) => filterToken(item.id) === token || filterToken(item.label) === token,
+  )?.id
 }
 
 function assertCatalog(entries: Entry[]) {
@@ -180,8 +201,8 @@ export function parseFilters(params: {
   const first = (value?: string | string[]) =>
     Array.isArray(value) ? value[0] : value
 
-  const category = first(params.category)
-  const era = first(params.era)
+  const category = resolveListedId(first(params.category), categories)
+  const era = resolveListedId(first(params.era), eras)
   const sort = first(params.sort)
   const q = first(params.q)?.trim()
 

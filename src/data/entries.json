@@ -2612,5 +2612,287 @@
     "tags": ["cubs", "indians", "world-series", "progressive-field", "closer"],
     "related": ["grady-little-game-seven", "clark-and-niedenfuer", "black-cat-at-shea"],
     "featured": false
+  },
+  {
+    "id": "smoltz-for-alexander",
+    "slug": "smoltz-for-alexander",
+    "title": "Smoltz for Alexander",
+    "date": "1987-08-12",
+    "year": 1987,
+    "era": "free-agency",
+    "categories": ["front-office"],
+    "teams": [
+      { "id": "detroit-tigers", "name": "Detroit Tigers" },
+      { "id": "atlanta-braves", "name": "Atlanta Braves" }
+    ],
+    "players": [
+      { "id": "john-smoltz", "name": "John Smoltz" },
+      { "id": "doyle-alexander", "name": "Doyle Alexander" },
+      { "id": "bill-lajoie", "name": "Bill Lajoie" }
+    ],
+    "summary": "On August 12, 1987, Detroit sent a 20-year-old in Double-A to Atlanta for Doyle Alexander. Alexander went 9–0 down the stretch. The prospect was John Smoltz.",
+    "story": "The Tigers trailed Toronto by a game and a half and wanted a pitcher they already knew. On August 12 they got Doyle Alexander, 36, who was 5–10 with a 4.13 earned-run average for the Braves. In return Atlanta took John Smoltz, a 22nd-round pick two years earlier, then 4–10 with a 5.68 earned-run average at Double-A Glens Falls. General manager Bill Lajoie said the obvious thing: Alexander was a proven starter, and the rotation needed to be stronger. The club's other choice, in the account of the negotiations, was Steve Searcy, who was closer to the majors. Detroit kept him.\n\nAlexander made 11 starts and went 9–0 with a 1.53 earned-run average. Detroit won the American League East and lost the Championship Series to the Twins in five games. He was an All-Star in 1988 and was out of baseball after 1989. Smoltz reached Atlanta in 1988. He won a Cy Young Award, saved 154 games after Tommy John surgery moved him to the bullpen, and is the only pitcher with 200 wins and 150 saves. He went into the Hall of Fame in 2015.\n\nThe trade did what Detroit asked of it in 1987. The retelling collapses that into a theft, which skips the pennant race Lajoie was actually in. What it does not skip is the scale of the arm the Braves' scout, John Hagemann, had talked Bobby Cox into taking.",
+    "images": [],
+    "videos": [],
+    "tags": ["trade", "tigers", "braves", "deadline"],
+    "related": ["ryan-for-fregosi", "johnson-for-langston", "brock-for-broglio"],
+    "featured": false
+  },
+  {
+    "id": "johnson-for-langston",
+    "slug": "johnson-for-langston",
+    "title": "Johnson for Langston",
+    "date": "1989-05-25",
+    "year": 1989,
+    "era": "free-agency",
+    "categories": ["front-office"],
+    "teams": [
+      { "id": "seattle-mariners", "name": "Seattle Mariners" },
+      { "id": "montreal-expos", "name": "Montreal Expos" }
+    ],
+    "players": [
+      { "id": "randy-johnson", "name": "Randy Johnson" },
+      { "id": "mark-langston", "name": "Mark Langston" },
+      { "id": "brian-holman", "name": "Brian Holman" },
+      { "id": "gene-harris", "name": "Gene Harris" }
+    ],
+    "summary": "Seattle could not sign Mark Langston and sent him to Montreal for three pitchers. One of them was Randy Johnson, 25 years old and 6-foot-10.",
+    "story": "May 25, 1989. The Mariners had just lost at Fenway Park, 10–0, and Mark Langston had turned down a three-year, $7.1 million contract the same day. He could be a free agent after the season. Seattle sent him, and a player to be named later, to the Expos for Randy Johnson, Brian Holman, and Gene Harris. On July 31 the player to be named was Mike Campbell. Woody Woodward, running baseball operations in Seattle, said the club had looked at a lot of packages and had to get pitching.\n\nJohnson had been a second-round pick in 1985 and had reached Montreal in 1988. He was 25, and already the tallest pitcher the game had had, at 6-foot-10. He had not settled into a rotation. Langston was the pitcher a contender could use that summer. Dave Dombrowski, then with the Expos, said the deal gave Montreal a quality left-hander to put with Dennis Martínez, Kevin Gross, and Bryn Smith.\n\nLangston did pitch well in Montreal and left as a free agent. Johnson stayed in Seattle and became one of the great left-handers of the next two decades. The day of the trade, the surprise in the papers was that a signed ace had been exchanged for three pitchers who had not yet proved they were major-league starters. The name that mattered was not yet the name on the back of the card.",
+    "images": [],
+    "videos": [],
+    "tags": ["trade", "mariners", "expos", "langston"],
+    "related": ["smoltz-for-alexander", "ryan-for-fregosi", "seaver-to-cincinnati"],
+    "featured": false
+  },
+  {
+    "id": "cabrera-to-detroit",
+    "slug": "cabrera-to-detroit",
+    "title": "Cabrera to Detroit",
+    "date": "2007-12-04",
+    "year": 2007,
+    "era": "wild-card",
+    "categories": ["front-office"],
+    "teams": [
+      { "id": "detroit-tigers", "name": "Detroit Tigers" },
+      { "id": "florida-marlins", "name": "Florida Marlins" }
+    ],
+    "players": [
+      { "id": "miguel-cabrera", "name": "Miguel Cabrera" },
+      { "id": "dontrelle-willis", "name": "Dontrelle Willis" },
+      { "id": "cameron-maybin", "name": "Cameron Maybin" },
+      { "id": "andrew-miller", "name": "Andrew Miller" }
+    ],
+    "summary": "At the 2007 winter meetings the Marlins sent Miguel Cabrera and Dontrelle Willis to Detroit for six players, headed by Cameron Maybin and Andrew Miller.",
+    "story": "December 4, 2007, the winter meetings in Nashville. The Florida Marlins traded Miguel Cabrera and Dontrelle Willis to the Tigers for Cameron Maybin, Andrew Miller, Mike Rabelo, Burke Badenhop, Dallas Trahern, and Eulogio De La Cruz. Maybin and Miller were the prospects the deal was built on. Cabrera was 24 and already one of the league's best hitters. Willis was the other All-Star in the package, and the reason it was not a one-player sale.\n\nDetroit was adding him to a lineup that already had Magglio Ordóñez, Gary Sheffield, Carlos Guillén, and Iván Rodríguez. The cost was public the day it was made: two of the organization's best young players, plus four more. That is the part the shorthand drops when the trade is remembered as Cabrera for a pile of names that did not become stars.\n\nIn 2012 Cabrera won the American League Triple Crown in a Tigers uniform. Willis did not become the pitcher the package had advertised. Maybin and Miller had major-league careers that were not the ones the prospect lists had sketched. The record of the trade is both things at once: a steep price, paid, and a hitter who was not finished.",
+    "images": [],
+    "videos": [],
+    "tags": ["trade", "tigers", "marlins", "winter-meetings"],
+    "related": ["robinson-for-pappas", "bautista-for-diaz", "betts-to-the-dodgers"],
+    "featured": false
+  },
+  {
+    "id": "alvarez-for-fields",
+    "slug": "alvarez-for-fields",
+    "title": "Alvarez for Fields",
+    "date": "2016-08-01",
+    "year": 2016,
+    "era": "modern",
+    "categories": ["front-office"],
+    "teams": [
+      { "id": "los-angeles-dodgers", "name": "Los Angeles Dodgers" },
+      { "id": "houston-astros", "name": "Houston Astros" }
+    ],
+    "players": [
+      { "id": "yordan-alvarez", "name": "Yordan Alvarez" },
+      { "id": "josh-fields", "name": "Josh Fields" }
+    ],
+    "summary": "On the 2016 trade deadline the Dodgers sent Yordan Alvarez, 19 and still without a professional game in the United States, to Houston for reliever Josh Fields.",
+    "story": "August 1, 2016. The Dodgers acquired Josh Fields from the Astros for Yordan Alvarez. Fields was 30. He had a 6.89 earned-run average in 15 appearances for Houston that year and a 1.65 earned-run average in 23 games at Triple-A Fresno. Alvarez was 19. The Dodgers had signed him out of Cuba on June 15. He had not yet played a professional game in their system. The Dodgers' announcement described him as a minor-league first baseman and Fields as the reliever they were adding.\n\nHouston's general manager, Jeff Luhnow, spent that deadline saying the club would not trade Alex Bregman, Joe Musgrove, or A.J. Reed. Alvarez was not on that list. He was a teenager the Dodgers had owned for six weeks. Fields was a major-league arm in a pennant race. That was the exchange as it was written on the day.\n\nAlvarez reached Houston in 2019 and became a middle-of-the-order hitter. Fields's time with the Dodgers did not change the way the deadline is remembered. The entry is the gap between a reliever a contender could use in August and a player who had not yet taken the field.",
+    "images": [],
+    "videos": [],
+    "tags": ["trade", "dodgers", "astros", "deadline"],
+    "related": ["tatis-for-shields", "bagwell-for-andersen", "pedro-for-deshields"],
+    "featured": false
+  },
+  {
+    "id": "tatis-for-shields",
+    "slug": "tatis-for-shields",
+    "title": "Tatis for Shields",
+    "date": "2016-06-04",
+    "year": 2016,
+    "era": "modern",
+    "categories": ["front-office"],
+    "teams": [
+      { "id": "san-diego-padres", "name": "San Diego Padres" },
+      { "id": "chicago-white-sox", "name": "Chicago White Sox" }
+    ],
+    "players": [
+      { "id": "fernando-tatis-jr", "name": "Fernando Tatis Jr." },
+      { "id": "james-shields", "name": "James Shields" },
+      { "id": "erik-johnson", "name": "Erik Johnson" }
+    ],
+    "summary": "The White Sox sent Fernando Tatis Jr., 17 and still without a professional game, and Erik Johnson to San Diego for James Shields and a large share of his contract.",
+    "story": "June 4, 2016. The Padres traded James Shields and cash to the White Sox for Erik Johnson and Fernando Tatis Jr. Shields was 34, in the second season of a four-year, $75 million contract, and was 2–7 with a 4.28 earned-run average. His previous start, in Seattle, had been ten earned runs in two and two-thirds innings. About $58 million remained on the deal. San Diego kept more than half of it. Chicago's share, if Shields did not opt out, was $5 million that year and $22 million after.\n\nJohnson was 26 and had already started in the majors. Tatis was 17, signed by Chicago the previous July, and had not made his professional debut. He was the son of a major leaguer. He was not, that afternoon, the player the trade was explained as. Preller said it was hard to move Shields and that the return was two players the Padres were excited about, plus flexibility.\n\nThe flexibility was the money. The excitement, in the retelling, is entirely the 17-year-old. Both were in the announcement. Only one of them is why the trade is filed here.",
+    "images": [],
+    "videos": [],
+    "tags": ["trade", "padres", "white-sox", "shields"],
+    "related": ["alvarez-for-fields", "bagwell-for-andersen", "ryan-for-fregosi"],
+    "featured": false
+  },
+  {
+    "id": "betts-to-the-dodgers",
+    "slug": "betts-to-the-dodgers",
+    "title": "Betts to the Dodgers",
+    "date": "2020-02-10",
+    "year": 2020,
+    "era": "modern",
+    "categories": ["front-office"],
+    "teams": [
+      { "id": "boston-red-sox", "name": "Boston Red Sox" },
+      { "id": "los-angeles-dodgers", "name": "Los Angeles Dodgers" },
+      { "id": "minnesota-twins", "name": "Minnesota Twins" }
+    ],
+    "players": [
+      { "id": "mookie-betts", "name": "Mookie Betts" },
+      { "id": "david-price", "name": "David Price" },
+      { "id": "alex-verdugo", "name": "Alex Verdugo" },
+      { "id": "jeter-downs", "name": "Jeter Downs" },
+      { "id": "connor-wong", "name": "Connor Wong" }
+    ],
+    "summary": "Boston sent Mookie Betts and David Price to Los Angeles for Alex Verdugo, Jeter Downs, and Connor Wong. A three-team version of the deal had already collapsed over a medical file.",
+    "story": "February 10, 2020. The Red Sox traded Mookie Betts, David Price, and cash to the Dodgers for Alex Verdugo, Jeter Downs, and Connor Wong. Betts was the 2018 Most Valuable Player, 27 years old, and a year from free agency. The Dodgers were taking his $27 million salary for 2020. The clubs split the $96 million still owed to Price; Boston sent $48 million of it. A three-team structure with the Twins had been reported the week before, with Brusdar Graterol headed to Boston. The Red Sox backed away after reviewing his medical records. Graterol went to Los Angeles instead, in a separate trade that sent Kenta Maeda to Minnesota.\n\nChaim Bloom said the aim was a roster that could keep winning, and that Verdugo, Downs, and Wong put the club in a better position to do that. The competitive-balance tax was the other stated pressure: a third straight season over the threshold carried penalties Boston was trying to get out from under. Verdugo was a major-league outfielder. Downs and Wong were prospects.\n\nBetts stayed in Los Angeles and was a central player on a championship club that autumn. The trade is not only the tax bill, and it is not only the trophy. It is a franchise batting title-winner, one season short of the open market, moved with a large contract attached so the prospect return would be smaller than his name.",
+    "images": [],
+    "videos": [],
+    "tags": ["trade", "red-sox", "dodgers", "twins"],
+    "related": ["sale-of-babe-ruth", "cabrera-to-detroit", "robinson-for-pappas"],
+    "featured": false
+  },
+  {
+    "id": "bautista-for-diaz",
+    "slug": "bautista-for-diaz",
+    "title": "Bautista for Diaz",
+    "date": "2008-08-21",
+    "year": 2008,
+    "era": "wild-card",
+    "categories": ["front-office"],
+    "teams": [
+      { "id": "toronto-blue-jays", "name": "Toronto Blue Jays" },
+      { "id": "pittsburgh-pirates", "name": "Pittsburgh Pirates" }
+    ],
+    "players": [
+      { "id": "jose-bautista", "name": "Jose Bautista" },
+      { "id": "robinzon-diaz", "name": "Robinzon Diaz" }
+    ],
+    "summary": "On August 21, 2008, Pittsburgh sent Jose Bautista to Toronto on waivers for a player to be named. Four days later the player was catcher Robinzon Diaz.",
+    "story": "Bautista was in his fourth season with the Pirates and had already been a Pirate, an Oriole, a Royal, and a Devil Ray. In 2008 he hit .242 with 12 home runs and 44 runs batted in over 107 games, then lost the third-base job when Andy LaRoche arrived and was sent to Indianapolis. No National League club claimed him on trade waivers. Toronto did. On August 21 the Blue Jays acquired him for a player to be named later. On August 25 that player was Robinzon Diaz, a 24-year-old catcher in the minors.\n\nJ.P. Ricciardi, the Toronto general manager, said later that the club had ranked Diaz a C prospect and that a C prospect for a major-league player had looked like a simple exchange. Pittsburgh had asked first about another catcher, Brian Jeroloman, and Toronto had said no. Scott Rolen was hurt, and the Blue Jays wanted someone who could play third and then move. Diaz, for his part, said afterward that nobody knew the future, and that at the time he was a prospect too.\n\nIn 2010 Bautista hit 54 home runs and led the majors. The waiver trade did not predict that. It moved a bench player the Pirates had already optioned, for a catcher their trading partner was willing to spare. The home runs are what the retelling starts with. The waiver wire is what the transaction was.",
+    "images": [],
+    "videos": [],
+    "tags": ["trade", "blue-jays", "pirates", "waivers"],
+    "related": ["cabrera-to-detroit", "bagwell-for-andersen", "alvarez-for-fields"],
+    "featured": false
+  },
+  {
+    "id": "pierzynski-runs-to-first",
+    "slug": "pierzynski-runs-to-first",
+    "title": "Pierzynski Runs to First",
+    "date": "2005-10-12",
+    "year": 2005,
+    "era": "wild-card",
+    "categories": ["umpire", "rules"],
+    "teams": [
+      { "id": "chicago-white-sox", "name": "Chicago White Sox" },
+      { "id": "los-angeles-angels", "name": "Los Angeles Angels of Anaheim" }
+    ],
+    "players": [
+      { "id": "aj-pierzynski", "name": "A.J. Pierzynski" },
+      { "id": "josh-paul", "name": "Josh Paul" },
+      { "id": "doug-eddings", "name": "Doug Eddings" },
+      { "id": "kelvim-escobar", "name": "Kelvim Escobar" },
+      { "id": "joe-crede", "name": "Joe Crede" }
+    ],
+    "summary": "In the ninth inning of the 2005 ALCS, strike three got to Josh Paul and the Angels left the field. Doug Eddings ruled the ball had touched the ground. A.J. Pierzynski ran to first.",
+    "story": "October 12, 2005, Game 2 of the American League Championship Series at U.S. Cellular Field. The score was tied, 1–1, in the ninth, with two out and nobody on. Mark Buehrle had pitched the whole game for Chicago. A.J. Pierzynski swung through a full-count split-finger from Kelvim Escobar. Home-plate umpire Doug Eddings closed his fist, the signal for a strike. Catcher Josh Paul, in the game because José Molina had been lifted for a pinch-runner in the eighth, rolled the ball toward the mound. Escobar started off the field.\n\nPierzynski took a step toward the dugout and then ran to first. Eddings let him stay. The umpire's account was that the fist meant strike three, not an out, because the ball had hit the ground before it reached the glove. An uncaught third strike is a live ball. Paul and the Angels had treated the inning as over. Pablo Ozuna pinch-ran, stole second, and Joe Crede doubled him home. The White Sox won, 2–1.\n\nOne camera angle looks like a catch. Another looks like the ball touched dirt. Ken Williams, the White Sox general manager, said Paul dropped it. The Angels said he did not. Eddings did not change the call. The series, tied at a game apiece, went to Anaheim, and Chicago won the next three. The play is filed as a ruling, not as a punch line: the rule is real, the signal was incomplete, and the runner took the base the rule gave him if the ball was on the ground.",
+    "images": [],
+    "videos": [],
+    "tags": ["alcs", "white-sox", "angels", "third-strike", "cellular-field"],
+    "related": ["owen-dropped-third-strike", "denkinger-safe-call", "pine-tar-game"],
+    "featured": false
+  },
+  {
+    "id": "knoblauch-and-the-bunt",
+    "slug": "knoblauch-and-the-bunt",
+    "title": "Knoblauch Stays on the Bag",
+    "date": "1998-10-07",
+    "year": 1998,
+    "era": "wild-card",
+    "categories": ["fielding", "hitting-mental"],
+    "teams": [
+      { "id": "new-york-yankees", "name": "New York Yankees" },
+      { "id": "cleveland-indians", "name": "Cleveland Indians" }
+    ],
+    "players": [
+      { "id": "chuck-knoblauch", "name": "Chuck Knoblauch" },
+      { "id": "travis-fryman", "name": "Travis Fryman" },
+      { "id": "tino-martinez", "name": "Tino Martinez" },
+      { "id": "enrique-wilson", "name": "Enrique Wilson" }
+    ],
+    "summary": "In the twelfth inning of the 1998 ALCS, a throw hit Travis Fryman and rolled away. Chuck Knoblauch stayed at first base to argue. Enrique Wilson scored from first.",
+    "story": "October 7, 1998, Game 2 at Yankee Stadium. The Championship Series was tied at a game apiece only after this one: the Indians had lost the opener, and the score here was 1–1 after eleven innings. In the twelfth Jim Thome singled. Travis Fryman bunted down the first-base line. Tino Martinez fielded it and threw to Chuck Knoblauch, covering first. The ball hit Fryman, who was running inside the line, in the back, and rolled toward the right-field grass.\n\nThe umpires did not call interference. Knoblauch stayed on the bag and pointed, waiting for the out. Enrique Wilson, pinch-running for Thome, kept going and scored from first, stumbling as he got close to the plate. Kenny Lofton followed with a two-run single. Cleveland won, 4–1. Knoblauch said afterward that his foot was on the base, that he expected the call, and that arguing was an instantaneous reaction.\n\nThe interference the Yankees wanted was a judgment the crew did not make. The ball was still in play while that argument happened. Wilson's run is the part that does not depend on the call. A live ball went past the fielder whose job, once the throw missed, was to pick it up.",
+    "images": [],
+    "videos": [],
+    "tags": ["alcs", "yankees", "indians", "bunt", "yankee-stadium"],
+    "related": ["pierzynski-runs-to-first", "buckner-game-six", "denkinger-safe-call"],
+    "featured": false
+  },
+  {
+    "id": "gossage-pitches-to-gibson",
+    "slug": "gossage-pitches-to-gibson",
+    "title": "Gossage Pitches to Gibson",
+    "date": "1984-10-14",
+    "year": 1984,
+    "era": "free-agency",
+    "categories": ["pitching", "managerial"],
+    "teams": [
+      { "id": "detroit-tigers", "name": "Detroit Tigers" },
+      { "id": "san-diego-padres", "name": "San Diego Padres" }
+    ],
+    "players": [
+      { "id": "goose-gossage", "name": "Goose Gossage" },
+      { "id": "kirk-gibson", "name": "Kirk Gibson" },
+      { "id": "dick-williams", "name": "Dick Williams" },
+      { "id": "lance-parrish", "name": "Lance Parrish" }
+    ],
+    "summary": "In the eighth inning of the 1984 World Series, Dick Williams wanted Goose Gossage to walk Kirk Gibson. Gossage talked him out of it. Gibson hit a three-run homer.",
+    "story": "October 14, 1984, Game 5 at Tiger Stadium. Detroit led the Series three games to one and the game, 5–4, in the bottom of the eighth. Lance Parrish had homered off Rich Gossage in the seventh. Kurt Bevacqua had homered off Willie Hernández in the eighth to bring San Diego within a run. Marty Castillo and Lou Whitaker were on base when Kirk Gibson came up, and first base was open. The next hitter was Parrish.\n\nDick Williams came to the mound. The account from the dugout, and from Gibson, is that Williams wanted the intentional walk, a left-handed hitter put on so Gossage could face the right-handed Parrish. Gossage talked him out of it. Sparky Anderson held up four fingers in the Detroit dugout. Gibson said he held up ten fingers and bet Anderson ten dollars he would hit it out. He hit a three-run homer into the right-field stands. The Tigers led, 8–4, and won the Series when Hernández finished the ninth.\n\nWilliams changed his mind on the mound, in public, at the urging of his closer. That is a managerial decision with a name on it, the same shape as pitching to a dangerous hitter with a base open. Gibson earned the swing. The entry is the conversation that let him have it.",
+    "images": [],
+    "videos": [],
+    "tags": ["world-series", "tigers", "padres", "tiger-stadium", "intentional-walk"],
+    "related": ["clark-and-niedenfuer", "grady-little-game-seven", "smoltz-for-alexander"],
+    "featured": false
+  },
+  {
+    "id": "conrad-three-errors",
+    "slug": "conrad-three-errors",
+    "title": "Three Errors by Conrad",
+    "date": "2010-10-10",
+    "year": 2010,
+    "era": "wild-card",
+    "categories": ["fielding"],
+    "teams": [
+      { "id": "atlanta-braves", "name": "Atlanta Braves" },
+      { "id": "san-francisco-giants", "name": "San Francisco Giants" }
+    ],
+    "players": [
+      { "id": "brooks-conrad", "name": "Brooks Conrad" },
+      { "id": "buster-posey", "name": "Buster Posey" },
+      { "id": "craig-kimbrel", "name": "Craig Kimbrel" }
+    ],
+    "summary": "In Game 3 of the 2010 NLDS, Brooks Conrad made three errors. The last one, on a two-out grounder in the ninth, let the Giants take a lead they did not give back.",
+    "story": "October 10, 2010, Game 3 at Turner Field, attendance 53,284. The Braves and Giants had split the first two games, each of them decided by a run. Brooks Conrad was at second base because Chipper Jones and Martín Prado were out for the season. He was 30, a journeyman, and he had already been charged with errors late in the regular season. In this game he bobbled a grounder in the first, and that one did not score. In the second he dropped a popup, and an unearned run did.\n\nThe Braves led, 2–1, into the ninth on Eric Hinske's homer. With two out, San Francisco tied the game against Craig Kimbrel. Buster Posey then hit a grounder that went under Conrad's glove. Freddy Sánchez scored. The Giants led, 3–2. Brian Wilson finished the ninth. Kimbrel was the losing pitcher. Conrad had three errors, tying a postseason record for a game, and he said afterward that it was completely embarrassing.\n\nThe series was not over. San Francisco won Game 4 the next night and the Division Series in four. The three errors are still the picture of Game 3, and the ninth is the one that changed the score. The first of them did not. A record of three is not the same fact as three runs.",
+    "images": [],
+    "videos": [],
+    "tags": ["nlds", "braves", "giants", "turner-field", "second-base"],
+    "related": ["willie-davis-three-errors", "buckner-game-six", "knoblauch-and-the-bunt"],
+    "featured": false
   }
 ]

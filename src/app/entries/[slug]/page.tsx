@@ -162,6 +162,39 @@ export default async function EntryPage({ params }: Props) {
               <h2 className="font-serif text-3xl">Film</h2>
               {entry.videos.map((video) => {
                 const embed = videoEmbedUrl(video.url)
+                if (video.thumbnail) {
+                  return (
+                    <figure key={video.url} className="border border-border bg-paper">
+                      <a href={video.url} target="_blank" rel="noopener noreferrer" className="block">
+                        <div className="relative aspect-video w-full bg-navy">
+                          <Image
+                            src={video.thumbnail}
+                            alt={video.title}
+                            fill
+                            sizes="(min-width: 1024px) 640px, 100vw"
+                            className="object-cover"
+                          />
+                        </div>
+                      </a>
+                      <figcaption className="border-t border-border px-4 py-4">
+                        <p className="font-serif text-2xl leading-snug text-navy">{video.title}</p>
+                        {video.description ? (
+                          <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                            {video.description}
+                          </p>
+                        ) : null}
+                        <a
+                          href={video.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-4 inline-block text-[11px] font-semibold tracking-[0.16em] text-cardinal uppercase"
+                        >
+                          Watch on MLB.com
+                        </a>
+                      </figcaption>
+                    </figure>
+                  )
+                }
                 return (
                   <figure key={video.url}>
                     {embed ? (

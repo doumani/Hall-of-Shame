@@ -57,6 +57,8 @@ export interface EntryVideo {
   url: string
   title: string
   credit?: string
+  description?: string
+  thumbnail?: string
 }
 
 export interface Entry {

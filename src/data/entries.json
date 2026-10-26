@@ -1,0 +1,2616 @@
+[
+  {
+    "id": "merkles-boner",
+    "slug": "merkles-boner",
+    "title": "Merkle's Boner",
+    "date": "1908-09-23",
+    "year": 1908,
+    "era": "dead-ball",
+    "categories": [
+      "baserunning",
+      "rules"
+    ],
+    "teams": [
+      {
+        "id": "new-york-giants",
+        "name": "New York Giants"
+      },
+      {
+        "id": "chicago-cubs",
+        "name": "Chicago Cubs"
+      }
+    ],
+    "players": [
+      {
+        "id": "fred-merkle",
+        "name": "Fred Merkle"
+      },
+      {
+        "id": "johnny-evers",
+        "name": "Johnny Evers"
+      },
+      {
+        "id": "hank-oday",
+        "name": "Hank O'Day"
+      },
+      {
+        "id": "al-bridwell",
+        "name": "Al Bridwell"
+      }
+    ],
+    "summary": "Fred Merkle, nineteen and starting in place of an injured regular, failed to touch second on a game-winning single. The league made the teams replay it, and the Cubs won the pennant.",
+    "story": "On September 23, 1908, at the Polo Grounds, the Giants and Cubs were tied in the bottom of the ninth with two out. Fred Merkle, filling in for the injured Fred Tenney, was on first. Moose McCormick was on third. Al Bridwell singled, McCormick trotted home, and the crowd spilled onto the field believing New York had won.\n\nMerkle did what a lot of runners did when a winning run had already scored: he peeled off toward the clubhouse without touching second. Johnny Evers noticed. Which baseball eventually reached Evers is still disputed. What is not disputed is that he stepped on second and that umpire Hank O'Day called Merkle out. O'Day had seen a nearly identical play by the Pirates' Warren Gill on September 4 and had let it pass. This time he did not. The field was too chaotic to finish the game, and the league ruled it a tie.\n\nThey played it over on October 8. Mordecai Brown beat Christy Mathewson, 4–2, and Chicago won the pennant by that game. Merkle went on to a long, respectable career and hated the word bonehead. The catalog keeps the name history gave the play, and records that he asked not to be remembered by it.",
+    "images": [
+      {
+        "url": "/archive/fred-merkle.jpg",
+        "caption": "Fred Merkle on a contemporary baseball card. This is a portrait, not a photograph of the play.",
+        "credit": "Public domain, via Wikimedia Commons."
+      }
+    ],
+    "videos": [],
+    "tags": [
+      "polo-grounds",
+      "world-series-chase",
+      "missed-base",
+      "cubs",
+      "giants"
+    ],
+    "related": [
+      "snodgrass-muff",
+      "zimmerman-chase",
+      "double-no-hitter"
+    ],
+    "featured": true
+  },
+  {
+    "id": "snodgrass-muff",
+    "slug": "snodgrass-muff",
+    "title": "Snodgrass's Muff",
+    "date": "1912-10-16",
+    "year": 1912,
+    "era": "dead-ball",
+    "categories": [
+      "fielding"
+    ],
+    "teams": [
+      {
+        "id": "new-york-giants",
+        "name": "New York Giants"
+      },
+      {
+        "id": "boston-red-sox",
+        "name": "Boston Red Sox"
+      }
+    ],
+    "players": [
+      {
+        "id": "fred-snodgrass",
+        "name": "Fred Snodgrass"
+      },
+      {
+        "id": "christy-mathewson",
+        "name": "Christy Mathewson"
+      },
+      {
+        "id": "tris-speaker",
+        "name": "Tris Speaker"
+      },
+      {
+        "id": "fred-merkle",
+        "name": "Fred Merkle"
+      }
+    ],
+    "summary": "With the Giants one win from a title, Fred Snodgrass dropped a routine fly to open the tenth. He then made a fine catch that the nickname forgot.",
+    "story": "The 1912 World Series needed an eighth game because one of the first seven had ended in a tie. On October 16 at Fenway Park, Christy Mathewson carried a 2–1 lead into the bottom of the tenth. Clyde Engle led off with a routine fly to center. Fred Snodgrass dropped it, and Engle reached second.\n\nThe inning did not belong to that drop alone. Snodgrass then ran down Harry Hooper's long drive and caught it. Steve Yerkes walked. Tris Speaker lifted a foul pop that Mathewson, first baseman Fred Merkle, and catcher Chief Meyers all hesitated on; it fell safely. Speaker singled Engle home. Larry Gardner's sacrifice fly scored Yerkes, and Boston won, 3–2.\n\nThe error picked up the nickname the \"$30,000 muff,\" a figure that overstated the actual gap between the winners' and losers' shares. Snodgrass spent the rest of his life attached to the drop. The catch on Hooper happened in the same half-inning.",
+    "images": [
+      {
+        "url": "/archive/fred-snodgrass-1911.jpg",
+        "caption": "Fred Snodgrass of the New York Giants in 1911, the year before the dropped fly. The negative is labeled with his name.",
+        "credit": "Public domain. Bain News Service, Library of Congress, via Wikimedia Commons."
+      },
+      {
+        "url": "/archive/fred-snodgrass.jpg",
+        "caption": "Fred Snodgrass. The portrait predates the reputation the tenth inning gave him.",
+        "credit": "Public domain. George Grantham Bain Collection, via Wikimedia Commons."
+      }
+    ],
+    "videos": [],
+    "tags": [
+      "world-series",
+      "fenway",
+      "center-field",
+      "giants",
+      "red-sox"
+    ],
+    "related": [
+      "merkles-boner",
+      "zimmerman-chase",
+      "owen-dropped-third-strike"
+    ],
+    "featured": true
+  },
+  {
+    "id": "schaefer-steals-first",
+    "slug": "schaefer-steals-first",
+    "title": "Germany Schaefer Steals First",
+    "date": "1911-08-04",
+    "year": 1911,
+    "era": "dead-ball",
+    "categories": [
+      "rules",
+      "baserunning"
+    ],
+    "teams": [
+      {
+        "id": "washington-senators",
+        "name": "Washington Senators"
+      },
+      {
+        "id": "chicago-white-sox",
+        "name": "Chicago White Sox"
+      }
+    ],
+    "players": [
+      {
+        "id": "germany-schaefer",
+        "name": "Germany Schaefer"
+      },
+      {
+        "id": "clyde-milan",
+        "name": "Clyde Milan"
+      },
+      {
+        "id": "tommy-connolly",
+        "name": "Tommy Connolly"
+      }
+    ],
+    "summary": "With the game tied in the ninth, Germany Schaefer stole second, got nothing for it, and stole first base back. The rules eventually made the trick illegal.",
+    "story": "A story in Lawrence Ritter's The Glory of Their Times has Germany Schaefer stealing first against Cleveland in 1908, told years later by teammate Davy Jones. The details do not survive contact with the newspapers. Historians treat that version as folklore.\n\nThe documented one is August 4, 1911, Washington against the White Sox, the score tied in the bottom of the ninth. Clyde Milan was on third and Schaefer on first. Schaefer stole second, hoping catcher Fred Payne would throw and let Milan come home. Payne held the ball. On the next pitch Schaefer took off back toward first. Umpire Tommy Connolly let it stand. There was no rule against running the bases in reverse.\n\nWhite Sox manager Hugh Duffy came out to argue. While he did, Schaefer broke for second again, was caught in a rundown, and Milan was thrown out trying to score. Connolly said afterward that Schaefer had a perfect right to go from second back to first. In 1920, after Schaefer's death, the rules changed: a runner who reverses direction to confuse the defense, or to make a travesty of the game, is out.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "rules",
+      "stolen-base",
+      "senators",
+      "dead-ball"
+    ],
+    "related": [
+      "merkles-boner",
+      "three-men-on-third",
+      "pine-tar-game"
+    ],
+    "featured": false
+  },
+  {
+    "id": "zimmerman-chase",
+    "slug": "zimmerman-chase",
+    "title": "Zimmerman Chases Collins Home",
+    "date": "1917-10-15",
+    "year": 1917,
+    "era": "dead-ball",
+    "categories": [
+      "baserunning"
+    ],
+    "teams": [
+      {
+        "id": "new-york-giants",
+        "name": "New York Giants"
+      },
+      {
+        "id": "chicago-white-sox",
+        "name": "Chicago White Sox"
+      }
+    ],
+    "players": [
+      {
+        "id": "heinie-zimmerman",
+        "name": "Heinie Zimmerman"
+      },
+      {
+        "id": "eddie-collins",
+        "name": "Eddie Collins"
+      },
+      {
+        "id": "rube-benton",
+        "name": "Rube Benton"
+      },
+      {
+        "id": "john-mcgraw",
+        "name": "John McGraw"
+      }
+    ],
+    "summary": "In the sixth game of the 1917 World Series, nobody covered home plate, so Heinie Zimmerman ran Eddie Collins across it himself.",
+    "story": "The White Sox led the 1917 World Series three games to two when they came to the Polo Grounds on October 15. In the fourth inning Eddie Collins was on third and Joe Jackson on first. Happy Felsch bounced back to pitcher Rube Benton. Catcher Bill Rariden had come up the line to start a rundown. Neither Benton nor first baseman Walter Holke covered the plate.\n\nZimmerman, the third baseman, had the ball and an empty home plate in front of him. He chased Collins, one of the quickest men in the league, all the way across it. The inning was already messy — Zimmerman had thrown a ball away, and right fielder Dave Robertson had dropped a fly — but the foot race is what the papers kept. New York added Zimmerman to the list of Giants scapegoats that already included Fred Merkle and Fred Snodgrass.\n\nJohn McGraw did not. He put the blame on Benton and Holke for leaving the plate uncovered. Chicago won the game, 4–2, and the series with it.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "world-series",
+      "polo-grounds",
+      "white-sox",
+      "giants",
+      "rundown"
+    ],
+    "related": [
+      "merkles-boner",
+      "snodgrass-muff",
+      "three-men-on-third"
+    ],
+    "featured": false
+  },
+  {
+    "id": "sale-of-babe-ruth",
+    "slug": "sale-of-babe-ruth",
+    "title": "The Sale of Babe Ruth",
+    "date": "1920-01-05",
+    "year": 1920,
+    "era": "live-ball",
+    "categories": [
+      "front-office"
+    ],
+    "teams": [
+      {
+        "id": "boston-red-sox",
+        "name": "Boston Red Sox"
+      },
+      {
+        "id": "new-york-yankees",
+        "name": "New York Yankees"
+      }
+    ],
+    "players": [
+      {
+        "id": "babe-ruth",
+        "name": "Babe Ruth"
+      },
+      {
+        "id": "harry-frazee",
+        "name": "Harry Frazee"
+      },
+      {
+        "id": "jacob-ruppert",
+        "name": "Jacob Ruppert"
+      }
+    ],
+    "summary": "The Red Sox sold Babe Ruth to the Yankees for $100,000, paid in installments. The Broadway story that explains the sale is a myth.",
+    "story": "On January 5, 1920, the Yankees announced they had bought Babe Ruth from the Boston Red Sox. The price was $100,000, paid in installments of $25,000 at six percent interest. A separate loan of $300,000 from Yankees owner Jacob Ruppert to Red Sox owner Harry Frazee, secured by a mortgage on Fenway Park, followed that May. Ruppert held the mortgage until Tom Yawkey retired it in 1933.\n\nThe story everyone knows is that Frazee sold Ruth to finance the musical No, No, Nanette. That show did not open until 1925. Frazee was a theater man, and he did need cash, but the sale also sat inside his feud with American League president Ban Johnson and a more complicated set of debts than one production. The Nanette explanation is a myth that stuck because it is tidy.\n\nThe consequences were not tidy. Ruth became the player who changed the sport. The Yankees won their first pennant in 1921. The Red Sox did not win another World Series until 2004. Calling the sale a blunder is hindsight. On the day it was announced, it was also a choice to trade the best player in baseball for money and a mortgage.",
+    "images": [
+      {
+        "url": "/archive/babe-ruth-1919.jpg",
+        "caption": "Babe Ruth in a Boston uniform in 1919, the season before the Yankees bought his contract. This is a publicity portrait, not a photograph of the sale.",
+        "credit": "Public domain. National Photo Company, Library of Congress, via Wikimedia Commons."
+      }
+    ],
+    "videos": [],
+    "tags": [
+      "trade",
+      "red-sox",
+      "yankees",
+      "frazee",
+      "curse"
+    ],
+    "related": [
+      "brock-for-broglio",
+      "seaver-to-cincinnati",
+      "ruth-caught-stealing"
+    ],
+    "featured": true
+  },
+  {
+    "id": "peckinpaugh-record",
+    "slug": "peckinpaugh-record",
+    "title": "Peckinpaugh's Eight Errors",
+    "date": "1925-10-15",
+    "year": 1925,
+    "era": "live-ball",
+    "categories": [
+      "fielding"
+    ],
+    "teams": [
+      {
+        "id": "washington-senators",
+        "name": "Washington Senators"
+      },
+      {
+        "id": "pittsburgh-pirates",
+        "name": "Pittsburgh Pirates"
+      }
+    ],
+    "players": [
+      {
+        "id": "roger-peckinpaugh",
+        "name": "Roger Peckinpaugh"
+      },
+      {
+        "id": "walter-johnson",
+        "name": "Walter Johnson"
+      },
+      {
+        "id": "kiki-cuyler",
+        "name": "Kiki Cuyler"
+      },
+      {
+        "id": "pie-traynor",
+        "name": "Pie Traynor"
+      }
+    ],
+    "summary": "The American League's Most Valuable Player committed eight errors in the 1925 World Series, two of them in a rainy seventh game the Senators led.",
+    "story": "Roger Peckinpaugh was not a clumsy shortstop having a moment. He was the 1925 American League Most Valuable Player, and Washington led the World Series three games to one. Then Pittsburgh won two, and Game 7 was played on October 15 at Forbes Field in a downpour that turned the ball dark and the infield to mud.\n\nWalter Johnson took a 6–4 lead into the seventh. Eddie Moore popped up, the sort of ball Peckinpaugh caught as a matter of course, and he dropped it — his seventh error of the series. Max Carey scored, and Pie Traynor tripled to tie the game before being thrown out at home. Peckinpaugh answered with a home run in the eighth to make it 7–6. In the bottom of the inning he could not handle Carey's grounder, his eighth error, still the World Series record. Kiki Cuyler's double put the Pirates ahead.\n\nPittsburgh won, 9–7, and became the first team to come back from a 3–1 deficit in a best-of-seven World Series. The rain was real. So was the record.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "world-series",
+      "shortstop",
+      "senators",
+      "pirates",
+      "rain"
+    ],
+    "related": [
+      "hack-wilson-sun-field",
+      "buckner-game-six",
+      "durham-through-the-wicket"
+    ],
+    "featured": false
+  },
+  {
+    "id": "three-men-on-third",
+    "slug": "three-men-on-third",
+    "title": "Three Men on Third",
+    "date": "1926-08-15",
+    "year": 1926,
+    "era": "live-ball",
+    "categories": [
+      "baserunning"
+    ],
+    "teams": [
+      {
+        "id": "brooklyn-dodgers",
+        "name": "Brooklyn Dodgers"
+      },
+      {
+        "id": "boston-braves",
+        "name": "Boston Braves"
+      }
+    ],
+    "players": [
+      {
+        "id": "babe-herman",
+        "name": "Babe Herman"
+      },
+      {
+        "id": "dazzy-vance",
+        "name": "Dazzy Vance"
+      },
+      {
+        "id": "chick-fewster",
+        "name": "Chick Fewster"
+      },
+      {
+        "id": "hank-deberry",
+        "name": "Hank DeBerry"
+      }
+    ],
+    "summary": "Babe Herman doubled off the right-field screen at Ebbets Field and arrived at third base to find two teammates already there.",
+    "story": "On August 15, 1926, in the first game of a doubleheader at Ebbets Field, Brooklyn loaded the bases against the Braves in the seventh with one out. Hank DeBerry was on third, pitcher Dazzy Vance on second, Chick Fewster on first. Babe Herman drove the ball off the right-field screen. Under the ground rules it was still in play. DeBerry scored.\n\nVance, not a practiced baserunner, held up to see if the ball would be caught, then tried to score, was cut off, and retreated. He got back to third at the same time Fewster and Herman arrived. Third baseman Eddie Taylor tagged all three. Vance was the lead runner and was not forced, so he was entitled to the base. Fewster and Herman were out. Herman had doubled into a double play, and the run he drove in stood up as the winner.\n\nHe spent years pointing out that nobody remembered the run, only the crowd on the bag. The telling grew until people called it a triple play. It was not. There was already one out. It was strange enough without the embroidery.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "ebbets-field",
+      "dodgers",
+      "baserunning",
+      "babe-herman"
+    ],
+    "related": [
+      "schaefer-steals-first",
+      "throneberry-missed-bases",
+      "merkles-boner"
+    ],
+    "featured": false
+  },
+  {
+    "id": "hack-wilson-sun-field",
+    "slug": "hack-wilson-sun-field",
+    "title": "Hack Wilson Loses the Ball in the Sun",
+    "date": "1929-10-12",
+    "year": 1929,
+    "era": "live-ball",
+    "categories": [
+      "fielding"
+    ],
+    "teams": [
+      {
+        "id": "chicago-cubs",
+        "name": "Chicago Cubs"
+      },
+      {
+        "id": "philadelphia-athletics",
+        "name": "Philadelphia Athletics"
+      }
+    ],
+    "players": [
+      {
+        "id": "hack-wilson",
+        "name": "Hack Wilson"
+      },
+      {
+        "id": "mule-haas",
+        "name": "Mule Haas"
+      },
+      {
+        "id": "connie-mack",
+        "name": "Connie Mack"
+      }
+    ],
+    "summary": "The Cubs led Game 4 of the 1929 World Series by eight runs. In the seventh, Hack Wilson lost a fly ball in the sun, and the Athletics scored ten.",
+    "story": "Game 4 of the 1929 World Series, October 12 at Shibe Park, looked finished early. The Cubs led Connie Mack's Athletics, 8–0. In the bottom of the seventh Philadelphia sent ten runs across, the largest inning in World Series history at the time, and won the game, 10–8.\n\nThe play in the middle of it was Mule Haas's fly to center. Hack Wilson lost the ball in the sun. It fell behind him and became a three-run inside-the-park home run, and the inning kept going. Wilson was not a poor player having a poor series so much as a great hitter — he would set the National League record with 191 runs batted in the next season — who had one terrible moment in the outfield with the title in reach.\n\nThe Athletics closed out the series the next day. Wilson's name stayed attached to the sun.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "world-series",
+      "cubs",
+      "athletics",
+      "sun-field"
+    ],
+    "related": [
+      "peckinpaugh-record",
+      "willie-davis-three-errors",
+      "buckner-game-six"
+    ],
+    "featured": false
+  },
+  {
+    "id": "medwick-fruit-barrage",
+    "slug": "medwick-fruit-barrage",
+    "title": "Medwick and the Fruit Barrage",
+    "date": "1934-10-09",
+    "year": 1934,
+    "era": "live-ball",
+    "categories": [
+      "fan-crowd"
+    ],
+    "teams": [
+      {
+        "id": "st-louis-cardinals",
+        "name": "St. Louis Cardinals"
+      },
+      {
+        "id": "detroit-tigers",
+        "name": "Detroit Tigers"
+      }
+    ],
+    "players": [
+      {
+        "id": "joe-medwick",
+        "name": "Joe Medwick"
+      },
+      {
+        "id": "marv-owen",
+        "name": "Marv Owen"
+      },
+      {
+        "id": "kenesaw-mountain-landis",
+        "name": "Kenesaw Mountain Landis"
+      }
+    ],
+    "summary": "After a hard slide in Game 7, Detroit fans threw fruit, bottles, and vegetables at Joe Medwick until the commissioner took him out of the game.",
+    "story": "The Cardinals were already blowing out the Tigers in Game 7 of the 1934 World Series when Joe Medwick slid hard into third baseman Marv Owen at Navin Field. The date was October 9. Detroit did not appreciate it. When Medwick went back to left field, the crowd pelted him with fruit, bottles, and vegetables. Play stopped.\n\nCommissioner Kenesaw Mountain Landis was in the ballpark. He removed Medwick from the game, not as a punishment entered in a box score but because the left fielder was no longer safe. St. Louis won, 11–0, and the Gashouse Gang had its championship. Medwick's bat was not the story of the afternoon by then. The crowd was.\n\nIt is an early, unmistakable case of a ballpark deciding it would rather throw things than watch the rest of a lost game. The commissioner sided with getting his player off the field.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "world-series",
+      "cardinals",
+      "tigers",
+      "crowd",
+      "landis"
+    ],
+    "related": [
+      "ten-cent-beer-night",
+      "bartman-game",
+      "jeffrey-maier"
+    ],
+    "featured": false
+  },
+  {
+    "id": "owen-dropped-third-strike",
+    "slug": "owen-dropped-third-strike",
+    "title": "Owen's Dropped Third Strike",
+    "date": "1941-10-05",
+    "year": 1941,
+    "era": "live-ball",
+    "categories": [
+      "fielding"
+    ],
+    "teams": [
+      {
+        "id": "brooklyn-dodgers",
+        "name": "Brooklyn Dodgers"
+      },
+      {
+        "id": "new-york-yankees",
+        "name": "New York Yankees"
+      }
+    ],
+    "players": [
+      {
+        "id": "mickey-owen",
+        "name": "Mickey Owen"
+      },
+      {
+        "id": "hugh-casey",
+        "name": "Hugh Casey"
+      },
+      {
+        "id": "tommy-henrich",
+        "name": "Tommy Henrich"
+      },
+      {
+        "id": "joe-dimaggio",
+        "name": "Joe DiMaggio"
+      }
+    ],
+    "summary": "The Dodgers were one strike from tying the World Series. Mickey Owen missed the third strike, and the Yankees scored four runs.",
+    "story": "Game 4 of the 1941 World Series, October 5 at Ebbets Field. Brooklyn led 4–3 with two out in the ninth. Hugh Casey was pitching to Tommy Henrich. Henrich swung and missed. The inning, and a tied series, appeared to be over.\n\nThe ball got past catcher Mickey Owen, all the way to the screen, and Henrich reached first. Whether Casey's breaking ball was doctored is still argued and is not required to explain the rest. Joe DiMaggio singled. Charlie Keller doubled. Bill Dickey walked. Joe Gordon doubled. The Yankees scored four runs and won, 7–4. They took the series the next day.\n\nOwen was an All-Star catcher, not a cartoon. One missed pitch with two out in October rewrote the game, and then the retelling rewrote Owen. The four hits that followed the miss are part of the inning too.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "world-series",
+      "dodgers",
+      "yankees",
+      "passed-ball",
+      "ebbets-field"
+    ],
+    "related": [
+      "buckner-game-six",
+      "snodgrass-muff",
+      "shot-heard-round-the-world"
+    ],
+    "featured": false
+  },
+  {
+    "id": "eddie-gaedel",
+    "slug": "eddie-gaedel",
+    "title": "Eddie Gaedel Walks",
+    "date": "1951-08-19",
+    "year": 1951,
+    "era": "postwar",
+    "categories": [
+      "promotions",
+      "personalities"
+    ],
+    "teams": [
+      {
+        "id": "st-louis-browns",
+        "name": "St. Louis Browns"
+      },
+      {
+        "id": "detroit-tigers",
+        "name": "Detroit Tigers"
+      }
+    ],
+    "players": [
+      {
+        "id": "eddie-gaedel",
+        "name": "Eddie Gaedel"
+      },
+      {
+        "id": "bill-veeck",
+        "name": "Bill Veeck"
+      },
+      {
+        "id": "bob-cain",
+        "name": "Bob Cain"
+      },
+      {
+        "id": "frank-saucier",
+        "name": "Frank Saucier"
+      }
+    ],
+    "summary": "Bill Veeck sent 3-foot-7 Eddie Gaedel to the plate in a child's uniform. Gaedel walked on four pitches. The league voided the contract the next day.",
+    "story": "The second game of a doubleheader at Sportsman's Park, August 19, 1951, Browns against the Tigers. Between games, a cake was wheeled out for the fiftieth anniversary of the American League. Out of it, in Browns owner Bill Veeck's telling of the stunt, came Eddie Gaedel, 3 feet 7 inches, wearing number 1/8.\n\nManager Zack Taylor sent him up to bat for Frank Saucier with a legitimate contract in hand. Bob Cain walked him on four pitches. Gaedel never took the bat off his shoulder. Jim Delsing ran for him. The next day American League president Will Harridge voided the contract and told clubs not to try it again. Gaedel's entire major-league career is one walk.\n\nThe joke, such as it was, belonged to Veeck. Gaedel was a performer who had been hired, paid, and let in on the stunt. He remains the shortest player in major-league history. The catalog keeps the entry for the promotion, not as a joke at his expense.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "veeck",
+      "browns",
+      "stunt",
+      "walk",
+      "sportsman's-park"
+    ],
+    "related": [
+      "disco-demolition-night",
+      "herb-washington-pickoff",
+      "ten-cent-beer-night"
+    ],
+    "featured": true
+  },
+  {
+    "id": "shot-heard-round-the-world",
+    "slug": "shot-heard-round-the-world",
+    "title": "The Shot Heard 'Round the World",
+    "date": "1951-10-03",
+    "year": 1951,
+    "era": "postwar",
+    "categories": [
+      "pitching"
+    ],
+    "teams": [
+      {
+        "id": "new-york-giants",
+        "name": "New York Giants"
+      },
+      {
+        "id": "brooklyn-dodgers",
+        "name": "Brooklyn Dodgers"
+      }
+    ],
+    "players": [
+      {
+        "id": "bobby-thomson",
+        "name": "Bobby Thomson"
+      },
+      {
+        "id": "ralph-branca",
+        "name": "Ralph Branca"
+      },
+      {
+        "id": "don-newcombe",
+        "name": "Don Newcombe"
+      },
+      {
+        "id": "herman-franks",
+        "name": "Herman Franks"
+      }
+    ],
+    "summary": "Bobby Thomson's pennant-winning homer off Ralph Branca is one of the famous swings in the sport. The Giants had stolen the sign.",
+    "story": "October 3, 1951, the Polo Grounds, the third and final game of a National League playoff. The Dodgers led 4–1 going into the ninth. Alvin Dark and Don Mueller singled, Whitey Lockman doubled, and it was 4–2 with runners on second and third. Mueller hurt himself sliding and was replaced by a pinch runner. Don Newcombe came out. Ralph Branca came in.\n\nThomson hit a three-run homer. The Giants won, 5–4, and Russ Hodges's call entered the language. For decades that was the whole story. Later research, especially Joshua Prager's, and the accounts of the participants, established that the Giants had been stealing signs with a telescope in the clubhouse beyond center field. Herman Franks relayed them to the bullpen, and the bullpen relayed them to the hitter. Thomson later said he knew what was coming.\n\nThe homer was real. The information was stolen. Branca spent a life as the man who threw the pitch. He also spent it as the man who was pitched against with a telescope in the building behind him. Both facts belong in the record.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "playoff",
+      "sign-stealing",
+      "giants",
+      "dodgers",
+      "polo-grounds"
+    ],
+    "related": [
+      "owen-dropped-third-strike",
+      "kim-consecutive-nights",
+      "grady-little-game-seven"
+    ],
+    "featured": true
+  },
+  {
+    "id": "throneberry-missed-bases",
+    "slug": "throneberry-missed-bases",
+    "title": "Throneberry Misses the Base",
+    "date": "1962-06-17",
+    "year": 1962,
+    "era": "expansion",
+    "categories": [
+      "baserunning"
+    ],
+    "teams": [
+      {
+        "id": "new-york-mets",
+        "name": "New York Mets"
+      },
+      {
+        "id": "chicago-cubs",
+        "name": "Chicago Cubs"
+      }
+    ],
+    "players": [
+      {
+        "id": "marv-throneberry",
+        "name": "Marv Throneberry"
+      },
+      {
+        "id": "casey-stengel",
+        "name": "Casey Stengel"
+      },
+      {
+        "id": "cookie-lavagetto",
+        "name": "Cookie Lavagetto"
+      },
+      {
+        "id": "ernie-banks",
+        "name": "Ernie Banks"
+      }
+    ],
+    "summary": "Marv Throneberry hit what looked like a two-run triple and was called out for missing first. He later admitted he had missed second, too.",
+    "story": "The Mets of 1962 lost 120 games, and Marvelous Marv Throneberry became their emblem. The clearest single play came on June 17 at the Polo Grounds, the first game of a doubleheader against the Cubs. New York trailed 4–1 in the first inning when Throneberry drove a ball into the right-center gap. Two runs scored, and he pulled into third.\n\nErnie Banks appealed. Umpire Dusty Boggess called Throneberry out for missing first base. The story that Casey Stengel came out to argue, and was told not to bother because Throneberry had missed second as well, has been told as an umpire's quip. The better-sourced version is that first-base coach Cookie Lavagetto was the one who stopped Stengel. The next day's New York Times mentioned only the miss at first. Retrosheet notes that Throneberry admitted he had missed second, too.\n\nThe Cubs won, 8–7. Throneberry struck out in the ninth with the tying run on base. The legend grew a few extra punch lines. The missed base did not need them.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "mets",
+      "1962",
+      "polo-grounds",
+      "missed-base"
+    ],
+    "related": [
+      "three-men-on-third",
+      "merkles-boner",
+      "castillo-popup"
+    ],
+    "featured": false
+  },
+  {
+    "id": "brock-for-broglio",
+    "slug": "brock-for-broglio",
+    "title": "Brock for Broglio",
+    "date": "1964-06-15",
+    "year": 1964,
+    "era": "expansion",
+    "categories": [
+      "front-office"
+    ],
+    "teams": [
+      {
+        "id": "chicago-cubs",
+        "name": "Chicago Cubs"
+      },
+      {
+        "id": "st-louis-cardinals",
+        "name": "St. Louis Cardinals"
+      }
+    ],
+    "players": [
+      {
+        "id": "lou-brock",
+        "name": "Lou Brock"
+      },
+      {
+        "id": "ernie-broglio",
+        "name": "Ernie Broglio"
+      }
+    ],
+    "summary": "The Cubs traded Lou Brock to the Cardinals for Ernie Broglio in a six-player deal. Brock finished with 3,023 hits. Broglio won seven games in Chicago.",
+    "story": "On June 15, 1964, the Cubs sent Lou Brock, Jack Spring, and Paul Toth to St. Louis for Ernie Broglio, Bobby Shantz, and Doug Clemens. Broglio was 28 and had won 18 games the year before. Brock was a young outfielder hitting .251, striking out too often for a man at the top of a lineup. On that day the deal had a logic.\n\nIt did not survive the summer. Brock hit .348 the rest of the way and the Cardinals won the pennant and the World Series. Broglio went 7–19 as a Cub and was out of the majors after 1966. He later said his elbow was already damaged when the trade was made, and that he had been taking cortisone. Brock retired with 3,023 hits and 938 stolen bases.\n\nThe trade is the shorthand for a deal that cannot be walked back. It is also a reminder that the famous side of it was not obvious in the transaction wire. Broglio was the established pitcher. The elbow was the fact the Cubs did not price in.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "trade",
+      "cubs",
+      "cardinals",
+      "hall-of-fame"
+    ],
+    "related": [
+      "robinson-for-pappas",
+      "ryan-for-fregosi",
+      "phillies-collapse"
+    ],
+    "featured": true
+  },
+  {
+    "id": "phillies-collapse",
+    "slug": "phillies-collapse",
+    "title": "The Phillies' 1964 Collapse",
+    "date": "1964-09-21",
+    "year": 1964,
+    "era": "expansion",
+    "categories": [
+      "managerial"
+    ],
+    "teams": [
+      {
+        "id": "philadelphia-phillies",
+        "name": "Philadelphia Phillies"
+      },
+      {
+        "id": "cincinnati-reds",
+        "name": "Cincinnati Reds"
+      },
+      {
+        "id": "st-louis-cardinals",
+        "name": "St. Louis Cardinals"
+      }
+    ],
+    "players": [
+      {
+        "id": "gene-mauch",
+        "name": "Gene Mauch"
+      },
+      {
+        "id": "chico-ruiz",
+        "name": "Chico Ruiz"
+      },
+      {
+        "id": "jim-bunning",
+        "name": "Jim Bunning"
+      },
+      {
+        "id": "chris-short",
+        "name": "Chris Short"
+      }
+    ],
+    "summary": "Philadelphia led the league by 6½ games with twelve to play. Gene Mauch kept running his aces out on short rest. The Phillies lost ten in a row.",
+    "story": "On the morning of September 21, 1964, the Phillies were 90–60 and led the National League by 6½ games with twelve left. That night, at home against Cincinnati, Chico Ruiz stole home in the sixth with Frank Robinson at the plate. Art Mahaffey's pitch got away, Ruiz scored, and the Reds won, 1–0. Manager Gene Mauch could not believe anyone would steal home with Robinson batting. Ruiz was safe. The steal worked.\n\nWhat followed is the managerial entry. The Phillies lost ten in a row. Mauch kept sending Jim Bunning and Chris Short back to the mound on short rest, sometimes on two days. Over the final twelve games Philadelphia went 2–10. The Cardinals went 9–3 and won the pennant on the last afternoon. The Phillies won their finale, 10–0, which was no longer relevant.\n\nRuiz's dash is the folk beginning of the slide. The repeated decision to empty the two best arms is the part a manager could control.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "pennant",
+      "phillies",
+      "short-rest",
+      "1964"
+    ],
+    "related": [
+      "brock-for-broglio",
+      "grady-little-game-seven",
+      "bagwell-for-andersen"
+    ],
+    "featured": false
+  },
+  {
+    "id": "robinson-for-pappas",
+    "slug": "robinson-for-pappas",
+    "title": "Frank Robinson for Milt Pappas",
+    "date": "1965-12-09",
+    "year": 1965,
+    "era": "expansion",
+    "categories": [
+      "front-office"
+    ],
+    "teams": [
+      {
+        "id": "cincinnati-reds",
+        "name": "Cincinnati Reds"
+      },
+      {
+        "id": "baltimore-orioles",
+        "name": "Baltimore Orioles"
+      }
+    ],
+    "players": [
+      {
+        "id": "frank-robinson",
+        "name": "Frank Robinson"
+      },
+      {
+        "id": "milt-pappas",
+        "name": "Milt Pappas"
+      },
+      {
+        "id": "bill-dewitt",
+        "name": "Bill DeWitt"
+      }
+    ],
+    "summary": "Cincinnati's Bill DeWitt called Frank Robinson an old thirty and traded him to Baltimore. The next year Robinson won the Triple Crown.",
+    "story": "On December 9, 1965, the Reds traded Frank Robinson to the Orioles for Milt Pappas, Jack Baldschun, and Dick Simpson. Robinson was thirty. Owner Bill DeWitt, explaining the deal, called him an old thirty. The phrase is the part that lasted, because the next season made it look absurd.\n\nIn 1966 Robinson hit .316 with 49 home runs and 122 runs batted in, won the Triple Crown and the American League Most Valuable Player award, and was the World Series MVP when Baltimore swept the Dodgers. He played six seasons in Baltimore, made four World Series, and won two of them. Pappas was a capable pitcher who was not Frank Robinson. Baldschun and Simpson did not change that.\n\nDeWitt wanted pitching, and thirty is not young for a corner outfielder of that era. The record does not require pretending the Reds received nothing. It does require noticing that they gave away a player who was not finished.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "trade",
+      "orioles",
+      "reds",
+      "triple-crown"
+    ],
+    "related": [
+      "brock-for-broglio",
+      "pedro-for-deshields",
+      "sale-of-babe-ruth"
+    ],
+    "featured": false
+  },
+  {
+    "id": "ryan-for-fregosi",
+    "slug": "ryan-for-fregosi",
+    "title": "Nolan Ryan for Jim Fregosi",
+    "date": "1971-12-10",
+    "year": 1971,
+    "era": "expansion",
+    "categories": [
+      "front-office"
+    ],
+    "teams": [
+      {
+        "id": "new-york-mets",
+        "name": "New York Mets"
+      },
+      {
+        "id": "california-angels",
+        "name": "California Angels"
+      }
+    ],
+    "players": [
+      {
+        "id": "nolan-ryan",
+        "name": "Nolan Ryan"
+      },
+      {
+        "id": "jim-fregosi",
+        "name": "Jim Fregosi"
+      }
+    ],
+    "summary": "The Mets traded Nolan Ryan and three others to the Angels for Jim Fregosi. Ryan left with seven no-hitters. Fregosi was gone in a season and a half.",
+    "story": "December 10, 1971. The Mets sent Nolan Ryan, Leroy Stanton, Don Rose, and Francisco Estrada to the California Angels for shortstop Jim Fregosi. Ryan was 24, wild, and unfinished: a hard thrower the Mets had not found a consistent role for. Fregosi was a six-time All-Star. The Mets thought they were buying a shortstop and selling a project.\n\nRyan won 324 games, struck out 5,714 batters, and threw seven no-hitters. Fregosi's 101 games in 1972 were the last season he reached 100. The Mets moved him on after a year and a half. He later managed the 1993 Phillies to the World Series, which is a better ending than the trade-wire version of him as a punch line.\n\nThe deal is still the cleanest example of a franchise giving up on a pitcher one organization too soon. The Angels did not invent Ryan. They waited him out.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "trade",
+      "mets",
+      "angels",
+      "no-hitter"
+    ],
+    "related": [
+      "brock-for-broglio",
+      "pedro-for-deshields",
+      "bagwell-for-andersen"
+    ],
+    "featured": true
+  },
+  {
+    "id": "ten-cent-beer-night",
+    "slug": "ten-cent-beer-night",
+    "title": "Ten-Cent Beer Night",
+    "date": "1974-06-04",
+    "year": 1974,
+    "era": "expansion",
+    "categories": [
+      "promotions",
+      "fan-crowd"
+    ],
+    "teams": [
+      {
+        "id": "cleveland-indians",
+        "name": "Cleveland Indians"
+      },
+      {
+        "id": "texas-rangers",
+        "name": "Texas Rangers"
+      }
+    ],
+    "players": [
+      {
+        "id": "billy-martin",
+        "name": "Billy Martin"
+      },
+      {
+        "id": "jeff-burroughs",
+        "name": "Jeff Burroughs"
+      },
+      {
+        "id": "nestor-chylak",
+        "name": "Nestor Chylak"
+      }
+    ],
+    "summary": "Cleveland sold beer for a dime, the limit collapsed, and the crowd stormed the field. The umpires forfeited the game to Texas.",
+    "story": "June 4, 1974, Cleveland Stadium. The Indians, trying to fill a ballpark that was usually empty, priced beer at ten cents. Other clubs had tried the same promotion with a hard limit of two. Cleveland's limit of six was not enforced once the concession stands fell behind, and fans were allowed to fill cups from Stroh's trucks parked behind the outfield fence. The crowd was 25,134, more than double the usual draw.\n\nThe night had a grudge in it. A week earlier there had been trouble in Texas, and Rangers manager Billy Martin had joked that Cleveland did not have enough fans to worry about. People ran onto the field through the game. In the ninth a fan went after right fielder Jeff Burroughs's cap. Martin led his players out, some of them carrying bats. The Indians came out to help the visitors. Reliever Tom Hilgendorf was hit with a chair.\n\nCrew chief Nestor Chylak, injured in the melee, forfeited the game to Texas, 9–0. The promotion had worked. The ballgame had not survived it.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "forfeit",
+      "promotion",
+      "cleveland",
+      "rangers",
+      "beer"
+    ],
+    "related": [
+      "disco-demolition-night",
+      "medwick-fruit-barrage",
+      "eddie-gaedel"
+    ],
+    "featured": true
+  },
+  {
+    "id": "herb-washington-pickoff",
+    "slug": "herb-washington-pickoff",
+    "title": "Herb Washington Is Picked Off",
+    "date": "1974-10-13",
+    "year": 1974,
+    "era": "expansion",
+    "categories": [
+      "front-office",
+      "baserunning"
+    ],
+    "teams": [
+      {
+        "id": "oakland-athletics",
+        "name": "Oakland Athletics"
+      },
+      {
+        "id": "los-angeles-dodgers",
+        "name": "Los Angeles Dodgers"
+      }
+    ],
+    "players": [
+      {
+        "id": "herb-washington",
+        "name": "Herb Washington"
+      },
+      {
+        "id": "charlie-finley",
+        "name": "Charlie Finley"
+      },
+      {
+        "id": "mike-marshall",
+        "name": "Mike Marshall"
+      },
+      {
+        "id": "steve-garvey",
+        "name": "Steve Garvey"
+      }
+    ],
+    "summary": "Charlie Finley signed a world-class sprinter who had never played baseball and used him only as a pinch runner. In the World Series, Mike Marshall picked him off.",
+    "story": "Herb Washington was a sprinter, a Michigan State man who held world-class times and had no baseball career behind him. Charlie Finley signed him in 1974 as a designated runner. He appeared in 92 games that year, stole 29 bases, and never came to the plate. His career, ended when the A's released him in May 1975, was 105 games, 31 steals, 17 times caught stealing, and no at-bats.\n\nThe World Series exposed the experiment in one pitch. Game 2, October 13 at Dodger Stadium. Oakland trailed 3–2 in the ninth and had just scored twice. Washington ran for Joe Rudi, the tying run, at first base. Mike Marshall, the Dodgers' relief pitcher and another former Spartan, picked him off. Steve Garvey put the tag on. Marshall then struck out the next hitter. The A's lost the game and won the series anyway.\n\nWashington was asked to do one thing he had never practiced under major-league pickoff moves. Finley was the one who sent him out there to learn it in October.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "world-series",
+      "athletics",
+      "pinch-runner",
+      "finley",
+      "pickoff"
+    ],
+    "related": [
+      "eddie-gaedel",
+      "merkles-boner",
+      "lonnie-smith-game-seven"
+    ],
+    "featured": false
+  },
+  {
+    "id": "disco-demolition-night",
+    "slug": "disco-demolition-night",
+    "title": "Disco Demolition Night",
+    "date": "1979-07-12",
+    "year": 1979,
+    "era": "free-agency",
+    "categories": [
+      "promotions",
+      "fan-crowd"
+    ],
+    "teams": [
+      {
+        "id": "chicago-white-sox",
+        "name": "Chicago White Sox"
+      },
+      {
+        "id": "detroit-tigers",
+        "name": "Detroit Tigers"
+      }
+    ],
+    "players": [
+      {
+        "id": "mike-veeck",
+        "name": "Mike Veeck"
+      },
+      {
+        "id": "steve-dahl",
+        "name": "Steve Dahl"
+      },
+      {
+        "id": "garry-meier",
+        "name": "Garry Meier"
+      }
+    ],
+    "summary": "The White Sox blew up a crate of disco records between games of a doubleheader. Fans took the field, a fire started, and the second game was forfeited.",
+    "story": "July 12, 1979, Comiskey Park, a twi-night doubleheader between the White Sox and the Tigers. Mike Veeck, Bill Veeck's son, and WLUP disc jockeys Steve Dahl and Garry Meier built a promotion around the backlash against disco: 98 cents to get in if you brought a record to destroy. Between games, a crate of records was blown up in center field.\n\nThousands of people came, many of them not there for baseball. After the explosion the crowd stormed the field. A fire burned. The grass was ruined. The umpires forfeited the second game to Detroit. What had been planned as a gag between games of a doubleheader ended with one of those games never being played.\n\nThe night is also part of a wider reaction against disco that overlapped with hostility toward Black and gay culture. Remembering it only as a funny forfeit leaves that out. Remembering it only as a culture-war parable leaves out the simpler operational fact: the club invited a crowd it could not control, and then lost the field.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "forfeit",
+      "comiskey",
+      "promotion",
+      "white-sox",
+      "veeck"
+    ],
+    "related": [
+      "ten-cent-beer-night",
+      "eddie-gaedel",
+      "medwick-fruit-barrage"
+    ],
+    "featured": true
+  },
+  {
+    "id": "pine-tar-game",
+    "slug": "pine-tar-game",
+    "title": "The Pine Tar Game",
+    "date": "1983-07-24",
+    "year": 1983,
+    "era": "free-agency",
+    "categories": [
+      "rules",
+      "umpire"
+    ],
+    "teams": [
+      {
+        "id": "kansas-city-royals",
+        "name": "Kansas City Royals"
+      },
+      {
+        "id": "new-york-yankees",
+        "name": "New York Yankees"
+      }
+    ],
+    "players": [
+      {
+        "id": "george-brett",
+        "name": "George Brett"
+      },
+      {
+        "id": "goose-gossage",
+        "name": "Goose Gossage"
+      },
+      {
+        "id": "billy-martin",
+        "name": "Billy Martin"
+      },
+      {
+        "id": "tim-mcclelland",
+        "name": "Tim McClelland"
+      },
+      {
+        "id": "lee-macphail",
+        "name": "Lee MacPhail"
+      }
+    ],
+    "summary": "George Brett's go-ahead homer was taken off the board because there was too much pine tar on the bat. The league president put the homer back.",
+    "story": "July 24, 1983, Yankee Stadium. George Brett hit a two-run homer off Goose Gossage in the ninth, and Kansas City took the lead. Billy Martin asked the umpires to look at the bat. The rule limited pine tar to 18 inches up the handle. Tim McClelland laid the bat across the plate, found tar well beyond the limit, and called Brett out. Brett came out of the dugout in the eruption that became the photograph.\n\nAmerican League president Lee MacPhail overturned the call. The pine-tar rule, he wrote, was about keeping the ball clean, not about canceling a home run after it had left the park. The game was resumed on August 18 from the moment after the homer, with Brett having been ejected for the argument and therefore not on the field. The Royals won, 5–4.\n\nMartin had the rule on his side for an evening. MacPhail decided the rule had been pointed at the wrong thing. The resumed game took a few minutes. The argument took the rest of the summer.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "yankee-stadium",
+      "rules",
+      "royals",
+      "yankees",
+      "pine-tar"
+    ],
+    "related": [
+      "denkinger-safe-call",
+      "galarraga-imperfect-game",
+      "belle-corked-bat"
+    ],
+    "featured": true
+  },
+  {
+    "id": "durham-through-the-wicket",
+    "slug": "durham-through-the-wicket",
+    "title": "Durham Lets It Through",
+    "date": "1984-10-07",
+    "year": 1984,
+    "era": "free-agency",
+    "categories": [
+      "fielding"
+    ],
+    "teams": [
+      {
+        "id": "chicago-cubs",
+        "name": "Chicago Cubs"
+      },
+      {
+        "id": "san-diego-padres",
+        "name": "San Diego Padres"
+      }
+    ],
+    "players": [
+      {
+        "id": "leon-durham",
+        "name": "Leon Durham"
+      },
+      {
+        "id": "tim-flannery",
+        "name": "Tim Flannery"
+      },
+      {
+        "id": "rick-sutcliffe",
+        "name": "Rick Sutcliffe"
+      },
+      {
+        "id": "steve-garvey",
+        "name": "Steve Garvey"
+      }
+    ],
+    "summary": "One out from a pennant-clinching chance slipping away, Tim Flannery's grounder went through Leon Durham's legs. San Diego scored four and won the National League.",
+    "story": "The 1984 National League Championship Series was a best-of-five, and the Cubs won the first two games at Wrigley. San Diego won the next two at Jack Murphy Stadium. Game 5, October 7, was for the pennant. Rick Sutcliffe, who had barely lost since the Cubs acquired him in June, took a 3–0 lead to the middle innings. The Padres cut it to 3–2.\n\nIn the seventh, Carmelo Martinez was on second with one out. Tim Flannery hit a grounder to first. Leon Durham said afterward that it was a routine ball and it stayed low. It went through his legs, Martinez scored, and the inning came apart. Tony Gwynn doubled, Steve Garvey singled, and San Diego scored four. The final was 6–3. The Padres went to the World Series. The Cubs, who had not won a postseason series since 1908, went home.\n\nA clubhouse story later claimed Durham's glove had been soaked by a spilled drink. He described a ball that never hopped. The grounder is enough.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "nlcs",
+      "cubs",
+      "padres",
+      "first-base",
+      "1984"
+    ],
+    "related": [
+      "buckner-game-six",
+      "bartman-game",
+      "hack-wilson-sun-field"
+    ],
+    "featured": false
+  },
+  {
+    "id": "denkinger-safe-call",
+    "slug": "denkinger-safe-call",
+    "title": "Denkinger Calls Orta Safe",
+    "date": "1985-10-26",
+    "year": 1985,
+    "era": "free-agency",
+    "categories": [
+      "umpire"
+    ],
+    "teams": [
+      {
+        "id": "kansas-city-royals",
+        "name": "Kansas City Royals"
+      },
+      {
+        "id": "st-louis-cardinals",
+        "name": "St. Louis Cardinals"
+      }
+    ],
+    "players": [
+      {
+        "id": "don-denkinger",
+        "name": "Don Denkinger"
+      },
+      {
+        "id": "jorge-orta",
+        "name": "Jorge Orta"
+      },
+      {
+        "id": "todd-worrell",
+        "name": "Todd Worrell"
+      },
+      {
+        "id": "jack-clark",
+        "name": "Jack Clark"
+      },
+      {
+        "id": "dane-iorg",
+        "name": "Dane Iorg"
+      }
+    ],
+    "summary": "With St. Louis one out from a championship, Don Denkinger called Jorge Orta safe at first. Replays showed he was out. The Cardinals never got the inning back.",
+    "story": "October 26, 1985, Royals Stadium, Game 6. The Cardinals led 1–0 in the ninth and had not blown a ninth-inning lead all year. Todd Worrell was pitching. Jorge Orta, pinch-hitting, chopped a ball to Jack Clark at first. Clark tossed to Worrell covering. Denkinger, umpiring at first, called Orta safe. The replays showed Worrell's foot on the bag about half a step ahead of Orta.\n\nThe inning did not end with the argument. Steve Balboni popped up a foul that Clark lost between himself, catcher Darrell Porter, and a camera near the dugout. Balboni then singled. Onix Concepcion ran for him. Jim Sundberg bunted, and Orta was forced at third. Porter's passed ball moved the runners up. Herzog walked Hal McRae on purpose. Dane Iorg, a former Cardinal, singled to right and scored both runners. Kansas City won, 2–1.\n\nThe next day Denkinger was behind the plate for an 11–0 Game 7 in which Herzog and pitcher Joaquin Andujar were ejected. The call did not score the winning run by itself. Clark's missed pop-up, the passed ball, and Iorg's single happened after it. St. Louis spent the winter on the one that came first.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "world-series",
+      "royals",
+      "cardinals",
+      "blown-call",
+      "first-base"
+    ],
+    "related": [
+      "galarraga-imperfect-game",
+      "clark-and-niedenfuer",
+      "infield-fly-wild-card"
+    ],
+    "featured": true
+  },
+  {
+    "id": "buckner-game-six",
+    "slug": "buckner-game-six",
+    "title": "The Ball Gets Through Buckner",
+    "date": "1986-10-25",
+    "year": 1986,
+    "era": "free-agency",
+    "categories": [
+      "fielding",
+      "managerial"
+    ],
+    "teams": [
+      {
+        "id": "boston-red-sox",
+        "name": "Boston Red Sox"
+      },
+      {
+        "id": "new-york-mets",
+        "name": "New York Mets"
+      }
+    ],
+    "players": [
+      {
+        "id": "bill-buckner",
+        "name": "Bill Buckner"
+      },
+      {
+        "id": "mookie-wilson",
+        "name": "Mookie Wilson"
+      },
+      {
+        "id": "bob-stanley",
+        "name": "Bob Stanley"
+      },
+      {
+        "id": "calvin-schiraldi",
+        "name": "Calvin Schiraldi"
+      },
+      {
+        "id": "john-mcnamara",
+        "name": "John McNamara"
+      }
+    ],
+    "summary": "The Red Sox were one out from a title when a ground ball went through Bill Buckner's legs. By then the lead was already gone.",
+    "story": "Game 6 of the 1986 World Series, October 25 at Shea Stadium. Boston led the series three games to two. In the top of the tenth Dave Henderson homered, Wade Boggs doubled, and Marty Barrett singled Boggs home. The Red Sox led, 5–3.\n\nCalvin Schiraldi got the first two outs of the bottom of the inning. Gary Carter singled. Kevin Mitchell, pinch-hitting, singled. Ray Knight singled, Carter scored, and it was 5–4 with Mitchell on third. Mookie Wilson battled Schiraldi, and manager John McNamara brought in Bob Stanley. A wild pitch — scored that way, though catcher Rich Gedman was part of the mess — brought Mitchell home and moved Knight to second. The game was tied before anyone fielded a ground ball. Wilson then hit a slow roller inside first. It went through Buckner's legs, and Knight scored. Mets 6, Red Sox 5.\n\nBuckner was playing on ruined ankles. McNamara had used Dave Stapleton as a late-inning defensive replacement earlier in the series and did not do it here. The Mets won Game 7 the next night. The photograph kept only the last mistake, which is why the entry is named for the ball and not for the man alone.",
+    "images": [
+      {
+        "url": "/archive/bill-buckner-1986.jpg",
+        "caption": "Bill Buckner in a Red Sox uniform, about 1986. This is not a photograph of the tenth inning.",
+        "credit": "Craig Johnson, CC BY-SA 2.0, via Wikimedia Commons."
+      }
+    ],
+    "videos": [],
+    "tags": [
+      "world-series",
+      "red-sox",
+      "mets",
+      "shea",
+      "tenth-inning"
+    ],
+    "related": [
+      "slaughter-scores-from-first",
+      "denkinger-safe-call",
+      "cruz-and-freese"
+    ],
+    "featured": true
+  },
+  {
+    "id": "bagwell-for-andersen",
+    "slug": "bagwell-for-andersen",
+    "title": "Bagwell for Larry Andersen",
+    "date": "1990-08-30",
+    "year": 1990,
+    "era": "free-agency",
+    "categories": [
+      "front-office"
+    ],
+    "teams": [
+      {
+        "id": "boston-red-sox",
+        "name": "Boston Red Sox"
+      },
+      {
+        "id": "houston-astros",
+        "name": "Houston Astros"
+      }
+    ],
+    "players": [
+      {
+        "id": "jeff-bagwell",
+        "name": "Jeff Bagwell"
+      },
+      {
+        "id": "larry-andersen",
+        "name": "Larry Andersen"
+      }
+    ],
+    "summary": "At the 1990 deadline the Red Sox traded a Double-A third baseman for a month of Larry Andersen. The third baseman was Jeff Bagwell.",
+    "story": "August 30, 1990. Boston needed a bullpen arm for a pennant race and sent minor-league third baseman Jeff Bagwell to Houston for reliever Larry Andersen. Andersen was 37. Bagwell was 22, blocked in the Red Sox system, and a lifelong Red Sox fan who did not want to go. Andersen pitched in 15 games, posted a 1.23 ERA, and helped Boston win the American League East. He was a free agent that winter and signed with San Diego. Boston was out in the playoffs.\n\nBagwell became a first baseman because Houston already had Ken Caminiti at third. He was the National League Rookie of the Year in 1991, the Most Valuable Player in 1994, and finished with 449 home runs. The trade is the deadline deal against which other deadline deals are measured, because the rental worked and the prospect was still the greater player by an order the standings could not show in September.\n\nBoston's need was real. The price was a player the club did not yet know it had.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "trade",
+      "deadline",
+      "red-sox",
+      "astros",
+      "hall-of-fame"
+    ],
+    "related": [
+      "pedro-for-deshields",
+      "brock-for-broglio",
+      "ryan-for-fregosi"
+    ],
+    "featured": false
+  },
+  {
+    "id": "lyons-drops-his-pants",
+    "slug": "lyons-drops-his-pants",
+    "title": "Steve Lyons Drops His Pants",
+    "date": "1990-07-16",
+    "year": 1990,
+    "era": "free-agency",
+    "categories": [
+      "personalities"
+    ],
+    "teams": [
+      {
+        "id": "chicago-white-sox",
+        "name": "Chicago White Sox"
+      },
+      {
+        "id": "detroit-tigers",
+        "name": "Detroit Tigers"
+      }
+    ],
+    "players": [
+      {
+        "id": "steve-lyons",
+        "name": "Steve Lyons"
+      },
+      {
+        "id": "dan-petry",
+        "name": "Dan Petry"
+      },
+      {
+        "id": "cecil-fielder",
+        "name": "Cecil Fielder"
+      }
+    ],
+    "summary": "Steve Lyons beat out a bunt, slid into first, and unbuckled his pants on live television to shake the dirt out.",
+    "story": "July 16, 1990, Tiger Stadium. Steve Lyons, the White Sox utility man whose nickname was Psycho, led off the fifth with a bunt single against Dan Petry and slid into the bag. While Petry argued with first baseman Cecil Fielder, Lyons felt the dirt in his uniform and did the thing a person does in a backyard: he unbuckled his pants to shake it out.\n\nHe got them to his knees, remembered the crowd and the broadcast, and hauled them back up. He was wearing sliding shorts. Nobody was hurt. The clip outlived almost everything else he did on a baseball field, which is its own small injustice and also the reason it is in the catalog. Lyons later became a broadcaster and told the story on himself, which is the decent version of this kind of moment.\n\nIt is here as a personality entry, not as a moral one. The sport has room for a man who forgot, for three seconds, that he was not alone.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "white-sox",
+      "tigers",
+      "television",
+      "first-base"
+    ],
+    "related": [
+      "canseco-head-homer",
+      "eddie-gaedel",
+      "castillo-popup"
+    ],
+    "featured": false
+  },
+  {
+    "id": "lonnie-smith-game-seven",
+    "slug": "lonnie-smith-game-seven",
+    "title": "Lonnie Smith Stops at Third",
+    "date": "1991-10-27",
+    "year": 1991,
+    "era": "free-agency",
+    "categories": [
+      "baserunning",
+      "hitting-mental"
+    ],
+    "teams": [
+      {
+        "id": "atlanta-braves",
+        "name": "Atlanta Braves"
+      },
+      {
+        "id": "minnesota-twins",
+        "name": "Minnesota Twins"
+      }
+    ],
+    "players": [
+      {
+        "id": "lonnie-smith",
+        "name": "Lonnie Smith"
+      },
+      {
+        "id": "terry-pendleton",
+        "name": "Terry Pendleton"
+      },
+      {
+        "id": "chuck-knoblauch",
+        "name": "Chuck Knoblauch"
+      },
+      {
+        "id": "greg-gagne",
+        "name": "Greg Gagne"
+      },
+      {
+        "id": "jack-morris",
+        "name": "Jack Morris"
+      }
+    ],
+    "summary": "In a scoreless Game 7, Lonnie Smith was on first when Terry Pendleton doubled. A decoy at second base held Smith at third. He never scored.",
+    "story": "October 27, 1991, the Metrodome, Game 7 of the World Series. Jack Morris and John Smoltz had matched zeros into the eighth. Lonnie Smith led off with a single. Terry Pendleton drove the ball into the left-center gap, the kind of hit the Atlanta dugout greeted as a run. Smith was running on the pitch. Near second he slowed.\n\nChuck Knoblauch and Greg Gagne mimed the turn of a double play, as if the ball were on the infield. It was not. It was on the warning track. Smith said later that he had not picked the ball up and that the decoy fooled him. By the time he saw it, third was all he could reach. Ron Gant grounded out. David Justice walked. Sid Bream grounded into a 3-2-3 double play, Kent Hrbek to Brian Harper to Hrbek. The inning died with the run on third.\n\nMorris finished ten shutout innings. In the bottom of the tenth Dan Gladden doubled, Knoblauch sacrificed, the Twins walked Kirby Puckett and Hrbek intentionally, and the injured Gene Larkin singled home the winner on the first pitch he saw from Alejandro Peña. Minnesota won, 1–0. Smith called it his mistake. The series is remembered as one of the best ever played. His hesitation is the reason it went to the tenth at all.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "world-series",
+      "braves",
+      "twins",
+      "metrodome",
+      "decoy"
+    ],
+    "related": [
+      "buckner-game-six",
+      "merkles-boner",
+      "grady-little-game-seven"
+    ],
+    "featured": true
+  },
+  {
+    "id": "canseco-head-homer",
+    "slug": "canseco-head-homer",
+    "title": "The Ball Comes Off Canseco's Head",
+    "date": "1993-05-26",
+    "year": 1993,
+    "era": "free-agency",
+    "categories": [
+      "fielding"
+    ],
+    "teams": [
+      {
+        "id": "texas-rangers",
+        "name": "Texas Rangers"
+      },
+      {
+        "id": "cleveland-indians",
+        "name": "Cleveland Indians"
+      }
+    ],
+    "players": [
+      {
+        "id": "jose-canseco",
+        "name": "Jose Canseco"
+      },
+      {
+        "id": "carlos-martinez",
+        "name": "Carlos Martinez"
+      }
+    ],
+    "summary": "Carlos Martinez flew to right at Cleveland Stadium. The ball ticked Jose Canseco's glove, hit him on the head, and bounced over the fence for a home run.",
+    "story": "May 26, 1993, Cleveland Stadium, the Rangers in town and leading 3–0. In the bottom of the fourth Carlos Martinez led off with a fly to right. Jose Canseco drifted back, turned his head to find the wall, and lost the ball. It grazed his glove, struck him on the top of the head, and bounced over the fence. By rule it was a home run. Center fielder David Hulse, backing up the play, was laughing before Martinez had rounded second.\n\nCleveland won, 7–6. Canseco, who understood the clip would be everywhere, asked if anybody had a Band-Aid and said he would be on television for a month. He was right about the month. The play is funny in the way a baseball blooper is funny, and it is also a perfect small fielding entry: an outfielder looking for the fence instead of the ball, and the ball finding him anyway.\n\nMartinez, whose homer it officially was, said he thought Canseco had it, and then he saw it hit him. That is the whole sequence. It does not need a second act.",
+    "images": [
+      {
+        "url": "/archive/jose-canseco-2011.png",
+        "caption": "Jose Canseco with the Yuma Scorpions in 2011. He is not in a Rangers uniform, and this is not the fly ball at Cleveland Stadium.",
+        "credit": "Resolute, CC BY-SA 3.0, via Wikimedia Commons."
+      }
+    ],
+    "videos": [],
+    "tags": [
+      "rangers",
+      "indians",
+      "right-field",
+      "home-run",
+      "blooper"
+    ],
+    "related": [
+      "lyons-drops-his-pants",
+      "hack-wilson-sun-field",
+      "castillo-popup"
+    ],
+    "featured": false
+  },
+  {
+    "id": "pedro-for-deshields",
+    "slug": "pedro-for-deshields",
+    "title": "Pedro Martinez for Delino DeShields",
+    "date": "1993-11-19",
+    "year": 1993,
+    "era": "free-agency",
+    "categories": [
+      "front-office"
+    ],
+    "teams": [
+      {
+        "id": "los-angeles-dodgers",
+        "name": "Los Angeles Dodgers"
+      },
+      {
+        "id": "montreal-expos",
+        "name": "Montreal Expos"
+      }
+    ],
+    "players": [
+      {
+        "id": "pedro-martinez",
+        "name": "Pedro Martinez"
+      },
+      {
+        "id": "delino-deshields",
+        "name": "Delino DeShields"
+      }
+    ],
+    "summary": "The Dodgers needed a second baseman and traded Pedro Martinez to Montreal to get one. Pedro became one of the great pitchers of the era.",
+    "story": "On November 19, 1993, the Dodgers traded Pedro Martinez to the Expos for second baseman Delino DeShields. Los Angeles had failed to re-sign Jody Reed and wanted an everyday second baseman. Martinez was 22, listed at 5-foot-11, a year removed from shoulder surgery, and had just gone 10–5 with a 2.61 ERA as a reliever. The club was not sure the arm would hold up as a starter. DeShields was a former first-round pick who could run and hit at the top of an order.\n\nDeShields was a useful Dodger and not a disaster. Martinez became a three-time Cy Young winner and, for a few seasons in Boston, the best pitcher alive. The trade looks inevitable only after those seasons. In November 1993 it was a team choosing a position it could see an opening at, and declining to bet that a small right-hander coming off shoulder surgery was the more valuable asset.\n\nThey chose wrong. The useful part of the record is that the choice had reasons. The reasons were not good enough.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "trade",
+      "dodgers",
+      "expos",
+      "cy-young"
+    ],
+    "related": [
+      "ryan-for-fregosi",
+      "bagwell-for-andersen",
+      "robinson-for-pappas"
+    ],
+    "featured": false
+  },
+  {
+    "id": "belle-corked-bat",
+    "slug": "belle-corked-bat",
+    "title": "Albert Belle's Corked Bat",
+    "date": "1994-07-15",
+    "year": 1994,
+    "era": "wild-card",
+    "categories": [
+      "rules",
+      "personalities"
+    ],
+    "teams": [
+      {
+        "id": "cleveland-indians",
+        "name": "Cleveland Indians"
+      },
+      {
+        "id": "chicago-white-sox",
+        "name": "Chicago White Sox"
+      }
+    ],
+    "players": [
+      {
+        "id": "albert-belle",
+        "name": "Albert Belle"
+      },
+      {
+        "id": "jason-grimsley",
+        "name": "Jason Grimsley"
+      },
+      {
+        "id": "paul-sorrento",
+        "name": "Paul Sorrento"
+      }
+    ],
+    "summary": "Umpires confiscated Albert Belle's bat in Chicago. A teammate crawled through the ceiling to swap it, and the replacement had the wrong name on it.",
+    "story": "July 15, 1994, Cleveland at Chicago. The umpires took Albert Belle's bat out of the game before he could use it. What happened next is the part the players later told on themselves. Pitcher Jason Grimsley crawled through the crawlspace above the clubhouse ceiling, dropped into the umpires' room, and replaced the confiscated bat with one belonging to teammate Paul Sorrento.\n\nThe switch did not survive a look at the barrel. The bat in the umpires' care was not Belle's model. The bat they had originally taken was corked. Belle was suspended seven games. Cork in a bat is an old trick, illegal because it lightens the barrel and changes how the ball comes off it. The ceiling crawl is what separated this one from a routine suspension.\n\nBelle was the hitter. Grimsley was the operation. The rule is simple enough that the ingenuity spent getting around it is the embarrassing half of the story.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "corked-bat",
+      "indians",
+      "white-sox",
+      "suspension"
+    ],
+    "related": [
+      "pine-tar-game",
+      "schaefer-steals-first",
+      "infield-fly-wild-card"
+    ],
+    "featured": false
+  },
+  {
+    "id": "jeffrey-maier",
+    "slug": "jeffrey-maier",
+    "title": "Jeffrey Maier Reaches Over the Wall",
+    "date": "1996-10-09",
+    "year": 1996,
+    "era": "wild-card",
+    "categories": [
+      "fan-crowd",
+      "umpire"
+    ],
+    "teams": [
+      {
+        "id": "new-york-yankees",
+        "name": "New York Yankees"
+      },
+      {
+        "id": "baltimore-orioles",
+        "name": "Baltimore Orioles"
+      }
+    ],
+    "players": [
+      {
+        "id": "jeffrey-maier",
+        "name": "Jeffrey Maier"
+      },
+      {
+        "id": "derek-jeter",
+        "name": "Derek Jeter"
+      },
+      {
+        "id": "tony-tarasco",
+        "name": "Tony Tarasco"
+      },
+      {
+        "id": "rich-garcia",
+        "name": "Rich Garcia"
+      }
+    ],
+    "summary": "A twelve-year-old reached over the wall and turned Derek Jeter's fly ball into a home run. The umpire out there never saw the hand.",
+    "story": "October 9, 1996, Yankee Stadium, Game 1 of the American League Championship Series. In the eighth inning Derek Jeter, a rookie, flew to right. Tony Tarasco camped under it. Jeffrey Maier, twelve years old and sitting in the front row, reached over the wall with his glove and deflected the ball into the stands. Right-field umpire Rich Garcia signaled a home run. The call tied the game. New York won it later, and won the series.\n\nGarcia said, after he saw the replay, that he probably would have called fan interference. Tarasco did not accept the companion claim that he had no chance at the ball. The rule is plain: a spectator who reaches into the field of play and touches a ball that a fielder has a play on has interfered. Maier was a child doing what children in the front row do. The missed call belonged to the umpire who was stationed there to see it.\n\nJeter's career made the homer look destined. On the night, it was a fly ball, a glove from the seats, and a signal that did not match the play.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "alcs",
+      "yankees",
+      "orioles",
+      "fan-interference",
+      "jeter"
+    ],
+    "related": [
+      "bartman-game",
+      "denkinger-safe-call",
+      "medwick-fruit-barrage"
+    ],
+    "featured": false
+  },
+  {
+    "id": "ankiel-wild-pitches",
+    "slug": "ankiel-wild-pitches",
+    "title": "Rick Ankiel Loses the Plate",
+    "date": "2000-10-03",
+    "year": 2000,
+    "era": "wild-card",
+    "categories": [
+      "pitching",
+      "hitting-mental"
+    ],
+    "teams": [
+      {
+        "id": "st-louis-cardinals",
+        "name": "St. Louis Cardinals"
+      },
+      {
+        "id": "atlanta-braves",
+        "name": "Atlanta Braves"
+      }
+    ],
+    "players": [
+      {
+        "id": "rick-ankiel",
+        "name": "Rick Ankiel"
+      },
+      {
+        "id": "tony-la-russa",
+        "name": "Tony La Russa"
+      }
+    ],
+    "summary": "Rick Ankiel was twenty-one, a phenom, and ahead 6–0 in his first playoff start. In the third inning he threw five wild pitches and could not find the strike zone.",
+    "story": "October 3, 2000, National League Division Series Game 1, the Cardinals against the Braves in St. Louis. Rick Ankiel was twenty-one and had just finished a rookie season in which he looked like one of the best young pitchers in the league. Tony La Russa handed him the ball. St. Louis scored six in the first. The choice looked like genius.\n\nIn the third inning the strike zone disappeared. Ankiel threw five wild pitches, walked four, and used 34 pitches, 20 of them balls. Atlanta scored four. He had thrown twelve wild pitches in 175 regular-season innings. Five of them arrived in one playoff inning. Baseball already had a name for this kind of sudden loss of command, after Steve Blass, the Pirates pitcher who won 19 games in 1972 and could not throw a strike in 1973. Ankiel's version arrived on television, in October, at 21.\n\nHe did not get the pitch back as a pitcher. He left the game for a time, came back as an outfielder, and had a real hitting career. The inning is in the catalog because it happened. It is not here as a joke about a young man whose arm stopped obeying him.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "nlds",
+      "cardinals",
+      "braves",
+      "yips",
+      "wild-pitch"
+    ],
+    "related": [
+      "kim-consecutive-nights",
+      "shot-heard-round-the-world",
+      "grady-little-game-seven"
+    ],
+    "featured": false
+  },
+  {
+    "id": "kim-consecutive-nights",
+    "slug": "kim-consecutive-nights",
+    "title": "Byung-Hyun Kim, Two Nights",
+    "date": "2001-10-31",
+    "year": 2001,
+    "era": "wild-card",
+    "categories": [
+      "pitching"
+    ],
+    "teams": [
+      {
+        "id": "arizona-diamondbacks",
+        "name": "Arizona Diamondbacks"
+      },
+      {
+        "id": "new-york-yankees",
+        "name": "New York Yankees"
+      }
+    ],
+    "players": [
+      {
+        "id": "byung-hyun-kim",
+        "name": "Byung-Hyun Kim"
+      },
+      {
+        "id": "tino-martinez",
+        "name": "Tino Martinez"
+      },
+      {
+        "id": "derek-jeter",
+        "name": "Derek Jeter"
+      },
+      {
+        "id": "scott-brosius",
+        "name": "Scott Brosius"
+      },
+      {
+        "id": "bob-brenly",
+        "name": "Bob Brenly"
+      }
+    ],
+    "summary": "Byung-Hyun Kim gave up a game-tying homer in the ninth on consecutive nights of the 2001 World Series. Arizona won the series anyway.",
+    "story": "Game 4 of the 2001 World Series, October 31 at Yankee Stadium. Arizona led 3–1 in the ninth. Byung-Hyun Kim had struck out the side in the eighth, and Bob Brenly sent him back out. Paul O'Neill singled with one out. With two out, Tino Martinez hit a two-run homer and the game was tied. In the tenth, after midnight, Derek Jeter homered. The papers called him Mr. November. New York won, 4–3. Kim was the losing pitcher.\n\nThe next night Arizona led 2–0 in the ninth and Brenly went to Kim again. Jorge Posada led off with a double. Kim retired the next two. Scott Brosius homered them both in, and the game was tied again. Alfonso Soriano singled home Chuck Knoblauch in the twelfth. New York won, 3–2, and led the series three games to two.\n\nArizona won Games 6 and 7 in Phoenix anyway, the last of them on Luis Gonzalez's broken-bat single off Mariano Rivera. Kim's two nights did not cost his team the championship. They cost him the ninth inning twice, which is a narrower and more accurate thing to say. Brenly's decision to bring him back on the second night is part of the entry, not a footnote.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "world-series",
+      "diamondbacks",
+      "yankees",
+      "closer",
+      "walk-off"
+    ],
+    "related": [
+      "ankiel-wild-pitches",
+      "shot-heard-round-the-world",
+      "buckner-game-six"
+    ],
+    "featured": false
+  },
+  {
+    "id": "castillo-popup",
+    "slug": "castillo-popup",
+    "title": "Castillo Drops the Popup",
+    "date": "2009-06-12",
+    "year": 2009,
+    "era": "wild-card",
+    "categories": [
+      "fielding"
+    ],
+    "teams": [
+      {
+        "id": "new-york-mets",
+        "name": "New York Mets"
+      },
+      {
+        "id": "new-york-yankees",
+        "name": "New York Yankees"
+      }
+    ],
+    "players": [
+      {
+        "id": "luis-castillo",
+        "name": "Luis Castillo"
+      },
+      {
+        "id": "alex-rodriguez",
+        "name": "Alex Rodriguez"
+      },
+      {
+        "id": "francisco-rodriguez",
+        "name": "Francisco Rodriguez"
+      },
+      {
+        "id": "derek-jeter",
+        "name": "Derek Jeter"
+      },
+      {
+        "id": "mark-teixeira",
+        "name": "Mark Teixeira"
+      }
+    ],
+    "summary": "The Mets led by a run with two outs in the ninth when Luis Castillo dropped Alex Rodriguez's popup, then threw to the wrong base.",
+    "story": "June 12, 2009, the new Yankee Stadium, the first Subway Series game there that year. The Mets led 8–7 in the ninth. David Wright's double off Mariano Rivera in the eighth had put them there. Francisco Rodriguez was one out from a save. Derek Jeter was on second, Mark Teixeira on first after an intentional walk, and Alex Rodriguez popped up a pitch he had been ahead in the count on. Rodriguez slammed his bat down. He thought the game was over.\n\nLuis Castillo, a three-time Gold Glove second baseman, drifted into short right and tried to take the ball one-handed. It hit the glove and fell. Jeter scored easily. Castillo then threw to second instead of home, and Teixeira scored too. The Yankees won, 9–8. Castillo sat alone in the visitors' clubhouse afterward and said it was a routine fly ball, and that the ball was moving.\n\nThe Mets of that summer were already finding new ways to lose. This one was the plainest: two outs, a popup, a Gold Glove, and a throw that did not even try for the runner at the plate.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "subway-series",
+      "mets",
+      "yankees",
+      "popup",
+      "ninth-inning"
+    ],
+    "related": [
+      "throneberry-missed-bases",
+      "canseco-head-homer",
+      "buckner-game-six"
+    ],
+    "featured": false
+  },
+  {
+    "id": "bartman-game",
+    "slug": "bartman-game",
+    "title": "The Bartman Game",
+    "date": "2003-10-14",
+    "year": 2003,
+    "era": "wild-card",
+    "categories": [
+      "fan-crowd",
+      "fielding"
+    ],
+    "teams": [
+      {
+        "id": "chicago-cubs",
+        "name": "Chicago Cubs"
+      },
+      {
+        "id": "florida-marlins",
+        "name": "Florida Marlins"
+      }
+    ],
+    "players": [
+      {
+        "id": "steve-bartman",
+        "name": "Steve Bartman"
+      },
+      {
+        "id": "moises-alou",
+        "name": "Moises Alou"
+      },
+      {
+        "id": "alex-gonzalez",
+        "name": "Alex Gonzalez"
+      },
+      {
+        "id": "mark-prior",
+        "name": "Mark Prior"
+      },
+      {
+        "id": "luis-castillo",
+        "name": "Luis Castillo"
+      }
+    ],
+    "summary": "Five outs from the World Series, a fan deflected a foul ball. The Cubs' shortstop then missed the double-play ball that would have ended the inning anyway.",
+    "story": "October 14, 2003, Wrigley Field, National League Championship Series Game 6. The Cubs led the series three games to two and the game 3–0 in the eighth. Mark Prior was pitching. Five outs remained. Juan Pierre doubled. Luis Castillo, on a full count, fouled a ball down the left-field line. Moises Alou reached the wall. Several fans reached too. Steve Bartman, headphones on, eyes on the ball, deflected it. Left-field umpire Mike Everitt did not call interference. Alou slammed his glove.\n\nPrior's next pitch was wild. Castillo walked. Ivan Rodriguez singled, and it was 3–1. Miguel Cabrera then hit a grounder to shortstop Alex Gonzalez, a tailor-made double play, and Gonzalez booted it. Derrek Lee doubled and the game was tied. The Marlins scored eight runs in the inning and won, 8–3. Five of those runs were unearned because of Gonzalez. Florida won Game 7 the next night.\n\nAlou later said he did not believe the foul ball was fan interference. In 2016 the Cubs gave Bartman a World Series ring. The entry keeps his name because that is what the night was called. The play that actually reopened the inning was a baseball play: a shortstop missing a grounder with runners on first and second and one out.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "nlcs",
+      "cubs",
+      "marlins",
+      "wrigley",
+      "fan"
+    ],
+    "related": [
+      "jeffrey-maier",
+      "durham-through-the-wicket",
+      "grady-little-game-seven"
+    ],
+    "featured": true
+  },
+  {
+    "id": "grady-little-game-seven",
+    "slug": "grady-little-game-seven",
+    "title": "Grady Little Leaves Pedro In",
+    "date": "2003-10-16",
+    "year": 2003,
+    "era": "wild-card",
+    "categories": [
+      "managerial"
+    ],
+    "teams": [
+      {
+        "id": "boston-red-sox",
+        "name": "Boston Red Sox"
+      },
+      {
+        "id": "new-york-yankees",
+        "name": "New York Yankees"
+      }
+    ],
+    "players": [
+      {
+        "id": "grady-little",
+        "name": "Grady Little"
+      },
+      {
+        "id": "pedro-martinez",
+        "name": "Pedro Martinez"
+      },
+      {
+        "id": "derek-jeter",
+        "name": "Derek Jeter"
+      },
+      {
+        "id": "jorge-posada",
+        "name": "Jorge Posada"
+      },
+      {
+        "id": "aaron-boone",
+        "name": "Aaron Boone"
+      }
+    ],
+    "summary": "Boston led Game 7 of the 2003 ALCS by three runs. Grady Little visited the mound, left a tiring Pedro Martinez in, and the Yankees tied the game.",
+    "story": "October 16, 2003, Yankee Stadium, Game 7 of the American League Championship Series. The Red Sox led 5–2 in the eighth. Pedro Martinez had already thrown well past 100 pitches and was laboring. The bullpen was up. Grady Little walked to the mound, talked to his pitcher, and left him in.\n\nDerek Jeter doubled. Bernie Williams singled. Hideki Matsui doubled. Jorge Posada doubled home the tying runs. The game went to the eleventh, where Aaron Boone hit a walk-off homer off Tim Wakefield. Little's contract was not renewed. The Red Sox won the World Series the next year with a different manager, which turned this night into the preface of a revenge story. On the night itself it was a lead, a tired ace, and a visit that did not include a pitching change.\n\nLeaving Pedro in was not irrational. He was Pedro Martinez. It was still the decision, and the next four hitters were the evidence.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "alcs",
+      "red-sox",
+      "yankees",
+      "bullpen",
+      "game-seven"
+    ],
+    "related": [
+      "bartman-game",
+      "phillies-collapse",
+      "kim-consecutive-nights"
+    ],
+    "featured": true
+  },
+  {
+    "id": "galarraga-imperfect-game",
+    "slug": "galarraga-imperfect-game",
+    "title": "Galarraga's Imperfect Game",
+    "date": "2010-06-02",
+    "year": 2010,
+    "era": "wild-card",
+    "categories": [
+      "umpire"
+    ],
+    "teams": [
+      {
+        "id": "detroit-tigers",
+        "name": "Detroit Tigers"
+      },
+      {
+        "id": "cleveland-indians",
+        "name": "Cleveland Indians"
+      }
+    ],
+    "players": [
+      {
+        "id": "armando-galarraga",
+        "name": "Armando Galarraga"
+      },
+      {
+        "id": "jim-joyce",
+        "name": "Jim Joyce"
+      },
+      {
+        "id": "jason-donald",
+        "name": "Jason Donald"
+      },
+      {
+        "id": "miguel-cabrera",
+        "name": "Miguel Cabrera"
+      }
+    ],
+    "summary": "Armando Galarraga was one out from a perfect game when Jim Joyce called Jason Donald safe. Joyce saw the replay, and said he had missed it.",
+    "story": "June 2, 2010, Comerica Park. Armando Galarraga had retired the first 26 Cleveland hitters. Jason Donald grounded to first. Miguel Cabrera fielded it and threw to Galarraga covering the bag. Donald was out, plainly, on the replay everyone in the park could see a moment later. Joyce, umpiring at first, called him safe.\n\nGalarraga smiled, took the ball back, and got the next batter. Detroit won the game. Joyce watched the replay in the umpires' room and came out in tears. He said he had blown the call and that he had cost the kid a perfect game. The next afternoon Galarraga carried the lineup card to the plate and the two men embraced. Commissioner Bud Selig did not overturn the out. A perfect game is a historical category with a definition, and the definition still said Donald had reached.\n\nThe missed call is why the game is in a catalog of blunders. The apology, and the way it was received, are why the entry cannot stop at the call. Joyce did not hide from the replay. Galarraga did not make him.",
+    "images": [
+      {
+        "url": "/archive/armando-galarraga-2010.jpg",
+        "caption": "Armando Galarraga pitching for Detroit on July 25, 2010, seven weeks after the game in this entry.",
+        "credit": "Arbitrarily0, CC BY-SA 3.0, via Wikimedia Commons."
+      },
+      {
+        "url": "/archive/jim-joyce-2011.jpg",
+        "caption": "Jim Joyce, umpiring on April 6, 2011, the season after the call at first base.",
+        "credit": "Keith Allison, CC BY-SA 2.0, via Wikimedia Commons. Cropped from a larger photograph."
+      }
+    ],
+    "videos": [],
+    "tags": [
+      "perfect-game",
+      "tigers",
+      "indians",
+      "comerica",
+      "replay"
+    ],
+    "related": [
+      "haddix-twelve-innings",
+      "hawkins-no-hit-loss",
+      "pine-tar-game"
+    ],
+    "featured": true
+  },
+  {
+    "id": "infield-fly-wild-card",
+    "slug": "infield-fly-wild-card",
+    "title": "The Infield Fly in Atlanta",
+    "date": "2012-10-05",
+    "year": 2012,
+    "era": "modern",
+    "categories": [
+      "umpire",
+      "rules",
+      "fan-crowd"
+    ],
+    "teams": [
+      {
+        "id": "atlanta-braves",
+        "name": "Atlanta Braves"
+      },
+      {
+        "id": "st-louis-cardinals",
+        "name": "St. Louis Cardinals"
+      }
+    ],
+    "players": [
+      {
+        "id": "sam-holbrook",
+        "name": "Sam Holbrook"
+      },
+      {
+        "id": "andrelton-simmons",
+        "name": "Andrelton Simmons"
+      },
+      {
+        "id": "pete-kozma",
+        "name": "Pete Kozma"
+      },
+      {
+        "id": "matt-holliday",
+        "name": "Matt Holliday"
+      }
+    ],
+    "summary": "With the Braves rallying in a winner-take-all game, Sam Holbrook called the infield fly rule on a ball that fell in short left field. The crowd threw trash for nineteen minutes.",
+    "story": "October 5, 2012, Turner Field, the first National League Wild Card game, and Chipper Jones's last. The Cardinals led 6–3. In the bottom of the eighth, Atlanta had runners on first and second with one out. On a 3-2 pitch from Mitchell Boggs, Andrelton Simmons popped a ball into short left. Shortstop Pete Kozma drifted well onto the grass. Left fielder Matt Holliday came in. Neither caught it.\n\nLeft-field umpire Sam Holbrook had invoked the infield fly rule. Simmons was out. The runners stayed at first and second. The ball had landed something like ninety feet beyond the infield dirt. Holbrook said he had seen the shortstop get under it with ordinary effort, which is the rule's actual test: not where the ball lands, but whether an infielder can catch it without undue trouble. Joe Torre, then running baseball operations, denied Atlanta's protest because a judgment call cannot be protested.\n\nFans threw bottles and cups onto the field. The delay lasted nineteen minutes, and the public address warned that the game could be forfeited. St. Louis won, 6–3, and went on to the World Series. The call could be both legal and absurd to everyone watching it. That is the entry.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "wild-card",
+      "braves",
+      "cardinals",
+      "infield-fly",
+      "turner-field"
+    ],
+    "related": [
+      "galarraga-imperfect-game",
+      "pine-tar-game",
+      "schaefer-steals-first"
+    ],
+    "featured": false
+  },
+  {
+    "id": "chesbro-wild-pitch",
+    "slug": "chesbro-wild-pitch",
+    "title": "Chesbro's Wild Pitch",
+    "date": "1904-10-10",
+    "year": 1904,
+    "era": "dead-ball",
+    "categories": ["pitching"],
+    "teams": [
+      { "id": "new-york-highlanders", "name": "New York Highlanders" },
+      { "id": "boston-americans", "name": "Boston Americans" }
+    ],
+    "players": [
+      { "id": "jack-chesbro", "name": "Jack Chesbro" },
+      { "id": "red-kleinow", "name": "Red Kleinow" },
+      { "id": "lou-criger", "name": "Lou Criger" },
+      { "id": "freddy-parent", "name": "Freddy Parent" },
+      { "id": "bill-dinneen", "name": "Bill Dinneen" }
+    ],
+    "summary": "Jack Chesbro had already won 41 games. In the ninth of the pennant game, a spitball got past his catcher, and Boston scored the run that ended it.",
+    "story": "October 10, 1904, the first game of a doubleheader at Hilltop Park. The Highlanders trailed the Boston Americans by a game and a half and needed both games. The score was tied, 2–2, in the ninth, with two out and Lou Criger on third. Freddy Parent had two strikes. Chesbro, who would finish 41–12, threw the spitball that had carried him all year.\n\nThe pitch got past catcher Red Kleinow. It was scored a wild pitch. Criger came home, and Boston led, 3–2. Bill Dinneen, the winning pitcher, held the lead. The pennant race was over. Clark Griffith, the Highlanders' manager, said Kleinow had simply let the ball get away, which would have made it a passed ball. The official record did not agree with him.\n\nChesbro's season remains the modern record for wins. The last of them was not this game. The retelling sometimes treats the pitch as the only thing that separated New York from a pennant. They were already behind in the standings when they took the field.",
+    "images": [],
+    "videos": [],
+    "tags": ["highlanders", "americans", "wild-pitch", "pennant", "spitball"],
+    "related": ["double-no-hitter", "sale-of-babe-ruth", "ruth-caught-stealing"],
+    "featured": false
+  },
+  {
+    "id": "double-no-hitter",
+    "slug": "double-no-hitter",
+    "title": "The Double No-Hitter Breaks",
+    "date": "1917-05-02",
+    "year": 1917,
+    "era": "dead-ball",
+    "categories": ["pitching", "fielding"],
+    "teams": [
+      { "id": "chicago-cubs", "name": "Chicago Cubs" },
+      { "id": "cincinnati-reds", "name": "Cincinnati Reds" }
+    ],
+    "players": [
+      { "id": "hippo-vaughn", "name": "Hippo Vaughn" },
+      { "id": "fred-toney", "name": "Fred Toney" },
+      { "id": "larry-kopf", "name": "Larry Kopf" },
+      { "id": "cy-williams", "name": "Cy Williams" },
+      { "id": "jim-thorpe", "name": "Jim Thorpe" },
+      { "id": "fred-merkle", "name": "Fred Merkle" },
+      { "id": "art-wilson", "name": "Art Wilson" },
+      { "id": "hal-chase", "name": "Hal Chase" }
+    ],
+    "summary": "Hippo Vaughn and Fred Toney both pitched nine no-hit innings. In the tenth, a single, a dropped fly, and a throw home the catcher was not looking for ended it.",
+    "story": "May 2, 1917, Weeghman Park, later Wrigley Field. Vaughn of the Cubs and Toney of the Reds retired the first twenty-seven men they faced. Vaughn had walked two, and both were erased on double plays. Through nine innings the score was 0–0, and neither side had a hit.\n\nIn the tenth, Larry Kopf singled between Larry Doyle and Fred Merkle for the game's first hit. Cy Williams dropped Hal Chase's line drive. Chase stole second. Jim Thorpe then topped a ball up the third-base line. Vaughn threw home. Catcher Art Wilson was looking for a throw to first. The ball hit him, and Kopf scored. Wilson recovered in time to tag Chase.\n\nToney then finished the tenth without a hit. The Reds won, 1–0. Vaughn said afterward that he had grown careless on Kopf. The game is remembered as the double no-hitter, which is almost right: two men pitched nine hitless innings, and only one of them was allowed to finish the tenth that way.",
+    "images": [],
+    "videos": [],
+    "tags": ["cubs", "reds", "no-hitter", "weeghman-park", "tenth-inning"],
+    "related": ["merkles-boner", "haddix-twelve-innings", "hawkins-no-hit-loss"],
+    "featured": false
+  },
+  {
+    "id": "ruth-caught-stealing",
+    "slug": "ruth-caught-stealing",
+    "title": "Ruth Is Out at Second",
+    "date": "1926-10-10",
+    "year": 1926,
+    "era": "live-ball",
+    "categories": ["baserunning", "hitting-mental"],
+    "teams": [
+      { "id": "new-york-yankees", "name": "New York Yankees" },
+      { "id": "st-louis-cardinals", "name": "St. Louis Cardinals" }
+    ],
+    "players": [
+      { "id": "babe-ruth", "name": "Babe Ruth" },
+      { "id": "grover-cleveland-alexander", "name": "Grover Cleveland Alexander" },
+      { "id": "bob-meusel", "name": "Bob Meusel" },
+      { "id": "bob-ofarrell", "name": "Bob O'Farrell" },
+      { "id": "rogers-hornsby", "name": "Rogers Hornsby" },
+      { "id": "tony-lazzeri", "name": "Tony Lazzeri" }
+    ],
+    "summary": "The 1926 World Series ended with Babe Ruth thrown out at second. He said he was stealing on his own. Other accounts say a hit-and-run was on.",
+    "story": "October 10, 1926, Game 7 at Yankee Stadium. The Cardinals led, 3–2. Grover Cleveland Alexander, who had pitched a complete game the day before, came in during the seventh with the bases loaded and two out. Tony Lazzeri fouled one just foul down the left-field line and then struck out. In the ninth Alexander retired Earle Combs and Mark Koenig and walked Ruth, his fourth walk of the game. Ruth had homered in the fourth. Bob Meusel was at bat. Lou Gehrig was on deck.\n\nRuth ran on a pitch. Bob O'Farrell threw to Rogers Hornsby, and Ruth was out. It is still the only World Series to end on a caught stealing. The box score is not in dispute. The reason for the run is.\n\nRuth said after the game that he had gone on his own, to reach scoring position if Meusel hit. Other writers, including accounts in The Sporting News, said a hit-and-run was on and that Meusel had swung and missed. The later story sometimes adds that Alexander was hung over. Nothing in the contemporary record establishes that, and the play does not need it.",
+    "images": [],
+    "videos": [],
+    "tags": ["yankees", "cardinals", "world-series", "caught-stealing", "alexander"],
+    "related": ["sale-of-babe-ruth", "slaughter-scores-from-first", "chesbro-wild-pitch"],
+    "featured": false
+  },
+  {
+    "id": "slaughter-scores-from-first",
+    "slug": "slaughter-scores-from-first",
+    "title": "Slaughter Scores from First",
+    "date": "1946-10-15",
+    "year": 1946,
+    "era": "postwar",
+    "categories": ["baserunning", "fielding"],
+    "teams": [
+      { "id": "st-louis-cardinals", "name": "St. Louis Cardinals" },
+      { "id": "boston-red-sox", "name": "Boston Red Sox" }
+    ],
+    "players": [
+      { "id": "enos-slaughter", "name": "Enos Slaughter" },
+      { "id": "johnny-pesky", "name": "Johnny Pesky" },
+      { "id": "harry-walker", "name": "Harry Walker" },
+      { "id": "leon-culberson", "name": "Leon Culberson" },
+      { "id": "mike-gonzalez", "name": "Mike Gonzalez" }
+    ],
+    "summary": "Enos Slaughter scored from first on Harry Walker's double in Game 7. The relay went through Johnny Pesky, who said he hesitated. Later viewings say the run was coming anyway.",
+    "story": "October 15, 1946, Game 7 at Sportsman's Park, attendance 36,143. The score was tied, 3–3, in the eighth after Dom DiMaggio's double. DiMaggio pulled a muscle and was replaced by Leon Culberson. In the bottom of the inning Enos Slaughter singled to open against Bob Klinger. Two outs followed. Slaughter was running on a hit-and-run when Harry Walker doubled to center.\n\nCulberson relayed the ball to Johnny Pesky in short left-center. Third-base coach Mike Gonzalez waved Slaughter home. The Cardinals led, 4–3, and held it. Harry Brecheen was the winning pitcher in relief. Jerry Nason, writing in the Boston Globe, said Pesky froze and pivoted slowly. Pesky said after the game that he had hesitated because he thought Slaughter would hold at third.\n\nThe phrase that stuck was that Pesky held the ball. Later film and later accounts, including Joe Posnanski's, describe a brief double-clutch, with Walker already at second by the time Pesky had the ball and Slaughter going to score either way. The hesitation is in Pesky's own account. The several seconds of the legend are not.",
+    "images": [],
+    "videos": [],
+    "tags": ["cardinals", "red-sox", "world-series", "sportsman's-park", "relay"],
+    "related": ["buckner-game-six", "ruth-caught-stealing", "lonnie-smith-game-seven"],
+    "featured": false
+  },
+  {
+    "id": "haddix-twelve-innings",
+    "slug": "haddix-twelve-innings",
+    "title": "Twelve Perfect Innings",
+    "date": "1959-05-26",
+    "year": 1959,
+    "era": "postwar",
+    "categories": ["pitching", "fielding", "rules"],
+    "teams": [
+      { "id": "pittsburgh-pirates", "name": "Pittsburgh Pirates" },
+      { "id": "milwaukee-braves", "name": "Milwaukee Braves" }
+    ],
+    "players": [
+      { "id": "harvey-haddix", "name": "Harvey Haddix" },
+      { "id": "don-hoak", "name": "Don Hoak" },
+      { "id": "felix-mantilla", "name": "Felix Mantilla" },
+      { "id": "hank-aaron", "name": "Hank Aaron" },
+      { "id": "joe-adcock", "name": "Joe Adcock" },
+      { "id": "eddie-mathews", "name": "Eddie Mathews" },
+      { "id": "lew-burdette", "name": "Lew Burdette" }
+    ],
+    "summary": "Harvey Haddix retired 36 batters in a row and lost in the thirteenth. Joe Adcock's ball cleared the fence, and the next day the league president made it a double.",
+    "story": "May 26, 1959, County Stadium. Haddix of the Pirates retired the first thirty-six Milwaukee Braves. Lew Burdette matched him with zeros, though not with a perfect game. In the thirteenth, Felix Mantilla, who had entered in the tenth, led off with a grounder to Don Hoak. The throw was in the dirt, and Rocky Nelson could not scoop it. Error. Eddie Mathews sacrificed Mantilla to second. Hank Aaron was walked intentionally.\n\nJoe Adcock drove a pitch over the fence in right-center. Aaron, thinking the ball had stayed in the park, touched second and cut across the diamond toward the dugout. Adcock passed him and was ruled out, so the hit became a double. Umpires first allowed more than one run. The next day National League president Warren Giles ruled the score 1–0. Once the hit was a double, only the run needed to end the game counted.\n\nHaddix was the losing pitcher. He had one hit against him, one intentional walk, and an unearned run. He said afterward that twelve perfect innings had seemed, to him, like just another loss. He had not known it was unprecedented.",
+    "images": [],
+    "videos": [],
+    "tags": ["pirates", "braves", "perfect-game", "county-stadium", "giles"],
+    "related": ["galarraga-imperfect-game", "double-no-hitter", "hawkins-no-hit-loss"],
+    "featured": false
+  },
+  {
+    "id": "willie-davis-three-errors",
+    "slug": "willie-davis-three-errors",
+    "title": "Three Errors in One Inning",
+    "date": "1966-10-06",
+    "year": 1966,
+    "era": "expansion",
+    "categories": ["fielding"],
+    "teams": [
+      { "id": "los-angeles-dodgers", "name": "Los Angeles Dodgers" },
+      { "id": "baltimore-orioles", "name": "Baltimore Orioles" }
+    ],
+    "players": [
+      { "id": "willie-davis", "name": "Willie Davis" },
+      { "id": "sandy-koufax", "name": "Sandy Koufax" },
+      { "id": "jim-palmer", "name": "Jim Palmer" }
+    ],
+    "summary": "In the fifth inning of World Series Game 2, Willie Davis lost two fly balls in the sun and threw one away. Three errors, three unearned runs, and Jim Palmer's shutout.",
+    "story": "October 6, 1966, Game 2 at Dodger Stadium, attendance 55,947. Sandy Koufax started for Los Angeles. Jim Palmer, twenty years old, started for Baltimore. In the top of the fifth Davis lost two flies in the sun and threw a ball past third. Three errors in one inning, a World Series record, and three unearned runs.\n\nThe Orioles added more later, including a run in the sixth off Koufax. Los Angeles made six errors in the game. Palmer finished a four-hit shutout. Koufax worked six innings, allowed one earned run, and took the loss. The final was 6–0.\n\nThe series is remembered for Baltimore's pitching. This inning is the other half of that memory: a center fielder losing the ball in the sun, twice, in the same inning he also threw one away. The runs were unearned. The shutout still counted.",
+    "images": [],
+    "videos": [],
+    "tags": ["dodgers", "orioles", "world-series", "sun-field", "dodger-stadium"],
+    "related": ["hack-wilson-sun-field", "buckner-game-six", "slaughter-scores-from-first"],
+    "featured": false
+  },
+  {
+    "id": "black-cat-at-shea",
+    "slug": "black-cat-at-shea",
+    "title": "A Black Cat at Shea",
+    "date": "1969-09-09",
+    "year": 1969,
+    "era": "expansion",
+    "categories": ["fan-crowd"],
+    "teams": [
+      { "id": "chicago-cubs", "name": "Chicago Cubs" },
+      { "id": "new-york-mets", "name": "New York Mets" }
+    ],
+    "players": [
+      { "id": "ron-santo", "name": "Ron Santo" },
+      { "id": "tom-seaver", "name": "Tom Seaver" },
+      { "id": "ferguson-jenkins", "name": "Ferguson Jenkins" },
+      { "id": "leo-durocher", "name": "Leo Durocher" }
+    ],
+    "summary": "A black cat walked in front of the Cubs' dugout at Shea. Chicago lost, 7–1. The standings, not the cat, are what the collapse was.",
+    "story": "September 9, 1969, Shea Stadium, attendance 51,448. The Cubs led the National League East by a game and a half. On August 19 the lead had been eight games. Tom Seaver started for the Mets. Ferguson Jenkins started for Chicago. In the top of the fourth, with Glenn Beckert on second and Ron Santo in the on-deck circle, a black cat came onto the field, walked in front of the Cubs' dugout, and disappeared under the stands.\n\nSanto said years later that the cat had looked at Leo Durocher. Ed Kranepool said Shea had a lot of rats, and therefore a lot of cats. After the cat left, Santo singled home the Cubs' only run. Seaver beat Jenkins, 7–1. Chicago's lead was down to half a game.\n\nThe Cubs went 8–17 in September. The Mets went 23–7 and clinched the division on September 24. Durocher's refusal to rest regulars is the explanation that shows up in the later accounts. The cat is the picture. It did not change the score.",
+    "images": [],
+    "videos": [],
+    "tags": ["cubs", "mets", "shea", "1969", "black-cat"],
+    "related": ["seaver-to-cincinnati", "bartman-game", "phillies-collapse"],
+    "featured": false
+  },
+  {
+    "id": "seaver-to-cincinnati",
+    "slug": "seaver-to-cincinnati",
+    "title": "Seaver to Cincinnati",
+    "date": "1977-06-15",
+    "year": 1977,
+    "era": "free-agency",
+    "categories": ["front-office"],
+    "teams": [
+      { "id": "new-york-mets", "name": "New York Mets" },
+      { "id": "cincinnati-reds", "name": "Cincinnati Reds" },
+      { "id": "san-diego-padres", "name": "San Diego Padres" }
+    ],
+    "players": [
+      { "id": "tom-seaver", "name": "Tom Seaver" },
+      { "id": "dave-kingman", "name": "Dave Kingman" },
+      { "id": "pat-zachry", "name": "Pat Zachry" },
+      { "id": "doug-flynn", "name": "Doug Flynn" },
+      { "id": "steve-henderson", "name": "Steve Henderson" },
+      { "id": "dan-norman", "name": "Dan Norman" }
+    ],
+    "summary": "On the night of the trading deadline, the Mets sent Tom Seaver to Cincinnati for four players, and Dave Kingman to San Diego in a separate deal.",
+    "story": "June 15, 1977. The Mets, in last place, sent Tom Seaver to the Cincinnati Reds for Pat Zachry, Doug Flynn, Steve Henderson, and Dan Norman. The same night they sent Dave Kingman, the club's home-run leader, to the San Diego Padres for Bobby Valentine and Paul Siebert. Chairman M. Donald Grant and Seaver had been feuding in the papers for months over Seaver's contract.\n\nThe New York Times described the return for Seaver as four players of far less magnitude. Henderson became a useful major leaguer. The night itself did not look like an even trade, and the papers did not treat it as one. The deal ended weeks of speculation and began a rebuild the club had not announced as a plan.\n\nIt is filed with the Ruth sale and the Ryan trade because the shape is the same: a franchise pitcher leaves, the public case for the return is thin, and the argument afterward is about what the club thought it was doing. Grant's side of the feud was about money and authority. The box score of the trade is the four names.",
+    "images": [],
+    "videos": [],
+    "tags": ["mets", "reds", "padres", "trade-deadline", "grant"],
+    "related": ["sale-of-babe-ruth", "ryan-for-fregosi", "black-cat-at-shea"],
+    "featured": false
+  },
+  {
+    "id": "dent-over-the-monster",
+    "slug": "dent-over-the-monster",
+    "title": "Dent over the Monster",
+    "date": "1978-10-02",
+    "year": 1978,
+    "era": "free-agency",
+    "categories": ["pitching"],
+    "teams": [
+      { "id": "new-york-yankees", "name": "New York Yankees" },
+      { "id": "boston-red-sox", "name": "Boston Red Sox" }
+    ],
+    "players": [
+      { "id": "bucky-dent", "name": "Bucky Dent" },
+      { "id": "mike-torrez", "name": "Mike Torrez" },
+      { "id": "mickey-rivers", "name": "Mickey Rivers" },
+      { "id": "ron-guidry", "name": "Ron Guidry" },
+      { "id": "reggie-jackson", "name": "Reggie Jackson" }
+    ],
+    "summary": "In the one-game playoff at Fenway, Bucky Dent, batting ninth, hit a three-run homer over the Green Monster. He had borrowed Mickey Rivers's bat after fouling a pitch off his foot.",
+    "story": "October 2, 1978, Fenway Park, attendance 32,925, a one-game playoff for the American League East. The Red Sox had held a double-digit lead in July. They led this game, 2–0, after Carl Yastrzemski's homer in the second. In the seventh, with two out and Chris Chambliss and Roy White on base, Bucky Dent came up. He was hitting ninth. It was his fifth home run of the year.\n\nHe fouled a pitch off his foot. During the delay he borrowed a bat from Mickey Rivers. Mike Torrez, who later said he took no warm-up pitches after the stoppage, threw again. Dent hit it to left, over the wall. The Yankees led, 3–2. Rivers then walked, stole second, and Thurman Munson doubled him home before Torrez came out for Bob Stanley. Reggie Jackson homered in the eighth. Boston scored twice in the eighth and lost, 5–4. Ron Guidry got the win. Rich Gossage got the save.\n\nThe nickname that followed Dent around Boston is the retelling. The play was a home run by a .243 shortstop, on a borrowed bat, in a game both clubs had spent two months reaching.",
+    "images": [],
+    "videos": [],
+    "tags": ["yankees", "red-sox", "fenway", "playoff", "green-monster"],
+    "related": ["buckner-game-six", "slaughter-scores-from-first", "phillies-collapse"],
+    "featured": false
+  },
+  {
+    "id": "randle-blows-it-foul",
+    "slug": "randle-blows-it-foul",
+    "title": "Randle Blows It Foul",
+    "date": "1981-05-27",
+    "year": 1981,
+    "era": "free-agency",
+    "categories": ["rules", "personalities"],
+    "teams": [
+      { "id": "seattle-mariners", "name": "Seattle Mariners" },
+      { "id": "kansas-city-royals", "name": "Kansas City Royals" }
+    ],
+    "players": [
+      { "id": "lenny-randle", "name": "Lenny Randle" },
+      { "id": "amos-otis", "name": "Amos Otis" },
+      { "id": "larry-mccoy", "name": "Larry McCoy" },
+      { "id": "jim-frey", "name": "Jim Frey" }
+    ],
+    "summary": "Lenny Randle dropped to the Kingdome turf and blew a slow roller across the foul line. The umpire called it foul, then changed the call after the Royals protested.",
+    "story": "May 27, 1981, the Kingdome. Amos Otis of the Kansas City Royals tapped a ball toward third that kept rolling on the artificial turf. Mariners third baseman Lenny Randle went to his hands and knees and blew on it until it crossed the foul line. Home-plate umpire Larry McCoy called the ball foul.\n\nRoyals manager Jim Frey protested. McCoy reversed himself and sent Otis to first. Randle's explanation was that he had been talking to the ball. \"I said, 'Please go foul, go foul,'\" he told reporters. \"I did not blow on it. I just used the power of suggestion.\" The film does not support the second sentence.\n\nThe Royals won the game, 8–5. That score is not why the play is here. A fielder tried to move a live ball with his breath, an umpire allowed it, and then the same umpire took it back. The rulebook had no provision for either half.",
+    "images": [],
+    "videos": [],
+    "tags": ["mariners", "royals", "kingdome", "foul-ball", "umpire"],
+    "related": ["pine-tar-game", "perry-ejected", "schaefer-steals-first"],
+    "featured": false
+  },
+  {
+    "id": "perry-ejected",
+    "slug": "perry-ejected",
+    "title": "Perry, Ejected",
+    "date": "1982-08-23",
+    "year": 1982,
+    "era": "free-agency",
+    "categories": ["umpire", "rules"],
+    "teams": [
+      { "id": "seattle-mariners", "name": "Seattle Mariners" },
+      { "id": "boston-red-sox", "name": "Boston Red Sox" }
+    ],
+    "players": [
+      { "id": "gaylord-perry", "name": "Gaylord Perry" },
+      { "id": "dave-phillips", "name": "Dave Phillips" },
+      { "id": "rick-miller", "name": "Rick Miller" }
+    ],
+    "summary": "Dave Phillips ejected Gaylord Perry for a spitball without looking at the ball. Perry said it was a forkball. The league suspended him for ten days anyway.",
+    "story": "August 23, 1982, the Kingdome, Mariners against the Red Sox. Gaylord Perry was forty-three and in his twenty-first season, with a long reputation for doctoring baseballs and, until this night, no ejection for it. In the fifth, home-plate umpire Dave Phillips checked a ball, said he found a slippery foreign substance, and warned Perry. Phillips said he was not a chemist and did not know what the substance was.\n\nIn the seventh, with Rick Miller batting and runners on first and third, Miller swung and missed a 1–0 pitch. Phillips ejected Perry without asking for the ball. He said the flight was enough, and that the rule allowed him to judge an illegal pitch that way. Perry said he had thrown a hard forkball, that Phillips had no evidence, and that if anything had been on the earlier ball the umpire had put it there. He also said the trouble had started in the first inning, over two pitches to Carl Yastrzemski.\n\nAmerican League president Lee MacPhail suspended Perry for ten days and fined him $250. The penalty was stayed while Perry appealed, then upheld. Perry never said, that night, whether the pitch was doctored. The ejection rests on an umpire's reading of a baseball he did not keep.",
+    "images": [],
+    "videos": [],
+    "tags": ["mariners", "red-sox", "spitball", "kingdome", "suspension"],
+    "related": ["belle-corked-bat", "pine-tar-game", "randle-blows-it-foul"],
+    "featured": false
+  },
+  {
+    "id": "clark-and-niedenfuer",
+    "slug": "clark-and-niedenfuer",
+    "title": "Lasorda Pitches to Clark",
+    "date": "1985-10-16",
+    "year": 1985,
+    "era": "free-agency",
+    "categories": ["managerial", "pitching"],
+    "teams": [
+      { "id": "los-angeles-dodgers", "name": "Los Angeles Dodgers" },
+      { "id": "st-louis-cardinals", "name": "St. Louis Cardinals" }
+    ],
+    "players": [
+      { "id": "tommy-lasorda", "name": "Tommy Lasorda" },
+      { "id": "tom-niedenfuer", "name": "Tom Niedenfuer" },
+      { "id": "jack-clark", "name": "Jack Clark" },
+      { "id": "andy-van-slyke", "name": "Andy Van Slyke" },
+      { "id": "ozzie-smith", "name": "Ozzie Smith" }
+    ],
+    "summary": "With first base open in the ninth of the 1985 NLCS, Tommy Lasorda let Tom Niedenfuer pitch to Jack Clark. Clark hit the first pitch into the left-field seats.",
+    "story": "October 16, 1985, Game 6 of the National League Championship Series at Dodger Stadium, attendance 55,208. The Dodgers led, 5–4, in the ninth. Tom Niedenfuer was in to protect the lead and force a seventh game. Tommy Lasorda had him walk Ozzie Smith. A groundout left runners on second and third with two out. First base was open. Jack Clark was the hitter. Andy Van Slyke, who had not been the threat Clark was in the series, was on deck.\n\nLasorda had ordered Clark walked the last three times he had come up with a runner in scoring position and first base open. This time he pitched to him. Clark hit the first pitch, a fastball, into the left-field bleachers. The Cardinals won, 7–5, and the pennant, four games to two. Niedenfuer took the loss.\n\nLasorda said afterward that it was the easiest thing in the world, after the fact, to say he should have walked Clark, and that a deep fly caught for the third out would have produced the opposite argument. The decision is in the entry because it was a choice, stated at the time, between an open base and a hitter. The home run is what the choice became.",
+    "images": [],
+    "videos": [],
+    "tags": ["dodgers", "cardinals", "nlcs", "dodger-stadium", "intentional-walk"],
+    "related": ["denkinger-safe-call", "grady-little-game-seven", "dent-over-the-monster"],
+    "featured": false
+  },
+  {
+    "id": "hawkins-no-hit-loss",
+    "slug": "hawkins-no-hit-loss",
+    "title": "Hawkins Loses a No-Hitter",
+    "date": "1990-07-01",
+    "year": 1990,
+    "era": "free-agency",
+    "categories": ["pitching", "fielding", "rules"],
+    "teams": [
+      { "id": "new-york-yankees", "name": "New York Yankees" },
+      { "id": "chicago-white-sox", "name": "Chicago White Sox" }
+    ],
+    "players": [
+      { "id": "andy-hawkins", "name": "Andy Hawkins" },
+      { "id": "jim-leyritz", "name": "Jim Leyritz" },
+      { "id": "jesse-barfield", "name": "Jesse Barfield" },
+      { "id": "robin-ventura", "name": "Robin Ventura" },
+      { "id": "ivan-calderon", "name": "Ivan Calderon" }
+    ],
+    "summary": "Andy Hawkins allowed no hits and lost, 4–0, on three errors in the eighth. A year later baseball decided eight innings was not a no-hitter.",
+    "story": "July 1, 1990, old Comiskey Park. The Yankees were the visitors, so a Chicago win would end the game after eight. Andy Hawkins had not allowed a hit. In the eighth, with two out and the bases loaded, rookie catcher Jim Leyritz dropped Robin Ventura's fly in left. Three runs scored. Jesse Barfield, the right fielder, then lost Ivan Calderon's fly in the sun and dropped it. Ventura scored. The White Sox won, 4–0. Hawkins was the losing pitcher. Barry Jones got the win. The Yankees had three errors. Chicago had no hits.\n\nAt the time the game was treated as a no-hitter, the sixth of a season that had just produced two on the same night, by Dave Stewart and Fernando Valenzuela, both of them wins. Hawkins had been close to release three weeks earlier.\n\nIn 1991 a committee under Commissioner Fay Vincent defined a no-hitter as nine innings or more. Games shorter than that became \"notable achievements.\" Hawkins's line was removed from the list. The hits did not change. The name of the game did.",
+    "images": [],
+    "videos": [],
+    "tags": ["yankees", "white-sox", "comiskey", "no-hitter", "eight-innings"],
+    "related": ["haddix-twelve-innings", "galarraga-imperfect-game", "double-no-hitter"],
+    "featured": false
+  },
+  {
+    "id": "carter-off-williams",
+    "slug": "carter-off-williams",
+    "title": "Carter off Williams",
+    "date": "1993-10-23",
+    "year": 1993,
+    "era": "free-agency",
+    "categories": ["pitching"],
+    "teams": [
+      { "id": "philadelphia-phillies", "name": "Philadelphia Phillies" },
+      { "id": "toronto-blue-jays", "name": "Toronto Blue Jays" }
+    ],
+    "players": [
+      { "id": "mitch-williams", "name": "Mitch Williams" },
+      { "id": "joe-carter", "name": "Joe Carter" },
+      { "id": "rickey-henderson", "name": "Rickey Henderson" },
+      { "id": "paul-molitor", "name": "Paul Molitor" }
+    ],
+    "summary": "Mitch Williams came in to protect a one-run lead in Game 6. He walked Rickey Henderson, gave up a single to Paul Molitor, and Joe Carter hit the next well-struck pitch over the left-field fence.",
+    "story": "October 23, 1993, Game 6 at SkyDome, attendance 52,195. The Phillies led, 6–5, and a win would have forced a seventh game. Jim Fregosi brought in Mitch Williams, who had 43 saves that season and had already been scored on heavily in Game 4. The ninth began with Williams, working from the stretch, nearly throwing a pitch after time had been called. He held the ball and fell off toward the first-base side.\n\nHe walked Rickey Henderson on four pitches. Devon White flied out. Paul Molitor singled, sending Henderson to second. Joe Carter, ahead in the count and then even at 2–2, hit a pitch over the left-field fence. Williams called it a mistake, a pitch that was supposed to be up and away. Fregosi remembered a bad slider. Carter said he lost the ball in the lights and knew only that it had the height. The Blue Jays won, 8–6.\n\nIt was the second walk-off home run to end a World Series, after Bill Mazeroski's in 1960, and the first of them hit while the home team trailed. The retelling begins and ends with the swing. The inning had already included a walk to the league's best base runner and a single by the man who had homered earlier in the game.",
+    "images": [],
+    "videos": [],
+    "tags": ["phillies", "blue-jays", "world-series", "skydome", "walk-off"],
+    "related": ["kim-consecutive-nights", "grady-little-game-seven", "dent-over-the-monster"],
+    "featured": false
+  },
+  {
+    "id": "mesa-game-seven",
+    "slug": "mesa-game-seven",
+    "title": "Mesa in the Ninth",
+    "date": "1997-10-26",
+    "year": 1997,
+    "era": "wild-card",
+    "categories": ["pitching"],
+    "teams": [
+      { "id": "cleveland-indians", "name": "Cleveland Indians" },
+      { "id": "florida-marlins", "name": "Florida Marlins" }
+    ],
+    "players": [
+      { "id": "jose-mesa", "name": "Jose Mesa" },
+      { "id": "craig-counsell", "name": "Craig Counsell" },
+      { "id": "edgar-renteria", "name": "Edgar Renteria" },
+      { "id": "charles-nagy", "name": "Charles Nagy" },
+      { "id": "tony-fernandez", "name": "Tony Fernandez" }
+    ],
+    "summary": "The Indians led Game 7 by a run in the ninth. Jose Mesa allowed the tying sacrifice fly. Edgar Renteria's winning single, two innings later, came off Charles Nagy.",
+    "story": "October 26, 1997, Game 7 at Pro Player Stadium, attendance 67,204. Cleveland led, 2–1, going to the bottom of the ninth. Jose Mesa, the Indians' closer, came on. Moises Alou singled. Charles Johnson singled, sending Alou to third. Craig Counsell's sacrifice fly to right scored Alou. The game was tied, 2–2.\n\nIt stayed tied through the tenth. In the eleventh, Bobby Bonilla singled, and Counsell reached on an error by second baseman Tony Fernandez. Charles Nagy, who had started, was now pitching. With two out, Edgar Renteria singled to center. Counsell scored. The run was unearned. Florida won, 3–2, in its fifth season.\n\nMesa is the name attached to the loss, and the tying run is his. The run that ended the series was not. Fernandez's error put Counsell on, and Nagy threw the pitch Renteria hit. The entry is the ninth inning and the two innings that followed it, not a single closer's line.",
+    "images": [],
+    "videos": [],
+    "tags": ["indians", "marlins", "world-series", "pro-player", "closer"],
+    "related": ["carter-off-williams", "denkinger-safe-call", "grady-little-game-seven"],
+    "featured": false
+  },
+  {
+    "id": "roberts-steals-second",
+    "slug": "roberts-steals-second",
+    "title": "Roberts Steals Second",
+    "date": "2004-10-17",
+    "year": 2004,
+    "era": "wild-card",
+    "categories": ["baserunning", "pitching"],
+    "teams": [
+      { "id": "boston-red-sox", "name": "Boston Red Sox" },
+      { "id": "new-york-yankees", "name": "New York Yankees" }
+    ],
+    "players": [
+      { "id": "dave-roberts", "name": "Dave Roberts" },
+      { "id": "mariano-rivera", "name": "Mariano Rivera" },
+      { "id": "kevin-millar", "name": "Kevin Millar" },
+      { "id": "bill-mueller", "name": "Bill Mueller" }
+    ],
+    "summary": "Down three games to none and a run in the ninth, the Red Sox sent Dave Roberts in to run. He stole second against Mariano Rivera, and Bill Mueller singled him home.",
+    "story": "October 17, 2004, Game 4 of the American League Championship Series at Fenway Park. The Yankees led the series three games to none and the game, 4–3, in the ninth. Mariano Rivera was pitching. Kevin Millar walked. Dave Roberts came in to run for him.\n\nRoberts stole second. Bill Mueller singled to center, and Roberts scored the tying run. The game went to the twelfth, where David Ortiz won it. Boston won the next three games as well. No club had come back from a three-games-to-none deficit in a league championship series.\n\nThe steal is a baserunning play, not a mistake by the runner. It is in this catalog because of the situation it interrupted: the inning of a pitcher who had been close to automatic, with the series one game from over, and a pinch runner put on base for the single purpose of taking the next one. Rivera had already walked the leadoff man. The stolen base made the walk into the tying run.",
+    "images": [],
+    "videos": [],
+    "tags": ["red-sox", "yankees", "alcs", "fenway", "stolen-base"],
+    "related": ["dent-over-the-monster", "buckner-game-six", "carter-off-williams"],
+    "featured": false
+  },
+  {
+    "id": "cruz-and-freese",
+    "slug": "cruz-and-freese",
+    "title": "The Ball over Cruz",
+    "date": "2011-10-27",
+    "year": 2011,
+    "era": "wild-card",
+    "categories": ["fielding"],
+    "teams": [
+      { "id": "texas-rangers", "name": "Texas Rangers" },
+      { "id": "st-louis-cardinals", "name": "St. Louis Cardinals" }
+    ],
+    "players": [
+      { "id": "nelson-cruz", "name": "Nelson Cruz" },
+      { "id": "david-freese", "name": "David Freese" },
+      { "id": "neftali-feliz", "name": "Neftali Feliz" },
+      { "id": "josh-hamilton", "name": "Josh Hamilton" },
+      { "id": "lance-berkman", "name": "Lance Berkman" }
+    ],
+    "summary": "With two outs in the ninth of World Series Game 6, David Freese's ball went over Nelson Cruz's head and tied the game. Texas led again in the tenth. St. Louis won in the eleventh.",
+    "story": "October 27, 2011, Game 6 at Busch Stadium. The Rangers led, 7–5, in the bottom of the ninth, two outs from a championship. Neftali Feliz was pitching. Ryan Theriot struck out. Albert Pujols doubled. Lance Berkman walked. Allen Craig struck out. David Freese then hit a ball into right field, over Nelson Cruz, for a two-run triple. The game was tied, 7–7.\n\nIn the tenth Josh Hamilton homered, and Texas led, 9–7. St. Louis scored once and then tied it again on Berkman's single. In the eleventh Freese led off with a home run against Mark Lowe. The Cardinals won, 10–9. They won Game 7 the next night.\n\nCruz did not drop a ball he had caught. The triple went over his head, which is a different play and, in the retelling, the same one: the right fielder at the moment the lead disappeared. The game had a second lead after that, and a walk-off that was not his to field.",
+    "images": [],
+    "videos": [],
+    "tags": ["rangers", "cardinals", "world-series", "busch", "ninth-inning"],
+    "related": ["buckner-game-six", "willie-davis-three-errors", "slaughter-scores-from-first"],
+    "featured": false
+  },
+  {
+    "id": "davis-off-chapman",
+    "slug": "davis-off-chapman",
+    "title": "Davis off Chapman",
+    "date": "2016-11-02",
+    "year": 2016,
+    "era": "modern",
+    "categories": ["pitching", "managerial"],
+    "teams": [
+      { "id": "chicago-cubs", "name": "Chicago Cubs" },
+      { "id": "cleveland-indians", "name": "Cleveland Indians" }
+    ],
+    "players": [
+      { "id": "rajai-davis", "name": "Rajai Davis" },
+      { "id": "aroldis-chapman", "name": "Aroldis Chapman" },
+      { "id": "joe-maddon", "name": "Joe Maddon" }
+    ],
+    "summary": "Joe Maddon brought Aroldis Chapman in to protect a three-run lead in the eighth inning of Game 7. Rajai Davis hit a two-run homer that tied it. The Cubs won in the tenth.",
+    "story": "November 2, 2016, Game 7 at Progressive Field. The Cubs led, 6–3, in the eighth. Joe Maddon brought in Aroldis Chapman, the closer, with a three-run lead and six outs still to get if the ninth was going to be his as well. Rajai Davis hit a two-run homer. The game was tied, 6–6.\n\nA rain delay followed. In the tenth Ben Zobrist and Miguel Montero drove in runs, Cleveland scored once, and the Cubs won, 8–7. It ended a World Series drought that had lasted since 1908.\n\nThe homer did not lose the series. It tied a game Chicago still won. What the entry keeps is the choice to spend Chapman in the eighth, up three, and the pitch that made the lead disappear for an inning and a delay. Davis earned the home run. The managerial part is when the pitcher was asked to get those outs.",
+    "images": [],
+    "videos": [],
+    "tags": ["cubs", "indians", "world-series", "progressive-field", "closer"],
+    "related": ["grady-little-game-seven", "clark-and-niedenfuer", "black-cat-at-shea"],
+    "featured": false
+  }
+]

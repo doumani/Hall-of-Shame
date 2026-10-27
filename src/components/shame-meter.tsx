@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useState, type FormEvent } from "react"
+import { createContext, useContext, useEffect, useState, type FormEvent, type ReactNode } from "react"
 import { BaseballIcon } from "@/components/baseball-icon"
 import {
   insertVote,
@@ -18,7 +18,34 @@ import {
   type ShameWindowId,
 } from "@/lib/shame"
 
-export function ShameMeter({ entryId }: { entryId: string }) {
+type ShameMeterValue = {
+  entryId: string
+  votes: ShameVote[] | null
+  voterKey: string | null
+  pending: boolean
+  hasReason: boolean
+  reasonDraft: string
+  setReasonDraft: (value: string) => void
+  reasonState: "idle" | "saved" | "error"
+  setReasonState: (value: "idle" | "saved" | "error") => void
+  windowId: ShameWindowId
+  setWindowId: (value: ShameWindowId) => void
+  hoverScore: number | null
+  setHoverScore: (value: number | null) => void
+  unavailable: boolean
+  rate: (score: number) => Promise<void>
+  saveReason: (event: FormEvent) => Promise<void>
+}
+
+const ShameMeterContext = createContext<ShameMeterValue | null>(null)
+
+function useShameMeter() {
+  const value = useContext(ShameMeterContext)
+  if (!value) throw new Error("Shame meter controls must render inside ShameMeter.")
+  return value
+}
+
+export function ShameMeter({ entryId, children }: { entryId: string; children: ReactNode }) {
   const [votes, setVotes] = useState<ShameVote[] | null>(null)
   const [voterKey, setVoterKey] = useState<string | null>(null)
   const [pending, setPending] = useState(false)
@@ -28,7 +55,6 @@ export function ShameMeter({ entryId }: { entryId: string }) {
   const [windowId, setWindowId] = useState<ShameWindowId>("all")
   const [hoverScore, setHoverScore] = useState<number | null>(null)
   const client = useShameClient()
-
   const [unavailable, setUnavailable] = useState(false)
 
   useEffect(() => {
@@ -59,15 +85,9 @@ export function ShameMeter({ entryId }: { entryId: string }) {
     }
   }, [client, entryId])
 
-  const mine = votes?.find((vote) => vote.voter_key === voterKey) ?? null
-  const locked = Boolean(mine)
-  const scores = votes?.map((vote) => vote.score) ?? []
-  const average = averageOf(scores)
-  const windowVotes = votes ? votesInWindow(votes, windowId) : []
-  const windowAverage = averageOf(windowVotes.map((vote) => vote.score))
-
   async function rate(score: number) {
-    if (!voterKey || !client || locked || pending || score < 1 || score > 5) return
+    const mine = votes?.find((vote) => vote.voter_key === voterKey) ?? null
+    if (!voterKey || !client || mine || pending || score < 1 || score > 5) return
     setPending(true)
     try {
       const result = await insertVote(client, entryId, voterKey, score)
@@ -111,27 +131,69 @@ export function ShameMeter({ entryId }: { entryId: string }) {
   }
 
   return (
-    <section className="mt-12 border border-border bg-paper p-5 md:p-6" aria-label="Shame meter">
-      <div className="flex items-end justify-between gap-4">
-        <div>
-          <h2 className="font-serif text-3xl tracking-tight">Shame meter</h2>
-          <p className="mt-2 max-w-md text-sm leading-relaxed text-muted-foreground">
-            {locked
-              ? "Your vote is final."
-              : "Anonymous. One score from 1 to 5, and it stays."}
-          </p>
-        </div>
-        <p className="text-right">
-          <span className="font-serif text-4xl leading-none tabular-nums">
-            {average === null ? "—" : average.toFixed(1)}
-          </span>
-          <span className="mt-1 block text-[11px] font-semibold tracking-[0.16em] text-muted-foreground uppercase">
-            All-time · {voteLabel(scores.length)}
-          </span>
-        </p>
-      </div>
+    <ShameMeterContext.Provider
+      value={{
+        entryId,
+        votes,
+        voterKey,
+        pending,
+        hasReason,
+        reasonDraft,
+        setReasonDraft,
+        reasonState,
+        setReasonState,
+        windowId,
+        setWindowId,
+        hoverScore,
+        setHoverScore,
+        unavailable,
+        rate,
+        saveReason,
+      }}
+    >
+      {children}
+    </ShameMeterContext.Provider>
+  )
+}
 
-      <div className="mt-5 flex gap-2" role="group" aria-label="Rate this entry from 1 to 5">
+export function ShameRating() {
+  const {
+    entryId,
+    votes,
+    voterKey,
+    pending,
+    hasReason,
+    reasonDraft,
+    setReasonDraft,
+    reasonState,
+    setReasonState,
+    hoverScore,
+    setHoverScore,
+    unavailable,
+    rate,
+    saveReason,
+  } = useShameMeter()
+
+  const mine = votes?.find((vote) => vote.voter_key === voterKey) ?? null
+  const locked = Boolean(mine)
+  const scores = votes?.map((vote) => vote.score) ?? []
+  const average = averageOf(scores)
+
+  return (
+    <section aria-label="Shame meter">
+      <p className="text-[11px] font-semibold tracking-[0.18em] text-cream/65 uppercase">
+        Shame meter
+      </p>
+      <p className="mt-2 flex items-baseline gap-3">
+        <span className="font-serif text-5xl leading-none text-cream tabular-nums">
+          {average === null ? "—" : average.toFixed(1)}
+        </span>
+        <span className="text-[11px] font-semibold tracking-[0.16em] text-cream/60 uppercase">
+          All-time · {voteLabel(scores.length)}
+        </span>
+      </p>
+
+      <div className="mt-4 flex gap-1.5" role="group" aria-label="Rate this entry from 1 to 5">
         {[1, 2, 3, 4, 5].map((score) => {
           const shown = mine?.score ?? hoverScore
           const filled = shown ? score <= shown : false
@@ -147,20 +209,26 @@ export function ShameMeter({ entryId }: { entryId: string }) {
               onBlur={() => setHoverScore(null)}
               aria-label={locked ? `Rated ${mine?.score} out of 5` : `Rate ${score} out of 5`}
               aria-pressed={mine?.score === score}
-              className="text-cardinal transition hover:text-navy disabled:cursor-default disabled:hover:text-cardinal"
+              className={`transition disabled:cursor-default ${
+                filled
+                  ? "text-cardinal"
+                  : "text-cream/45 hover:text-cream disabled:hover:text-cream/45"
+              }`}
             >
-              <BaseballIcon filled={filled} className="size-9" />
+              <BaseballIcon filled={filled} className="size-8 sm:size-9" />
             </button>
           )
         })}
       </div>
 
-      {unavailable ? (
-        <p className="mt-3 text-sm text-muted-foreground">The meter is unavailable.</p>
-      ) : null}
+      <p className="mt-3 text-sm text-cream/65">
+        {locked ? "Your vote is final." : "One anonymous score, and it stays."}
+      </p>
+
+      {unavailable ? <p className="mt-3 text-sm text-cream/70">The meter is unavailable.</p> : null}
 
       {locked && !hasReason ? (
-        <form onSubmit={saveReason} className="mt-5 flex gap-2">
+        <form onSubmit={saveReason} className="mt-4 flex flex-col items-start gap-2">
           <label className="sr-only" htmlFor={`shame-reason-${entryId}`}>
             Optional private note
           </label>
@@ -173,48 +241,56 @@ export function ShameMeter({ entryId }: { entryId: string }) {
             }}
             maxLength={180}
             placeholder="Optional note, kept private"
-            className="min-w-0 flex-1 border border-border bg-cream px-3 py-2 text-sm outline-none focus:border-navy"
+            className="w-full border border-cream/25 bg-transparent px-3 py-2 text-sm text-cream outline-none placeholder:text-cream/40 focus:border-cream/70"
           />
           <button
             type="submit"
             disabled={pending || reasonDraft.trim().length === 0}
-            className="border border-navy px-3 py-2 text-[11px] font-semibold tracking-[0.14em] text-navy uppercase disabled:opacity-40"
+            className="border border-cream/40 px-3 py-2 text-[11px] font-semibold tracking-[0.14em] text-cream uppercase disabled:opacity-40"
           >
             Save
           </button>
         </form>
       ) : null}
-      {reasonState === "saved" ? (
-        <p className="mt-2 text-sm text-muted-foreground">Note saved.</p>
-      ) : null}
+      {reasonState === "saved" ? <p className="mt-2 text-sm text-cream/65">Note saved.</p> : null}
       {reasonState === "error" ? (
-        <p className="mt-2 text-sm text-muted-foreground">The note could not be saved.</p>
+        <p className="mt-2 text-sm text-cream/70">The note could not be saved.</p>
       ) : null}
-
-      <div className="mt-6 border-t border-border pt-4">
-        <div className="flex flex-wrap gap-2" role="group" aria-label="Trend window">
-          {shameWindows.map((item) => (
-            <button
-              key={item.id}
-              type="button"
-              aria-pressed={windowId === item.id}
-              onClick={() => setWindowId(item.id)}
-              className={
-                windowId === item.id
-                  ? "border border-navy bg-navy px-2.5 py-1 text-[11px] font-semibold tracking-[0.14em] text-cream uppercase"
-                  : "border border-border px-2.5 py-1 text-[11px] font-semibold tracking-[0.14em] text-muted-foreground uppercase hover:border-navy hover:text-navy"
-              }
-            >
-              {item.label}
-            </button>
-          ))}
-        </div>
-        <p className="mt-3 text-sm text-muted-foreground">
-          {windowAverage === null ? "No votes" : windowAverage.toFixed(1)} · {voteLabel(windowVotes.length)}
-        </p>
-        <Sparkline scores={windowVotes.map((vote) => vote.score)} />
-      </div>
+      <ShameTrend />
     </section>
+  )
+}
+
+function ShameTrend() {
+  const { votes, windowId, setWindowId } = useShameMeter()
+  const windowVotes = votes ? votesInWindow(votes, windowId) : []
+  const windowAverage = averageOf(windowVotes.map((vote) => vote.score))
+
+  return (
+    <div className="mt-6 border-t border-cream/15 pt-4" role="group" aria-label="Shame trend">
+      <p className="text-[11px] font-semibold tracking-[0.18em] text-cream/65 uppercase">Trend</p>
+      <div className="mt-3 flex flex-wrap gap-1.5" role="group" aria-label="Trend window">
+        {shameWindows.map((item) => (
+          <button
+            key={item.id}
+            type="button"
+            aria-pressed={windowId === item.id}
+            onClick={() => setWindowId(item.id)}
+            className={
+              windowId === item.id
+                ? "border border-cream bg-cream px-2 py-1 text-[11px] font-semibold tracking-[0.12em] text-navy uppercase"
+                : "border border-cream/25 px-2 py-1 text-[11px] font-semibold tracking-[0.12em] text-cream/70 uppercase hover:border-cream/60 hover:text-cream"
+            }
+          >
+            {item.label}
+          </button>
+        ))}
+      </div>
+      <p className="mt-3 text-sm text-cream/65">
+        {windowAverage === null ? "No votes" : windowAverage.toFixed(1)} · {voteLabel(windowVotes.length)}
+      </p>
+      <Sparkline scores={windowVotes.map((vote) => vote.score)} />
+    </div>
   )
 }
 

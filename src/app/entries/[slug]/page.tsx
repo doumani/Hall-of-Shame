@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { EntryCard } from "@/components/entry-card"
-import { ShameMeter } from "@/components/shame-meter"
+import { ShameMeter, ShameRating } from "@/components/shame-meter"
 import { Story } from "@/components/story"
 import { Separator } from "@/components/ui/separator"
 import {
@@ -63,6 +63,7 @@ export default async function EntryPage({ params }: Props) {
   }
 
   return (
+    <ShameMeter entryId={entry.slug}>
     <article>
       <script
         type="application/ld+json"
@@ -78,36 +79,43 @@ export default async function EntryPage({ params }: Props) {
             <span className="text-cream">{entry.title}</span>
           </nav>
 
-          <div className="mt-8 max-w-3xl">
-            <p className="flex items-center gap-3 text-[11px] font-semibold tracking-[0.18em] text-cream/75 uppercase">
-              <span className="h-px w-8 bg-cardinal" />
-              No. {catalogNumber(entry.date)} · {era?.label}
-            </p>
-            <h1 className="display mt-4 text-5xl leading-[0.95] text-balance text-cream md:text-7xl">
-              {entry.title}
-            </h1>
-            <p className="mt-5 text-xl leading-relaxed text-cream/80">
-              {entry.summary}
-            </p>
-            <p className="mt-4 text-sm text-cream/75">
-              <time dateTime={entry.date}>{formatEntryDate(entry.date)}</time>
-            </p>
-            <ul className="mt-5 flex flex-wrap gap-2">
-              {entry.categories.map((id) => {
-                const category = getCategory(id)
-                if (!category) return null
-                return (
-                  <li key={id}>
-                    <Link
-                      href={`/entries?category=${id}`}
-                      className="inline-block border border-cream/25 px-2.5 py-1 text-[11px] font-semibold tracking-[0.16em] text-cream uppercase hover:border-cream"
-                    >
-                      {category.label}
-                    </Link>
-                  </li>
-                )
-              })}
-            </ul>
+          <div className="mt-8 grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-x-14">
+            <div className="order-1 lg:col-start-1 lg:row-start-1">
+              <p className="flex items-center gap-3 text-[11px] font-semibold tracking-[0.18em] text-cream/75 uppercase">
+                <span className="h-px w-8 bg-cardinal" />
+                No. {catalogNumber(entry.date)} · {era?.label}
+              </p>
+              <h1 className="display mt-4 text-5xl leading-[0.95] text-balance text-cream md:text-7xl">
+                {entry.title}
+              </h1>
+              <p className="mt-5 max-w-3xl text-xl leading-relaxed text-cream/80">
+                {entry.summary}
+              </p>
+            </div>
+            <div className="order-2 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:pt-1">
+              <ShameRating />
+            </div>
+            <div className="order-3 lg:col-start-1 lg:row-start-2">
+              <p className="text-sm text-cream/75">
+                <time dateTime={entry.date}>{formatEntryDate(entry.date)}</time>
+              </p>
+              <ul className="mt-5 flex flex-wrap gap-2">
+                {entry.categories.map((id) => {
+                  const category = getCategory(id)
+                  if (!category) return null
+                  return (
+                    <li key={id}>
+                      <Link
+                        href={`/entries?category=${id}`}
+                        className="inline-block border border-cream/25 px-2.5 py-1 text-[11px] font-semibold tracking-[0.16em] text-cream uppercase hover:border-cream"
+                      >
+                        {category.label}
+                      </Link>
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -157,7 +165,6 @@ export default async function EntryPage({ params }: Props) {
       >
         <div className="lg:col-span-8">
           <Story markdown={entry.story} />
-          <ShameMeter entryId={entry.slug} />
 
           {entry.videos.length > 0 ? (
             <div className="mt-12 space-y-6">
@@ -293,5 +300,6 @@ export default async function EntryPage({ params }: Props) {
         </section>
       ) : null}
     </article>
+    </ShameMeter>
   )
 }

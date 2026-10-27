@@ -62,7 +62,8 @@ export default function AboutPage() {
             correction, or a public-domain image can be offered on the{" "}
             <Link href="/submit" className="underline">
               suggestion page
-            </Link>. The form is a placeholder and does not send anything yet.
+            </Link>
+            . Notes are saved for review and are not published on their own.
           </p>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { SubmitForm } from "@/components/submit-form"
 export const metadata: Metadata = {
   title: "Suggest an entry",
   description:
-    "Suggest an entry, a correction, or a public-domain image. This form is a placeholder and does not send data.",
+    "Suggest an entry, a correction, or a public-domain image. Notes are saved for review and are not published on their own.",
 }
 
 export default function SubmitPage() {
@@ -21,8 +21,8 @@ export default function SubmitPage() {
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-cream/80 md:text-lg">
             This is the place to suggest an entry, a correction, or a
-            public-domain image. The form is a placeholder. It does not send
-            or save anything yet.
+            public-domain image. The note is saved for review. It is not
+            added to the catalog on its own.
           </p>
         </div>
       </header>

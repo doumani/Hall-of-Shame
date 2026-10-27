@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useEffect, useState, type FormEvent, type ReactNode } from "react"
 import { BaseballIcon } from "@/components/baseball-icon"
+import { CrowdRating } from "@/components/shame-badge"
 import {
   insertVote,
   loadEntryVotes,
@@ -13,6 +14,7 @@ import {
   averageOf,
   getVoterKey,
   shameWindows,
+  subscribeShame,
   votesInWindow,
   type ShameVote,
   type ShameWindowId,
@@ -80,8 +82,12 @@ export function ShameMeter({ entryId, children }: { entryId: string; children: R
     }
 
     void load(client)
+    const unsubscribe = subscribeShame(() => {
+      void load(client)
+    })
     return () => {
       cancelled = true
+      unsubscribe()
     }
   }, [client, entryId])
 
@@ -184,13 +190,14 @@ export function ShameRating() {
       <p className="text-[11px] font-semibold tracking-[0.18em] text-cream/65 uppercase">
         Shame meter
       </p>
-      <p className="mt-2 flex items-baseline gap-3">
+      <p className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-2">
         <span className="font-serif text-5xl leading-none text-cream tabular-nums">
           {average === null ? "—" : average.toFixed(1)}
         </span>
         <span className="text-[11px] font-semibold tracking-[0.16em] text-cream/60 uppercase">
           All-time · {voteLabel(scores.length)}
         </span>
+        <CrowdRating count={votes === null ? 0 : scores.length} tone="cream" />
       </p>
 
       <div className="mt-4 flex gap-1.5" role="group" aria-label="Rate this entry from 1 to 5">
@@ -221,7 +228,17 @@ export function ShameRating() {
         })}
       </div>
 
-      <p className="mt-3 text-sm text-cream/65">
+      {mine ? (
+        <p className="mt-3 text-sm text-cream/75 tabular-nums" aria-live="polite">
+          You: {mine.score}
+          <span className="px-1.5 text-cream/40" aria-hidden="true">
+            ·
+          </span>
+          Crowd: {average === null ? "—" : average.toFixed(1)}
+        </p>
+      ) : null}
+
+      <p className={`${mine ? "mt-1.5" : "mt-3"} text-sm text-cream/65`}>
         {locked ? "Your vote is final." : "One anonymous score, and it stays."}
       </p>
 

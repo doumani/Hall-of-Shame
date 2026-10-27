@@ -2,15 +2,11 @@ import Image from "next/image"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { EntryCard } from "@/components/entry-card"
+import { RelatedEntries } from "@/components/related-entries"
 import { ShameMeter, ShameRating } from "@/components/shame-meter"
 import { Story } from "@/components/story"
 import { Separator } from "@/components/ui/separator"
-import {
-  getAllEntries,
-  getEntryBySlug,
-  getRelatedEntries,
-} from "@/lib/entries"
+import { getAllEntries, getEntryBySlug } from "@/lib/entries"
 import { catalogNumber, formatEntryDate, videoEmbedUrl } from "@/lib/format"
 import { getCategory, getEra } from "@/lib/taxonomy"
 import { localImageSize } from "@/lib/image-size"
@@ -22,18 +18,64 @@ export function generateStaticParams() {
   return getAllEntries().map((entry) => ({ slug: entry.slug }))
 }
 
+const fallbackShareImage = {
+  path: "/og",
+  width: 1200,
+  height: 630,
+  alt: "Hall of Shame",
+  type: "image/png",
+} as const
+
+function imageMime(url: string) {
+  const ext = url.split("?")[0]?.split(".").pop()?.toLowerCase()
+  if (ext === "png") return "image/png"
+  if (ext === "webp") return "image/webp"
+  if (ext === "gif") return "image/gif"
+  return "image/jpeg"
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params
   const entry = getEntryBySlug(slug)
   if (!entry) return { title: "Entry not found" }
 
+  const site = getSiteUrl()
+  const pageUrl = `${site}/entries/${entry.slug}`
+  const photo = entry.images[0]
+  const photoSize = photo ? localImageSize(photo.url) : null
+  const image = photo
+    ? {
+        url: new URL(photo.url, site).toString(),
+        alt: photo.caption,
+        type: imageMime(photo.url),
+        ...(photoSize ?? {}),
+      }
+    : {
+        url: new URL(fallbackShareImage.path, site).toString(),
+        alt: fallbackShareImage.alt,
+        type: fallbackShareImage.type,
+        width: fallbackShareImage.width,
+        height: fallbackShareImage.height,
+      }
+  const title = { absolute: entry.title }
+
   return {
     title: entry.title,
     description: entry.summary,
     openGraph: {
-      title: entry.title,
+      title,
       description: entry.summary,
+      url: pageUrl,
+      siteName: "Hall of Shame",
+      locale: "en_US",
       type: "article",
+      images: [image],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: entry.summary,
+      images: [image],
     },
   }
 }
@@ -46,7 +88,6 @@ export default async function EntryPage({ params }: Props) {
   if (!entry) notFound()
 
   const era = getEra(entry.era)
-  const related = getRelatedEntries(entry)
   const url = `${getSiteUrl()}/entries/${entry.slug}`
 
   const jsonLd = {
@@ -161,7 +202,7 @@ export default async function EntryPage({ params }: Props) {
       </header>
 
       <div
-        className={`mx-auto mt-12 grid max-w-6xl gap-12 px-5 lg:grid-cols-12 ${related.length === 0 ? "pb-16 lg:pb-20" : ""}`}
+        className="mx-auto mt-12 grid max-w-6xl gap-12 px-5 lg:grid-cols-12"
       >
         <div className="lg:col-span-8">
           <Story markdown={entry.story} />
@@ -289,16 +330,7 @@ export default async function EntryPage({ params }: Props) {
         </aside>
       </div>
 
-      {related.length > 0 ? (
-        <section className="mx-auto mt-4 max-w-6xl border-t border-border px-5 pt-12 pb-16 md:pb-20">
-          <h2 className="font-serif text-4xl tracking-tight">Related entries</h2>
-          <div className="mt-6 grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
-            {related.map((item) => (
-              <EntryCard key={item.id} entry={item} />
-            ))}
-          </div>
-        </section>
-      ) : null}
+      <RelatedEntries entry={entry} />
     </article>
     </ShameMeter>
   )

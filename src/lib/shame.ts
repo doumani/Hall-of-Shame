@@ -25,9 +25,24 @@ export function getVoterKey() {
   return key
 }
 
+export const crowdRatingMinimum = 10
+
 export function averageOf(scores: number[]) {
   if (scores.length === 0) return null
   return scores.reduce((sum, score) => sum + score, 0) / scores.length
+}
+
+export function tallyShameScores(rows: { entry_id: string; score: number }[]) {
+  const totals = new Map<string, { sum: number; count: number }>()
+  for (const row of rows) {
+    const score = Number(row.score)
+    if (!Number.isFinite(score)) continue
+    const current = totals.get(row.entry_id) ?? { sum: 0, count: 0 }
+    current.sum += score
+    current.count += 1
+    totals.set(row.entry_id, current)
+  }
+  return totals
 }
 
 export function windowStart(id: ShameWindowId, now = new Date()) {

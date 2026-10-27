@@ -4,6 +4,7 @@ import Link from "next/link"
 import { EntryCard } from "@/components/entry-card"
 import { EntryFilters } from "@/components/entry-filters"
 import { filterEntries, getAllEntries, parseFilters } from "@/lib/entries"
+import { loadAllTimeShameAverages } from "@/lib/shame-averages"
 import { categories, eras, getCategory, getEra } from "@/lib/taxonomy"
 
 export const metadata: Metadata = {
@@ -33,7 +34,9 @@ export default function EntriesPage({
 
 async function Listing({ searchParams }: { searchParams: Promise<CatalogSearch> }) {
   const filters = parseFilters(await searchParams)
-  const results = filterEntries(filters)
+  const shameAverages =
+    filters.sort === "shame" ? await loadAllTimeShameAverages() : undefined
+  const results = filterEntries(filters, shameAverages)
   const total = getAllEntries().length
   const category = filters.category ? getCategory(filters.category) : undefined
   const era = filters.era ? getEra(filters.era) : undefined

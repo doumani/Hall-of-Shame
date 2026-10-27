@@ -98,10 +98,88 @@ export function getFeaturedEntries() {
     .sort((a, b) => a.date.localeCompare(b.date))
 }
 
+const relatedLimit = 4
+
+function foldName(value: string) {
+  return value.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase()
+}
+
+function titleMentions(title: string, name: string) {
+  const surname = name.split(/\s+/).at(-1) ?? ""
+  if (foldName(surname).length < 4) return false
+  const tokens = title.split(/[^A-Za-z0-9\u00C0-\u024F'’]+/)
+  const target = foldName(surname)
+  return tokens.some((token) => foldName(token) === target)
+}
+
+function subjectIds(entry: Entry) {
+  const mentioned = entry.players.filter((player) => titleMentions(entry.title, player.name))
+  const subjects = mentioned.length > 0 ? mentioned : entry.players.slice(0, 1)
+  return new Set(subjects.map((player) => player.id))
+}
+
+function sharedIds(left: { id: string }[], right: { id: string }[]) {
+  const ids = new Set(right.map((item) => item.id))
+  return left.reduce((count, item) => count + (ids.has(item.id) ? 1 : 0), 0)
+}
+
+/**
+ * Up to four other entries, ranked by shared subject, category, team, and era.
+ * Curated links win ties. Nearer years fill the list when little else overlaps.
+ */
 export function getRelatedEntries(entry: Entry) {
-  return entry.related
-    .map((id) => byId.get(id))
-    .filter((related): related is Entry => Boolean(related))
+  const subjects = subjectIds(entry)
+
+  return entries
+    .filter((candidate) => candidate.id !== entry.id)
+    .map((candidate) => {
+      const candidatePlayers = new Set(candidate.players.map((player) => player.id))
+      let subjectPlayers = 0
+      let otherPlayers = 0
+      for (const player of entry.players) {
+        if (!candidatePlayers.has(player.id)) continue
+        if (subjects.has(player.id)) subjectPlayers += 1
+        else otherPlayers += 1
+      }
+
+      const teams = sharedIds(entry.teams, candidate.teams)
+      const categories = entry.categories.filter((id) =>
+        candidate.categories.includes(id),
+      ).length
+      const sameEra = candidate.era === entry.era ? 1 : 0
+      const curated = entry.related.includes(candidate.id) ? 1 : 0
+      const sharesPrimary = candidate.categories.includes(entry.categories[0]) ? 1 : 0
+      const score =
+        subjectPlayers * 12 +
+        otherPlayers * 3 +
+        categories * 8 +
+        teams * 4 +
+        sameEra * 2 +
+        curated * 3 +
+        sharesPrimary * 3
+
+      return {
+        candidate,
+        score,
+        categories,
+        subjectPlayers,
+        teams,
+        curated,
+        yearGap: Math.abs(candidate.year - entry.year),
+      }
+    })
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        b.categories - a.categories ||
+        b.subjectPlayers - a.subjectPlayers ||
+        b.teams - a.teams ||
+        b.curated - a.curated ||
+        a.yearGap - b.yearGap ||
+        a.candidate.title.localeCompare(b.candidate.title),
+    )
+    .slice(0, relatedLimit)
+    .map((item) => item.candidate)
 }
 
 export interface RosterGroup {
@@ -214,7 +292,24 @@ export function parseFilters(params: {
   }
 }
 
-export function filterEntries(filters: EntryFilters) {
+function byRecency(a: Entry, b: Entry) {
+  return b.date.localeCompare(a.date) || a.title.localeCompare(b.title)
+}
+
+function byShame(a: Entry, b: Entry, averages: ReadonlyMap<string, number> | undefined) {
+  const aScore = averages?.get(a.id)
+  const bScore = averages?.get(b.id)
+  const aRated = aScore !== undefined
+  const bRated = bScore !== undefined
+  if (aRated && bRated && aScore !== bScore) return bScore - aScore
+  if (aRated !== bRated) return aRated ? -1 : 1
+  return byRecency(a, b)
+}
+
+export function filterEntries(
+  filters: EntryFilters,
+  shameAverages?: ReadonlyMap<string, number>,
+) {
   const query = filters.q?.toLowerCase()
 
   const matched = entries.filter((entry) => {
@@ -231,7 +326,8 @@ export function filterEntries(filters: EntryFilters) {
     if (filters.sort === "oldest") {
       return a.date.localeCompare(b.date) || a.title.localeCompare(b.title)
     }
-    return b.date.localeCompare(a.date) || a.title.localeCompare(b.title)
+    if (filters.sort === "shame") return byShame(a, b, shameAverages)
+    return byRecency(a, b)
   })
 }
 

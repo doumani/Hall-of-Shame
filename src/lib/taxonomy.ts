@@ -136,6 +136,7 @@ export const sorts: { id: SortId; label: string }[] = [
   { id: "newest", label: "Newest first" },
   { id: "oldest", label: "Oldest first" },
   { id: "title", label: "Title A–Z" },
+  { id: "shame", label: "Highest shame" },
 ]
 
 export function getCategory(id: string) {

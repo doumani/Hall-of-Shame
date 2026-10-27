@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useMemo, type ReactNode } from "react"
 import { createClient, type SupabaseClient } from "@supabase/supabase-js"
-import { notifyShame, type ShameVote } from "@/lib/shame"
+import { notifyShame, tallyShameScores, type ShameVote } from "@/lib/shame"
 
 const ShameContext = createContext<SupabaseClient | null>(null)
 
@@ -134,16 +134,7 @@ export async function loadAverages(client: SupabaseClient) {
     throw error
   }
 
-  const map = new Map<string, { sum: number; count: number }>()
-  for (const row of data ?? []) {
-    const score = Number(row.score)
-    if (!Number.isFinite(score)) continue
-    const current = map.get(row.entry_id) ?? { sum: 0, count: 0 }
-    current.sum += score
-    current.count += 1
-    map.set(row.entry_id, current)
-  }
-  return map
+  return tallyShameScores(data ?? [])
 }
 
 function toVote(row: {

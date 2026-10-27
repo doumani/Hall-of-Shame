@@ -3,6 +3,7 @@ import { Fraunces, Source_Sans_3 } from "next/font/google"
 import { ShameProvider } from "@/components/shame-client"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
+import { getAllEntries } from "@/lib/entries"
 import { getSiteUrl } from "@/lib/site"
 import "./globals.css"
 
@@ -54,7 +55,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           Skip to content
         </a>
         <ShameProvider url={supabaseUrl} anonKey={supabaseAnonKey}>
-          <SiteHeader />
+          <SiteHeader slugs={getAllEntries().map((entry) => entry.slug)} />
           <main id="main" className="flex-1">
             {children}
           </main>

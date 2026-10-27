@@ -3,11 +3,35 @@
 import { useEffect, useState } from "react"
 import { BaseballIcon } from "@/components/baseball-icon"
 import { loadAverages, useShameClient } from "@/components/shame-client"
-import { subscribeShame } from "@/lib/shame"
+import { crowdRatingMinimum, subscribeShame } from "@/lib/shame"
+import { cn } from "@/lib/utils"
+
+export function CrowdRating({
+  count,
+  tone = "ink",
+}: {
+  count: number
+  tone?: "ink" | "cream"
+}) {
+  if (count < crowdRatingMinimum) return null
+
+  return (
+    <span
+      className={cn(
+        "inline-flex items-center font-semibold tracking-[0.14em] uppercase tabular-nums",
+        tone === "cream"
+          ? "border border-cream/35 px-1.5 py-0.5 text-[10px] leading-none text-cream/80"
+          : "text-[10px] leading-none text-muted-foreground",
+      )}
+    >
+      {count} ratings
+    </span>
+  )
+}
 
 export function ShameBadge({ entryId }: { entryId: string }) {
   const client = useShameClient()
-  const [label, setLabel] = useState<string | null>(null)
+  const [stats, setStats] = useState<{ average: string; count: number } | null>(null)
 
   useEffect(() => {
     if (!client) return
@@ -16,9 +40,10 @@ export function ShameBadge({ entryId }: { entryId: string }) {
       try {
         const map = await loadAverages(client!)
         const row = map.get(entryId)
-        if (!cancelled) setLabel(row && row.count > 0 ? (row.sum / row.count).toFixed(1) : null)
+        if (cancelled) return
+        setStats(row && row.count > 0 ? { average: (row.sum / row.count).toFixed(1), count: row.count } : null)
       } catch {
-        if (!cancelled) setLabel(null)
+        if (!cancelled) setStats(null)
       }
     }
     void read()
@@ -31,13 +56,14 @@ export function ShameBadge({ entryId }: { entryId: string }) {
     }
   }, [client, entryId])
 
-  if (!label) return null
+  if (!stats) return null
 
   return (
-    <p className="mt-3 flex items-center gap-1.5 text-xs tracking-wide text-navy">
+    <p className="mt-3 flex flex-wrap items-center gap-x-1.5 gap-y-1 text-xs tracking-wide text-navy">
       <BaseballIcon filled className="size-3.5 text-cardinal" />
-      <span className="tabular-nums">{label}</span>
+      <span className="tabular-nums">{stats.average}</span>
       <span className="text-muted-foreground">shame</span>
+      <CrowdRating count={stats.count} />
     </p>
   )
 }

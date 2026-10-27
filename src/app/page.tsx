@@ -1,8 +1,10 @@
+import { Suspense } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button"
 import { CategoryIndex } from "@/components/category-index"
 import { EntryCard } from "@/components/entry-card"
+import { OnThisDay, OnThisDayFallback } from "@/components/on-this-day"
 import {
   getAllEntries,
   getCategoryCounts,
@@ -107,6 +109,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <Suspense fallback={<OnThisDayFallback />}>
+        <OnThisDay />
+      </Suspense>
 
       <section className="border-b border-border bg-paper">
         <div className="mx-auto max-w-6xl px-5 py-14 md:py-16">

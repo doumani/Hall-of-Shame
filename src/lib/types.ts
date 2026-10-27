@@ -31,7 +31,7 @@ export const eraIds = [
   "modern",
 ] as const
 
-export const sortIds = ["newest", "oldest", "title"] as const
+export const sortIds = ["newest", "oldest", "title", "shame"] as const
 
 export type CategoryId = (typeof categoryIds)[number]
 export type EraId = (typeof eraIds)[number]

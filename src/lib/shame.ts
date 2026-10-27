@@ -1,7 +1,4 @@
-import { getSupabase } from "@/lib/supabase"
-
 export const VOTER_KEY = "hos-voter-key"
-export const SEED_VOTER_KEY = "seed"
 
 export const shameWindows = [
   { id: "7d", label: "7 days" },
@@ -52,9 +49,6 @@ export function votesInWindow(votes: ShameVote[], id: ShameWindowId, now = new D
   )
 }
 
-type AverageRow = { sum: number; count: number }
-
-let averagesCache: Promise<Map<string, AverageRow>> | null = null
 const listeners = new Set<() => void>()
 
 export function subscribeShame(listener: () => void) {
@@ -62,36 +56,6 @@ export function subscribeShame(listener: () => void) {
   return () => listeners.delete(listener)
 }
 
-export function invalidateShame() {
-  averagesCache = null
+export function notifyShame() {
   listeners.forEach((listener) => listener())
-}
-
-export function loadAverages() {
-  if (!averagesCache) {
-    averagesCache = fetchAverages().catch((error) => {
-      averagesCache = null
-      throw error
-    })
-  }
-  return averagesCache
-}
-
-async function fetchAverages() {
-  const supabase = getSupabase()
-  const map = new Map<string, AverageRow>()
-  if (!supabase) return map
-
-  const { data, error } = await supabase.from("shame_ratings").select("entry_id, score")
-  if (error || !data) return map
-
-  for (const row of data) {
-    const score = Number(row.score)
-    if (!Number.isFinite(score)) continue
-    const current = map.get(row.entry_id) ?? { sum: 0, count: 0 }
-    current.sum += score
-    current.count += 1
-    map.set(row.entry_id, current)
-  }
-  return map
 }

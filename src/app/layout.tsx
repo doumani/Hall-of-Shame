@@ -1,9 +1,8 @@
 import type { Metadata } from "next"
 import { Fraunces, Source_Sans_3 } from "next/font/google"
-import { ShameSeed } from "@/components/shame-seed"
+import { ShameProvider } from "@/components/shame-client"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
-import { getAllEntries } from "@/lib/entries"
 import { getSiteUrl } from "@/lib/site"
 import "./globals.css"
 
@@ -39,7 +38,8 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
-  const slugs = getAllEntries().map((entry) => entry.slug)
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? ""
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? ""
 
   return (
     <html
@@ -53,12 +53,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Skip to content
         </a>
-        <ShameSeed slugs={slugs} />
-        <SiteHeader />
-        <main id="main" className="flex-1">
-          {children}
-        </main>
-        <SiteFooter />
+        <ShameProvider url={supabaseUrl} anonKey={supabaseAnonKey}>
+          <SiteHeader />
+          <main id="main" className="flex-1">
+            {children}
+          </main>
+          <SiteFooter />
+        </ShameProvider>
       </body>
     </html>
   )

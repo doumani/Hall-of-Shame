@@ -3,16 +3,20 @@
 import { useEffect, useState, type FormEvent } from "react"
 import { BaseballIcon } from "@/components/baseball-icon"
 import {
+  insertVote,
+  loadEntryVotes,
+  updateReason,
+  useShameClient,
+  voterHasReason,
+} from "@/components/shame-client"
+import {
   averageOf,
   getVoterKey,
-  invalidateShame,
   shameWindows,
-  subscribeShame,
   votesInWindow,
   type ShameVote,
   type ShameWindowId,
 } from "@/lib/shame"
-import { getSupabase } from "@/lib/supabase"
 
 export function ShameMeter({ entryId }: { entryId: string }) {
   const [votes, setVotes] = useState<ShameVote[] | null>(null)
@@ -23,56 +27,37 @@ export function ShameMeter({ entryId }: { entryId: string }) {
   const [reasonState, setReasonState] = useState<"idle" | "saved" | "error">("idle")
   const [windowId, setWindowId] = useState<ShameWindowId>("all")
   const [hoverScore, setHoverScore] = useState<number | null>(null)
+  const client = useShameClient()
+
   const [unavailable, setUnavailable] = useState(false)
 
   useEffect(() => {
     const key = getVoterKey()
     setVoterKey(key)
-    let cancelled = false
-
-    async function load() {
-      const supabase = getSupabase()
-      if (!supabase) {
-        if (!cancelled) setUnavailable(true)
-        return
-      }
-      const { data, error } = await supabase
-        .from("shame_ratings")
-        .select("entry_id, score, created_at, voter_key")
-        .eq("entry_id", entryId)
-
-      if (cancelled) return
-      if (error || !data) {
-        setUnavailable(true)
-        return
-      }
-      setVotes(
-        data.map((row) => ({
-          entry_id: row.entry_id,
-          score: Number(row.score),
-          created_at: row.created_at,
-          voter_key: row.voter_key,
-        })),
-      )
-
-      const { data: own } = await supabase
-        .from("shame_ratings")
-        .select("reason")
-        .eq("entry_id", entryId)
-        .eq("voter_key", key)
-        .maybeSingle()
-      if (!cancelled) setHasReason(Boolean(own?.reason))
+    if (!client) {
+      setUnavailable(true)
+      return
     }
 
-    void load()
-    const unsubscribe = subscribeShame(() => {
-      void load()
-    })
+    let cancelled = false
+    async function load(active: NonNullable<typeof client>) {
+      try {
+        const rows = await loadEntryVotes(active, entryId)
+        if (cancelled) return
+        setVotes(rows)
+        setUnavailable(false)
+        const noted = await voterHasReason(active, entryId, key)
+        if (!cancelled) setHasReason(noted)
+      } catch {
+        if (!cancelled) setUnavailable(true)
+      }
+    }
+
+    void load(client)
     return () => {
       cancelled = true
-      unsubscribe()
     }
-  }, [entryId])
+  }, [client, entryId])
 
   const mine = votes?.find((vote) => vote.voter_key === voterKey) ?? null
   const locked = Boolean(mine)
@@ -82,52 +67,47 @@ export function ShameMeter({ entryId }: { entryId: string }) {
   const windowAverage = averageOf(windowVotes.map((vote) => vote.score))
 
   async function rate(score: number) {
-    if (!voterKey || locked || pending || score < 1 || score > 5) return
-    const supabase = getSupabase()
-    if (!supabase) return
+    if (!voterKey || !client || locked || pending || score < 1 || score > 5) return
     setPending(true)
-    const { error } = await supabase.from("shame_ratings").insert({
-      entry_id: entryId,
-      score,
-      voter_key: voterKey,
-      reason: null,
-    })
-    setPending(false)
-    if (error && error.code !== "23505") return
-
-    setVotes((current) => {
-      const next = (current ?? []).filter((vote) => vote.voter_key !== voterKey)
-      next.push({
-        entry_id: entryId,
-        score,
-        voter_key: voterKey,
-        created_at: new Date().toISOString(),
-      })
-      return next
-    })
-    invalidateShame()
+    try {
+      const result = await insertVote(client, entryId, voterKey, score)
+      if (result === "duplicate") {
+        setVotes(await loadEntryVotes(client, entryId))
+      } else {
+        setVotes((current) => {
+          const next = (current ?? []).filter((vote) => vote.voter_key !== voterKey)
+          next.push({
+            entry_id: entryId,
+            score,
+            voter_key: voterKey,
+            created_at: new Date().toISOString(),
+          })
+          return next
+        })
+      }
+      setUnavailable(false)
+    } catch {
+      setUnavailable(true)
+    } finally {
+      setPending(false)
+    }
   }
 
   async function saveReason(event: FormEvent) {
     event.preventDefault()
     const reason = reasonDraft.trim()
-    if (!reason || !voterKey || hasReason) return
-    const supabase = getSupabase()
-    if (!supabase) return
+    if (!reason || !voterKey || !client || hasReason) return
     setPending(true)
-    const { error } = await supabase
-      .from("shame_ratings")
-      .update({ reason })
-      .eq("entry_id", entryId)
-      .eq("voter_key", voterKey)
-    setPending(false)
-    if (error) {
+    try {
+      await updateReason(client, entryId, voterKey, reason)
+      setReasonDraft("")
+      setHasReason(true)
+      setReasonState("saved")
+    } catch {
       setReasonState("error")
-      return
+    } finally {
+      setPending(false)
     }
-    setReasonDraft("")
-    setHasReason(true)
-    setReasonState("saved")
   }
 
   return (

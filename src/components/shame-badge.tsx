@@ -2,16 +2,19 @@
 
 import { useEffect, useState } from "react"
 import { BaseballIcon } from "@/components/baseball-icon"
-import { loadAverages, subscribeShame } from "@/lib/shame"
+import { loadAverages, useShameClient } from "@/components/shame-client"
+import { subscribeShame } from "@/lib/shame"
 
 export function ShameBadge({ entryId }: { entryId: string }) {
+  const client = useShameClient()
   const [label, setLabel] = useState<string | null>(null)
 
   useEffect(() => {
+    if (!client) return
     let cancelled = false
     async function read() {
       try {
-        const map = await loadAverages()
+        const map = await loadAverages(client!)
         const row = map.get(entryId)
         if (!cancelled) setLabel(row && row.count > 0 ? (row.sum / row.count).toFixed(1) : null)
       } catch {
@@ -26,7 +29,7 @@ export function ShameBadge({ entryId }: { entryId: string }) {
       cancelled = true
       unsubscribe()
     }
-  }, [entryId])
+  }, [client, entryId])
 
   if (!label) return null
 

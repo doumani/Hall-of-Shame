@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { ShameBadge } from "@/components/shame-badge"
 import { catalogNumber, formatEntryDate } from "@/lib/format"
 import { getCategory } from "@/lib/taxonomy"
 import type { Entry } from "@/lib/types"
@@ -58,6 +59,7 @@ export function EntryCard({
         <p className="mt-2.5 line-clamp-3 flex-1 text-sm leading-relaxed text-muted-foreground">
           {entry.summary}
         </p>
+        <ShameBadge entryId={entry.id} />
         <p className="mt-4 border-t border-border/80 pt-3 text-xs tracking-wide text-foreground/75">
           {entry.teams.map((team) => team.name).join(" · ")}
         </p>

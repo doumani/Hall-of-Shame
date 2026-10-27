@@ -1,7 +1,9 @@
 import type { Metadata } from "next"
 import { Fraunces, Source_Sans_3 } from "next/font/google"
+import { ShameSeed } from "@/components/shame-seed"
 import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
+import { getAllEntries } from "@/lib/entries"
 import { getSiteUrl } from "@/lib/site"
 import "./globals.css"
 
@@ -37,6 +39,8 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
+  const slugs = getAllEntries().map((entry) => entry.slug)
+
   return (
     <html
       lang="en"
@@ -49,6 +53,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         >
           Skip to content
         </a>
+        <ShameSeed slugs={slugs} />
         <SiteHeader />
         <main id="main" className="flex-1">
           {children}

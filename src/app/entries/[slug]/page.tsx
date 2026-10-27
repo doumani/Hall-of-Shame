@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { EntryCard } from "@/components/entry-card"
+import { ShameMeter } from "@/components/shame-meter"
 import { Story } from "@/components/story"
 import { Separator } from "@/components/ui/separator"
 import {
@@ -156,6 +157,7 @@ export default async function EntryPage({ params }: Props) {
       >
         <div className="lg:col-span-8">
           <Story markdown={entry.story} />
+          <ShameMeter entryId={entry.slug} />
 
           {entry.videos.length > 0 ? (
             <div className="mt-12 space-y-6">

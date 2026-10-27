@@ -3138,5 +3138,1619 @@
     "tags": ["nlds", "braves", "giants", "turner-field", "second-base"],
     "related": ["willie-davis-three-errors", "buckner-game-six", "knoblauch-and-the-bunt"],
     "featured": false
+  },
+  {
+    "id": "yamamoto-immaculate-inning",
+    "slug": "yamamoto-immaculate-inning",
+    "title": "Hudson and the Immaculate Inning",
+    "date": "2025-06-19",
+    "year": 2025,
+    "era": "modern",
+    "categories": [
+      "umpire",
+      "rules"
+    ],
+    "teams": [
+      {
+        "id": "san-diego-padres",
+        "name": "San Diego Padres"
+      },
+      {
+        "id": "los-angeles-dodgers",
+        "name": "Los Angeles Dodgers"
+      }
+    ],
+    "players": [
+      {
+        "id": "yoshinobu-yamamoto",
+        "name": "Yoshinobu Yamamoto"
+      },
+      {
+        "id": "marvin-hudson",
+        "name": "Marvin Hudson"
+      },
+      {
+        "id": "fernando-tatis-jr",
+        "name": "Fernando Tatis Jr."
+      },
+      {
+        "id": "bryce-johnson",
+        "name": "Bryce Johnson"
+      },
+      {
+        "id": "martin-maldonado",
+        "name": "Martín Maldonado"
+      }
+    ],
+    "summary": "Yoshinobu Yamamoto was one called strike from an immaculate inning when Marvin Hudson ruled a 96-mph fastball a ball. Yamamoto struck out the side anyway. The inning was no longer immaculate.",
+    "story": "June 19, 2025, Dodger Stadium, the Padres in town. In the top of the third Yoshinobu Yamamoto struck out Bryce Johnson and Martín Maldonado on three pitches each. He got ahead of Fernando Tatis Jr., 0–2. The next pitch was a 96-mph fastball over the middle of the plate. Plate umpire Marvin Hudson called it a ball.\n\nAn immaculate inning is three strikeouts on nine pitches. There have been about 118 of them in major-league history. Hudson's call ended this one. Yamamoto struck Tatis out two pitches later, so the side was still retired on strikes, and the pitch count was no longer nine. San Diego won the game, 5–3. Accounts in the East often date the night June 20. In Los Angeles it was still the 19th.\n\nDodgers broadcaster Joe Davis asked on the air whether the league could borrow the automated ball-strike system from Triple-A for the night. The entry is the one pitch. The strikeout that followed does not put the call back.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/yoshinobu-yamamoto-strikes-out-the-side",
+        "title": "Yamamoto strikes out the side",
+        "description": "Yoshinobu Yamamoto strikes out the side in the third and comes one called ball short of an immaculate inning.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/upload/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/c9p1udlzfizdvug2z4da",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "dodgers",
+      "padres",
+      "immaculate-inning",
+      "strike-zone",
+      "dodger-stadium"
+    ],
+    "related": [
+      "galarraga-imperfect-game",
+      "flores-check-swing",
+      "scherzer-sticky-stuff"
+    ],
+    "featured": false
+  },
+  {
+    "id": "cash-pulls-snell",
+    "slug": "cash-pulls-snell",
+    "title": "Cash Pulls Snell",
+    "date": "2020-10-27",
+    "year": 2020,
+    "era": "modern",
+    "categories": [
+      "managerial"
+    ],
+    "teams": [
+      {
+        "id": "tampa-bay-rays",
+        "name": "Tampa Bay Rays"
+      },
+      {
+        "id": "los-angeles-dodgers",
+        "name": "Los Angeles Dodgers"
+      }
+    ],
+    "players": [
+      {
+        "id": "kevin-cash",
+        "name": "Kevin Cash"
+      },
+      {
+        "id": "blake-snell",
+        "name": "Blake Snell"
+      },
+      {
+        "id": "nick-anderson",
+        "name": "Nick Anderson"
+      },
+      {
+        "id": "mookie-betts",
+        "name": "Mookie Betts"
+      }
+    ],
+    "summary": "Blake Snell led Game 6 of the World Series on 73 pitches when Kevin Cash took him out after a one-out single. Nick Anderson allowed the tying and go-ahead runs. The Dodgers won the championship.",
+    "story": "October 27, 2020, Game 6 at Globe Life Field in Arlington. The Rays led, 1–0, in the sixth. Blake Snell had thrown 73 pitches, struck out nine, and allowed two hits. With one out, Austin Barnes singled. Kevin Cash came and got him.\n\nNick Anderson relieved. The tying run scored, and then the go-ahead run. Los Angeles won, 3–1, and won the series. Snell had been the best pitcher on the field. The inning he left became the inning the season ended.\n\nCash's account was that the matchups, and a third time through a lineup that had already seen Snell, were the reason. Snell said afterward that he had wanted to stay. The entry keeps both sentences. A decision can be the one the model recommended and still be the one the game punished.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/cash-snell-on-pitching-change-x6734",
+        "title": "Cash and Snell on the change",
+        "description": "Kevin Cash and Blake Snell, after Game 6, on the decision to leave the game in the sixth.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/tjkyv4c5icqasdgjzufo",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "world-series",
+      "rays",
+      "dodgers",
+      "bullpen",
+      "globe-life-field"
+    ],
+    "related": [
+      "grady-little-game-seven",
+      "roberts-kershaw-and-kelly",
+      "showalter-holds-britton"
+    ],
+    "featured": false
+  },
+  {
+    "id": "phillips-arozarena-walk-off",
+    "slug": "phillips-arozarena-walk-off",
+    "title": "Phillips, Taylor, and the Relay",
+    "date": "2020-10-24",
+    "year": 2020,
+    "era": "modern",
+    "categories": [
+      "fielding",
+      "baserunning"
+    ],
+    "teams": [
+      {
+        "id": "los-angeles-dodgers",
+        "name": "Los Angeles Dodgers"
+      },
+      {
+        "id": "tampa-bay-rays",
+        "name": "Tampa Bay Rays"
+      }
+    ],
+    "players": [
+      {
+        "id": "brett-phillips",
+        "name": "Brett Phillips"
+      },
+      {
+        "id": "randy-arozarena",
+        "name": "Randy Arozarena"
+      },
+      {
+        "id": "chris-taylor",
+        "name": "Chris Taylor"
+      },
+      {
+        "id": "will-smith",
+        "name": "Will Smith"
+      },
+      {
+        "id": "kenley-jansen",
+        "name": "Kenley Jansen"
+      }
+    ],
+    "summary": "With two outs in the ninth of World Series Game 4, Brett Phillips singled, Chris Taylor bobbled the ball, and the relay home never got there. Randy Arozarena tripped on the way and still scored.",
+    "story": "October 24, 2020, Game 4 at Globe Life Field. The Dodgers were one strike from a 7–6 win and a lead of three games to one. Brett Phillips, with two outs, singled to center. Chris Taylor, the center fielder, did not field the ball cleanly. The relay came home. Catcher Will Smith did not catch it. Kenley Jansen, the pitcher, was not behind the plate to back the throw up.\n\nRandy Arozarena was the runner who had to score from first, and he went down rounding third. He got up and came home anyway. Tampa Bay won, 8–7. The series was tied. Los Angeles won it two nights later.\n\nThe single was a hit. The rest was a sequence of ordinary baseball jobs, each of them missed in order: the pickup, the throw, the catch, the backup. Arozarena's fall is the picture people remember. The run scored because the ball was still loose when he arrived.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/rays-crazy-game-4-walk-off",
+        "title": "The Rays' Game 4 walk-off",
+        "description": "Brett Phillips singles with two outs, the relay home comes apart, and Randy Arozarena scores the winning run.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/dwdlq23oi4zd9phquxzq",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "world-series",
+      "dodgers",
+      "rays",
+      "relay",
+      "globe-life-field"
+    ],
+    "related": [
+      "buckner-game-six",
+      "cash-pulls-snell",
+      "yankees-fifth-inning"
+    ],
+    "featured": false
+  },
+  {
+    "id": "hernandez-three-overturns",
+    "slug": "hernandez-three-overturns",
+    "title": "Three Calls, Four Innings",
+    "date": "2018-10-08",
+    "year": 2018,
+    "era": "modern",
+    "categories": [
+      "umpire"
+    ],
+    "teams": [
+      {
+        "id": "boston-red-sox",
+        "name": "Boston Red Sox"
+      },
+      {
+        "id": "new-york-yankees",
+        "name": "New York Yankees"
+      }
+    ],
+    "players": [
+      {
+        "id": "angel-hernandez",
+        "name": "Ángel Hernández"
+      },
+      {
+        "id": "didi-gregorius",
+        "name": "Didi Gregorius"
+      },
+      {
+        "id": "gleyber-torres",
+        "name": "Gleyber Torres"
+      }
+    ],
+    "summary": "In the first four innings of a 2018 division-series game, first-base umpire Ángel Hernández had three calls overturned by replay. Two involved Didi Gregorius. One involved Gleyber Torres.",
+    "story": "October 8, 2018, Game 3 of the American League Division Series at Yankee Stadium. Ángel Hernández was at first base. In the first four innings, replay overturned him three times. Two of the plays were on Didi Gregorius. The third was on Gleyber Torres. Boston won the game, 16–1. The score made the calls irrelevant to the result and impossible to miss on the broadcast.\n\nHernández already had a reputation, including a racial-discrimination lawsuit against Major League Baseball that did not succeed. This night became the short version of that reputation: three reversals before the fifth inning of a playoff game. He retired on May 27, 2024.\n\nA reversed call is the system working. Three of them in four innings is the entry. The lawsuit is context for why the night was received as it was.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "alds",
+      "yankees",
+      "red-sox",
+      "replay",
+      "first-base"
+    ],
+    "related": [
+      "denkinger-safe-call",
+      "galarraga-imperfect-game",
+      "flores-check-swing"
+    ],
+    "featured": false
+  },
+  {
+    "id": "yankees-fifth-inning",
+    "slug": "yankees-fifth-inning",
+    "title": "The Yankees' Fifth Inning",
+    "date": "2024-10-30",
+    "year": 2024,
+    "era": "modern",
+    "categories": [
+      "fielding"
+    ],
+    "teams": [
+      {
+        "id": "los-angeles-dodgers",
+        "name": "Los Angeles Dodgers"
+      },
+      {
+        "id": "new-york-yankees",
+        "name": "New York Yankees"
+      }
+    ],
+    "players": [
+      {
+        "id": "aaron-judge",
+        "name": "Aaron Judge"
+      },
+      {
+        "id": "anthony-volpe",
+        "name": "Anthony Volpe"
+      },
+      {
+        "id": "gerrit-cole",
+        "name": "Gerrit Cole"
+      },
+      {
+        "id": "tommy-edman",
+        "name": "Tommy Edman"
+      },
+      {
+        "id": "mookie-betts",
+        "name": "Mookie Betts"
+      },
+      {
+        "id": "freddie-freeman",
+        "name": "Freddie Freeman"
+      }
+    ],
+    "summary": "The Yankees led Game 5 of the World Series by five runs. Aaron Judge dropped a fly ball, Anthony Volpe bounced a throw, and Gerrit Cole did not cover first. The Dodgers scored five unearned runs and won the championship.",
+    "story": "October 30, 2024, Game 5 at Yankee Stadium. New York led, 5–0. In the fifth, Tommy Edman hit a routine fly to center. Aaron Judge dropped it. Anthony Volpe, the shortstop, then bounced a throw to third. Gerrit Cole, the pitcher, did not cover first on a ground ball by Mookie Betts.\n\nThe Dodgers scored five unearned runs and tied the game. They won it, 7–6, and won the series. Freddie Freeman had already been the story of the series at the plate. This inning was the field.\n\nNone of the three mistakes was exotic. A fly ball, a throw, a pitcher covering a base. Filed together they are the inning a five-run lead left. Separately, each one is a play a major-league club makes, and misses, in April.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/russo-discusses-the-yankees-miscues-in-game-5-loss",
+        "title": "Russo on the fifth inning",
+        "description": "Christopher Russo on the Yankees' miscues in Game 5. The clip is the discussion, not the plays.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/upload/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/vmgtsvshvuoqsa6gscwm",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "world-series",
+      "yankees",
+      "dodgers",
+      "yankee-stadium",
+      "errors"
+    ],
+    "related": [
+      "buckner-game-six",
+      "phillips-arozarena-walk-off",
+      "willie-davis-three-errors"
+    ],
+    "featured": false
+  },
+  {
+    "id": "betts-glove-and-the-fans",
+    "slug": "betts-glove-and-the-fans",
+    "title": "The Ball in Betts's Glove",
+    "date": "2024-10-29",
+    "year": 2024,
+    "era": "modern",
+    "categories": [
+      "fan-crowd"
+    ],
+    "teams": [
+      {
+        "id": "los-angeles-dodgers",
+        "name": "Los Angeles Dodgers"
+      },
+      {
+        "id": "new-york-yankees",
+        "name": "New York Yankees"
+      }
+    ],
+    "players": [
+      {
+        "id": "mookie-betts",
+        "name": "Mookie Betts"
+      },
+      {
+        "id": "gleyber-torres",
+        "name": "Gleyber Torres"
+      }
+    ],
+    "summary": "Mookie Betts caught Gleyber Torres's foul against the right-field wall. Two fans grabbed his glove and tried to take the ball. Torres was called out for interference, and the fans were barred from the next game.",
+    "story": "October 29, 2024, Game 4 of the World Series, the bottom of the first at Yankee Stadium. Gleyber Torres hit a foul fly toward the right-field seats. Mookie Betts reached the wall and caught it. Two fans in the front row took hold of his glove and his wrist and tried to pull the ball out.\n\nThe umpires ruled fan interference. Torres was out. The two fans were ejected, and they were banned from Game 5. The catch counted. The argument was about whose hands had been on the glove.\n\nA fan reaching over a wall is an old entry in this catalog. This one is on film from a yard away, in a World Series, with the ball already in the glove. The ruling followed the rule. The entry is the reach.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/gleyber-torres-flies-out-to-right-fielder-mookie-betts-in-foul-territory",
+        "title": "Fan interference on Betts",
+        "description": "Mookie Betts catches Gleyber Torres's foul against the wall, and Torres is ruled out on fan interference.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/upload/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/pe9uzr7qdstz2zzsufbl",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "world-series",
+      "yankees",
+      "dodgers",
+      "interference",
+      "right-field"
+    ],
+    "related": [
+      "jeffrey-maier",
+      "bartman-game",
+      "yankees-fifth-inning"
+    ],
+    "featured": false
+  },
+  {
+    "id": "showalter-holds-britton",
+    "slug": "showalter-holds-britton",
+    "title": "Britton Stays in the Bullpen",
+    "date": "2016-10-04",
+    "year": 2016,
+    "era": "modern",
+    "categories": [
+      "managerial"
+    ],
+    "teams": [
+      {
+        "id": "baltimore-orioles",
+        "name": "Baltimore Orioles"
+      },
+      {
+        "id": "toronto-blue-jays",
+        "name": "Toronto Blue Jays"
+      }
+    ],
+    "players": [
+      {
+        "id": "buck-showalter",
+        "name": "Buck Showalter"
+      },
+      {
+        "id": "zach-britton",
+        "name": "Zach Britton"
+      },
+      {
+        "id": "ubaldo-jimenez",
+        "name": "Ubaldo Jiménez"
+      },
+      {
+        "id": "edwin-encarnacion",
+        "name": "Edwin Encarnación"
+      }
+    ],
+    "summary": "Buck Showalter saved Zach Britton, who had converted all 47 of his saves with a 0.54 earned-run average, for a lead that never came. Ubaldo Jiménez gave up a three-run walk-off homer in the eleventh.",
+    "story": "October 4, 2016, the American League Wild Card Game at Rogers Centre. The game was tied into the eleventh. Zach Britton had been the best reliever in the league that year: a 0.54 earned-run average, and 47 saves in 47 chances. Buck Showalter did not bring him in. He was waiting for a lead to protect.\n\nUbaldo Jiménez, a starter having a poor season, pitched the eleventh. Edwin Encarnación hit a three-run homer. Toronto won, 5–2, and Baltimore's season ended with Britton still in the bullpen. There had not been a save situation. There had been an elimination inning.\n\nThe decision has a logic if a closer is defined as a man who pitches only with a lead. The game did not offer that inning. It offered a tie, in October, with the club's best pitcher available. Showalter kept the definition and lost the game.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/encarnacion-s-walk-off-homer-c1202668883",
+        "title": "Encarnación's walk-off homer",
+        "description": "Edwin Encarnación hits a three-run homer off Ubaldo Jiménez in the eleventh, and Toronto wins the wild-card game.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/u4hqkewhbubtaagonice",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "wild-card",
+      "orioles",
+      "blue-jays",
+      "closer",
+      "rogers-centre"
+    ],
+    "related": [
+      "grady-little-game-seven",
+      "cash-pulls-snell",
+      "davis-off-chapman"
+    ],
+    "featured": false
+  },
+  {
+    "id": "harvey-talks-his-way-back",
+    "slug": "harvey-talks-his-way-back",
+    "title": "Harvey Talks His Way Back",
+    "date": "2015-11-01",
+    "year": 2015,
+    "era": "modern",
+    "categories": [
+      "managerial",
+      "fielding",
+      "baserunning"
+    ],
+    "teams": [
+      {
+        "id": "kansas-city-royals",
+        "name": "Kansas City Royals"
+      },
+      {
+        "id": "new-york-mets",
+        "name": "New York Mets"
+      }
+    ],
+    "players": [
+      {
+        "id": "terry-collins",
+        "name": "Terry Collins"
+      },
+      {
+        "id": "matt-harvey",
+        "name": "Matt Harvey"
+      },
+      {
+        "id": "eric-hosmer",
+        "name": "Eric Hosmer"
+      },
+      {
+        "id": "lucas-duda",
+        "name": "Lucas Duda"
+      },
+      {
+        "id": "salvador-perez",
+        "name": "Salvador Pérez"
+      }
+    ],
+    "summary": "Terry Collins let Matt Harvey pitch the ninth of World Series Game 5 with a two-run lead. Harvey walked a man and gave up a double. Eric Hosmer then scored the tying run on a throw Lucas Duda did not get to the plate.",
+    "story": "November 1, 2015, Game 5 at Citi Field. The Mets led, 2–0, in the ninth. Terry Collins had planned to bring in Jeurys Familia. Matt Harvey, who had pitched eight innings, asked to go back out, and Collins let him. Harvey walked Lorenzo Cain and gave up an RBI double to Eric Hosmer. The lead was one.\n\nSalvador Pérez then hit a ground ball. Hosmer broke for home. Lucas Duda's throw from first was wide of the plate, and Hosmer scored the tying run. Kansas City won, 7–2, in the twelfth, and won the series.\n\nTwo decisions are in the inning. Collins changed his mind on the mound, in public, at the request of his starter. Hosmer, seeing the ball on the ground, ran. Duda's throw is the play that made the run. The conversation is why Harvey was still the pitcher when the inning began.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/hosmer-s-mad-dash-ties-game-c527579583",
+        "title": "Hosmer scores the tying run",
+        "description": "Eric Hosmer scores from third on Salvador Pérez's ground ball in the ninth of World Series Game 5.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/ydqj8bdwfiqvz2gn6iu0",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "world-series",
+      "mets",
+      "royals",
+      "citi-field",
+      "ninth-inning"
+    ],
+    "related": [
+      "cash-pulls-snell",
+      "gossage-pitches-to-gibson",
+      "grady-little-game-seven"
+    ],
+    "featured": false
+  },
+  {
+    "id": "girardi-doesnt-challenge",
+    "slug": "girardi-doesnt-challenge",
+    "title": "Girardi Does Not Challenge",
+    "date": "2017-10-06",
+    "year": 2017,
+    "era": "modern",
+    "categories": [
+      "managerial",
+      "rules"
+    ],
+    "teams": [
+      {
+        "id": "new-york-yankees",
+        "name": "New York Yankees"
+      },
+      {
+        "id": "cleveland-indians",
+        "name": "Cleveland Indians"
+      }
+    ],
+    "players": [
+      {
+        "id": "joe-girardi",
+        "name": "Joe Girardi"
+      },
+      {
+        "id": "lonnie-chisenhall",
+        "name": "Lonnie Chisenhall"
+      },
+      {
+        "id": "francisco-lindor",
+        "name": "Francisco Lindor"
+      },
+      {
+        "id": "chad-green",
+        "name": "Chad Green"
+      }
+    ],
+    "summary": "A two-out pitch was ruled to have hit Lonnie Chisenhall. Replays showed it had hit the bat. Joe Girardi did not challenge. Francisco Lindor then hit a grand slam.",
+    "story": "October 6, 2017, Game 2 of the American League Division Series at Progressive Field. With two out, a pitch was ruled to have hit Lonnie Chisenhall. The replay showed it coming off the knob of the bat and into the catcher's glove, which would have been strike three and the end of the inning. Joe Girardi had a challenge. He did not use it.\n\nFrancisco Lindor hit a grand slam. Cleveland won, 9–8, in thirteen innings. Girardi said afterward that he regretted the decision. New York still won the series.\n\nThe rule gave the manager a look. He declined it. The slam is what the inning became after that. The entry is the choice not to ask, made with the picture already on the scoreboard.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/extended-cut-hbp-lindor-s-slam-c1861168083",
+        "title": "The hit-by-pitch and Lindor's slam",
+        "description": "Lonnie Chisenhall is awarded first on a pitch that hit the bat, and Francisco Lindor homers with the bases loaded.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/fp9s1ypoxf733eviogxw",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "alds",
+      "yankees",
+      "indians",
+      "challenge",
+      "progressive-field"
+    ],
+    "related": [
+      "infield-fly-wild-card",
+      "showalter-holds-britton",
+      "grady-little-game-seven"
+    ],
+    "featured": false
+  },
+  {
+    "id": "roberts-kershaw-and-kelly",
+    "slug": "roberts-kershaw-and-kelly",
+    "title": "Kershaw, Then Kelly",
+    "date": "2019-10-09",
+    "year": 2019,
+    "era": "modern",
+    "categories": [
+      "managerial"
+    ],
+    "teams": [
+      {
+        "id": "washington-nationals",
+        "name": "Washington Nationals"
+      },
+      {
+        "id": "los-angeles-dodgers",
+        "name": "Los Angeles Dodgers"
+      }
+    ],
+    "players": [
+      {
+        "id": "dave-roberts",
+        "name": "Dave Roberts"
+      },
+      {
+        "id": "clayton-kershaw",
+        "name": "Clayton Kershaw"
+      },
+      {
+        "id": "joe-kelly",
+        "name": "Joe Kelly"
+      },
+      {
+        "id": "anthony-rendon",
+        "name": "Anthony Rendon"
+      },
+      {
+        "id": "juan-soto",
+        "name": "Juan Soto"
+      },
+      {
+        "id": "howie-kendrick",
+        "name": "Howie Kendrick"
+      }
+    ],
+    "summary": "Dave Roberts brought Clayton Kershaw in to protect a two-run lead, and Anthony Rendon and Juan Soto homered back to back. Joe Kelly then pitched a second inning, and Howie Kendrick hit a grand slam.",
+    "story": "October 9, 2019, Game 5 of the National League Division Series at Dodger Stadium. Los Angeles had won 106 games. The Dodgers led, 3–1, in the eighth when Dave Roberts brought Clayton Kershaw out of the bullpen. Anthony Rendon homered. Juan Soto homered. The game was tied.\n\nIn the tenth Roberts sent Joe Kelly back out for a second inning of relief. Howie Kendrick hit a grand slam. Washington won, 7–3, and went on to win the World Series. The Dodgers' season ended at home, in a winner-take-all game, on two pitching decisions.\n\nKershaw had been the club's best starter for a decade. Using him there was a choice about the eighth inning of a series, not a statement about his career. Kelly's second inning is the other choice. Kendrick's swing is what the second one cost.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/nationals-hit-back-to-back-homers",
+        "title": "Back-to-back home runs",
+        "description": "Anthony Rendon and Juan Soto homer on consecutive pitches off Clayton Kershaw and tie the eighth inning.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/rs5qmnlf07w587wsujid",
+        "credit": "MLB.com"
+      },
+      {
+        "url": "https://www.mlb.com/video/kendrick-s-grand-slam",
+        "title": "Kendrick's grand slam",
+        "description": "Howie Kendrick hits a grand slam in the tenth, and Washington wins the division series.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/bxh0hsp9hf2yruknl990",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "nlds",
+      "dodgers",
+      "nationals",
+      "bullpen",
+      "dodger-stadium"
+    ],
+    "related": [
+      "cash-pulls-snell",
+      "grady-little-game-seven",
+      "roberts-steals-second"
+    ],
+    "featured": false
+  },
+  {
+    "id": "trea-turner-interference",
+    "slug": "trea-turner-interference",
+    "title": "Turner in the Runner's Lane",
+    "date": "2019-10-29",
+    "year": 2019,
+    "era": "modern",
+    "categories": [
+      "umpire",
+      "rules"
+    ],
+    "teams": [
+      {
+        "id": "washington-nationals",
+        "name": "Washington Nationals"
+      },
+      {
+        "id": "houston-astros",
+        "name": "Houston Astros"
+      }
+    ],
+    "players": [
+      {
+        "id": "trea-turner",
+        "name": "Trea Turner"
+      },
+      {
+        "id": "yuli-gurriel",
+        "name": "Yuli Gurriel"
+      },
+      {
+        "id": "sam-holbrook",
+        "name": "Sam Holbrook"
+      },
+      {
+        "id": "dave-martinez",
+        "name": "Dave Martinez"
+      }
+    ],
+    "summary": "In World Series Game 6, Trea Turner was called out for runner's-lane interference on a bunt, and a run came off the board. The rule's wording became the argument. Washington won the series anyway.",
+    "story": "October 29, 2019, Game 6 at Minute Maid Park, the top of the seventh. Trea Turner bunted and ran to first. He and Yuli Gurriel, the first baseman, met at the bag. Home-plate umpire Sam Holbrook called Turner out for interfering while running outside the runner's lane. A run that had scored on the play was taken off the board.\n\nDave Martinez, the Washington manager, was ejected in the argument. The rule requires the runner to be in the lane when a throw is being made to first, and it is written more narrowly than the play looks on a broadcast. Washington won the game, 7–2, and won the series the next night.\n\nThe call followed a sentence in the book. The sentence is why the play is filed here, with the pine-tar game and the infield fly: a rule applied in October, in front of a country that had not read it, and a run removed because of where a runner's feet were.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/turner-out-on-interference",
+        "title": "Turner out on interference",
+        "description": "Trea Turner is called out for runner's-lane interference in the seventh inning of World Series Game 6.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/vdbulyarveuz2okqulnw",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "world-series",
+      "nationals",
+      "astros",
+      "interference",
+      "minute-maid"
+    ],
+    "related": [
+      "pine-tar-game",
+      "infield-fly-wild-card",
+      "flores-check-swing"
+    ],
+    "featured": false
+  },
+  {
+    "id": "flores-check-swing",
+    "slug": "flores-check-swing",
+    "title": "The Check Swing",
+    "date": "2021-10-14",
+    "year": 2021,
+    "era": "modern",
+    "categories": [
+      "umpire"
+    ],
+    "teams": [
+      {
+        "id": "los-angeles-dodgers",
+        "name": "Los Angeles Dodgers"
+      },
+      {
+        "id": "san-francisco-giants",
+        "name": "San Francisco Giants"
+      }
+    ],
+    "players": [
+      {
+        "id": "wilmer-flores",
+        "name": "Wilmer Flores"
+      },
+      {
+        "id": "max-scherzer",
+        "name": "Max Scherzer"
+      },
+      {
+        "id": "gabe-morales",
+        "name": "Gabe Morales"
+      }
+    ],
+    "summary": "With the tying run on base in the ninth of a winner-take-all game, Wilmer Flores held up on an 0–2 slider. First-base umpire Gabe Morales ruled that he had swung. The Giants' season ended.",
+    "story": "October 14, 2021, Game 5 of the National League Division Series at Oracle Park. San Francisco had won 107 games. In the ninth, with the tying run on, Wilmer Flores took an 0–2 slider from Max Scherzer and appeared to stop his swing. Gabe Morales, umpiring at first, ruled that he had gone. It was strike three. The series was over.\n\nA check swing is one of the few calls replay does not review. The batter, the catcher, and the first-base umpire share a judgment the broadcast then tries to settle with a freeze frame. Morales's judgment ended a postseason series. It was the first time one had ended on a check-swing strikeout.\n\nThe Giants' season was 107 wins and this pitch. The entry is not that they lost a series. It is that the last out was a question the rulebook leaves to one man's eyes, and that those eyes said swing.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/wilmer-flores-strikes-out-swinging-ikmq02",
+        "title": "Flores strikes out on the check swing",
+        "description": "Max Scherzer strikes out Wilmer Flores on a checked swing, and the Dodgers win the division series.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/h8m6vvhrxe9k0g3gdkfi",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "nlds",
+      "giants",
+      "dodgers",
+      "check-swing",
+      "oracle-park"
+    ],
+    "related": [
+      "yamamoto-immaculate-inning",
+      "denkinger-safe-call",
+      "trea-turner-interference"
+    ],
+    "featured": false
+  },
+  {
+    "id": "craig-chases-baez",
+    "slug": "craig-chases-baez",
+    "title": "Craig Chases Báez",
+    "date": "2021-05-27",
+    "year": 2021,
+    "era": "modern",
+    "categories": [
+      "fielding",
+      "baserunning"
+    ],
+    "teams": [
+      {
+        "id": "chicago-cubs",
+        "name": "Chicago Cubs"
+      },
+      {
+        "id": "pittsburgh-pirates",
+        "name": "Pittsburgh Pirates"
+      }
+    ],
+    "players": [
+      {
+        "id": "will-craig",
+        "name": "Will Craig"
+      },
+      {
+        "id": "javier-baez",
+        "name": "Javier Báez"
+      },
+      {
+        "id": "willson-contreras",
+        "name": "Willson Contreras"
+      }
+    ],
+    "summary": "A throw pulled Will Craig off first base with two outs. Instead of getting back to the bag, he chased Javier Báez toward home. Willson Contreras scored from second, and Báez ended up on second base.",
+    "story": "May 27, 2021, PNC Park, the Cubs in Pittsburgh. With two outs, Javier Báez hit a routine ground ball. The throw pulled first baseman Will Craig off the bag. The out was still available if Craig stepped back on the base. He ran after Báez instead.\n\nBáez retreated toward home. Willson Contreras, the runner on second, came around and scored. Throws after that put Báez on second. Chicago won, 5–3. The next day Craig called it baseball 101.\n\nThe play is a rundown run backward. The first baseman left the base he was supposed to keep, the batter ran the wrong direction on purpose, and a run scored on a ball that had been an out. Craig's sentence the next day is the right size for it. The catalog does not need a larger one.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/will-craig-on-the-strange-rundown",
+        "title": "Craig on the rundown",
+        "description": "Will Craig, after the game, on the rundown with Javier Báez. The clip is his account, not the play.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/tugv6vvks6dipzwvt10x",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "pirates",
+      "cubs",
+      "rundown",
+      "first-base",
+      "pnc-park"
+    ],
+    "related": [
+      "zimmerman-chase",
+      "merkles-boner",
+      "phillips-arozarena-walk-off"
+    ],
+    "featured": false
+  },
+  {
+    "id": "miller-for-swanson",
+    "slug": "miller-for-swanson",
+    "title": "Miller for Swanson",
+    "date": "2015-12-09",
+    "year": 2015,
+    "era": "modern",
+    "categories": [
+      "front-office"
+    ],
+    "teams": [
+      {
+        "id": "arizona-diamondbacks",
+        "name": "Arizona Diamondbacks"
+      },
+      {
+        "id": "atlanta-braves",
+        "name": "Atlanta Braves"
+      }
+    ],
+    "players": [
+      {
+        "id": "shelby-miller",
+        "name": "Shelby Miller"
+      },
+      {
+        "id": "dansby-swanson",
+        "name": "Dansby Swanson"
+      },
+      {
+        "id": "ender-inciarte",
+        "name": "Ender Inciarte"
+      },
+      {
+        "id": "aaron-blair",
+        "name": "Aaron Blair"
+      }
+    ],
+    "summary": "Six months after drafting Dansby Swanson first overall, Arizona traded him, Ender Inciarte, and Aaron Blair to Atlanta for Shelby Miller. Miller went 3–12 with a 6.15 earned-run average the next year.",
+    "story": "December 9, 2015. The Diamondbacks traded Dansby Swanson, Ender Inciarte, and Aaron Blair to the Braves for Shelby Miller. Swanson was the first pick in the draft that June. Inciarte was a center fielder already playing a Gold Glove defense. Blair was a pitching prospect. Miller was a major-league starter Arizona believed it could win with immediately.\n\nIn 2016 Miller went 3–12 with a 6.15 earned-run average and was sent to the minors. Swanson became Atlanta's shortstop and won a World Series there in 2021. The trade did not fail because the prospects were famous on the day it was made. Swanson had not played in the majors. It failed because the pitcher, who was the known quantity, was not the pitcher the deal required.\n\nA deadline trade of a star for prospects is one shape. This is the other: three players, one of them the first pick in the country, for one year of a starter who then lost twelve games.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "trade",
+      "diamondbacks",
+      "braves",
+      "draft"
+    ],
+    "related": [
+      "archer-to-pittsburgh",
+      "ryan-for-fregosi",
+      "bagwell-for-andersen"
+    ],
+    "featured": false
+  },
+  {
+    "id": "archer-to-pittsburgh",
+    "slug": "archer-to-pittsburgh",
+    "title": "Archer to Pittsburgh",
+    "date": "2018-07-31",
+    "year": 2018,
+    "era": "modern",
+    "categories": [
+      "front-office"
+    ],
+    "teams": [
+      {
+        "id": "pittsburgh-pirates",
+        "name": "Pittsburgh Pirates"
+      },
+      {
+        "id": "tampa-bay-rays",
+        "name": "Tampa Bay Rays"
+      }
+    ],
+    "players": [
+      {
+        "id": "chris-archer",
+        "name": "Chris Archer"
+      },
+      {
+        "id": "tyler-glasnow",
+        "name": "Tyler Glasnow"
+      },
+      {
+        "id": "austin-meadows",
+        "name": "Austin Meadows"
+      },
+      {
+        "id": "shane-baz",
+        "name": "Shane Baz"
+      }
+    ],
+    "summary": "At the 2018 deadline Pittsburgh sent Tyler Glasnow, Austin Meadows, and Shane Baz to Tampa Bay for Chris Archer. Archer's earned-run average in Pittsburgh stayed over 5. Meadows and Glasnow became the players the prospects had been advertised as.",
+    "story": "July 31, 2018. The Pirates traded Tyler Glasnow, Austin Meadows, and a player to be named later to the Rays for Chris Archer. The player named later was Shane Baz. Archer was the established starter, a former All-Star, and the pitcher a club adds when it thinks the race is still open.\n\nHis earned-run average in Pittsburgh stayed above 5. He missed 2020 after thoracic-outlet surgery, and the club declined his option. Meadows was an All-Star in 2019. Glasnow became the Rays' ace. Baz was still a prospect on the day of the deal. He was also the third name.\n\nThe trade is the deadline version of an old entry: a pitcher whose present was bought with someone else's future, and a present that did not arrive. Archer's injury is part of the record. It is not the whole of why the return outgrew him.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "trade",
+      "pirates",
+      "rays",
+      "deadline"
+    ],
+    "related": [
+      "miller-for-swanson",
+      "arozarena-to-tampa",
+      "smoltz-for-alexander"
+    ],
+    "featured": false
+  },
+  {
+    "id": "arozarena-to-tampa",
+    "slug": "arozarena-to-tampa",
+    "title": "Arozarena to Tampa",
+    "date": "2020-01-09",
+    "year": 2020,
+    "era": "modern",
+    "categories": [
+      "front-office"
+    ],
+    "teams": [
+      {
+        "id": "st-louis-cardinals",
+        "name": "St. Louis Cardinals"
+      },
+      {
+        "id": "tampa-bay-rays",
+        "name": "Tampa Bay Rays"
+      }
+    ],
+    "players": [
+      {
+        "id": "randy-arozarena",
+        "name": "Randy Arozarena"
+      },
+      {
+        "id": "jose-martinez",
+        "name": "José Martínez"
+      },
+      {
+        "id": "matthew-liberatore",
+        "name": "Matthew Liberatore"
+      }
+    ],
+    "summary": "St. Louis traded Randy Arozarena and José Martínez for Matthew Liberatore and other pieces. That October Arozarena hit ten home runs in the postseason, a record, on the way to the World Series.",
+    "story": "January 9, 2020. The Cardinals traded Randy Arozarena and José Martínez to the Rays. The pitching prospect coming back was Matthew Liberatore, with other pieces in the deal. Arozarena was an outfielder who had reached the majors the year before and had not yet had a season of his own.\n\nTen months later he hit ten home runs in one postseason, a record, during Tampa Bay's run to the World Series. In 2021 he was the American League Rookie of the Year. He was an All-Star after that. Liberatore's career is not the career the ten home runs made the trade look like on a replay.\n\nThe entry is the gap between a January transaction and an October record. Arozarena was not that hitter on the day St. Louis moved him. He was that hitter before the year was over.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "trade",
+      "cardinals",
+      "rays",
+      "postseason"
+    ],
+    "related": [
+      "archer-to-pittsburgh",
+      "phillips-arozarena-walk-off",
+      "miller-for-swanson"
+    ],
+    "featured": false
+  },
+  {
+    "id": "davis-oh-for-fifty-four",
+    "slug": "davis-oh-for-fifty-four",
+    "title": "Davis Goes 0-for-54",
+    "date": "2019-04-13",
+    "year": 2019,
+    "era": "modern",
+    "categories": [
+      "front-office",
+      "hitting-mental"
+    ],
+    "teams": [
+      {
+        "id": "baltimore-orioles",
+        "name": "Baltimore Orioles"
+      }
+    ],
+    "players": [
+      {
+        "id": "chris-davis",
+        "name": "Chris Davis"
+      }
+    ],
+    "summary": "In the middle of a seven-year, $161 million contract, Chris Davis went 0-for-54, the longest hitless streak by a position player in major-league history. The streak ended on April 13, 2019.",
+    "story": "The streak ran from September 15, 2018, to April 13, 2019. Fifty-four at-bats without a hit is the longest hitless run by a position player in major-league history. Chris Davis was in the third and fourth years of a seven-year, $161 million contract, at the time the largest in Orioles history. He hit .168 in 2018.\n\nHe retired with money from the deal still owed, much of it deferred. The at-bats are a hitting record. The contract is why the record is also a front-office entry. Baltimore paid for the hitter Davis had been, across a stretch in which he stopped getting hits at all.\n\nA slump is ordinary. Fifty-four is the length that makes it a record. The entry keeps the number and the deal in the same sentence, because neither one, alone, is why it is filed here.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "orioles",
+      "contract",
+      "hitless-streak"
+    ],
+    "related": [
+      "white-sox-121-losses",
+      "peckinpaugh-record",
+      "sale-of-babe-ruth"
+    ],
+    "featured": false
+  },
+  {
+    "id": "scherzer-sticky-stuff",
+    "slug": "scherzer-sticky-stuff",
+    "title": "Scherzer's Hand",
+    "date": "2023-04-19",
+    "year": 2023,
+    "era": "modern",
+    "categories": [
+      "rules",
+      "umpire"
+    ],
+    "teams": [
+      {
+        "id": "new-york-mets",
+        "name": "New York Mets"
+      },
+      {
+        "id": "los-angeles-dodgers",
+        "name": "Los Angeles Dodgers"
+      }
+    ],
+    "players": [
+      {
+        "id": "max-scherzer",
+        "name": "Max Scherzer"
+      },
+      {
+        "id": "phil-cuzzi",
+        "name": "Phil Cuzzi"
+      },
+      {
+        "id": "dan-bellino",
+        "name": "Dan Bellino"
+      }
+    ],
+    "summary": "In the fourth inning at Dodger Stadium, the umpires checked Max Scherzer's hand and glove, ruled them too sticky, and threw him out. Major League Baseball suspended him ten games. He said it was rosin and sweat.",
+    "story": "April 19, 2023, the Mets at Dodger Stadium. In the fourth inning the umpires, Phil Cuzzi and Dan Bellino among them, inspected Max Scherzer under the foreign-substance rules the league had been enforcing since 2021. They judged his hand and his glove too sticky and ejected him.\n\nScherzer said it was rosin and sweat. The league suspended him ten games. The rule was written because pitchers had been using substances that were not rosin, and the spin rates had shown it. A check in the middle of an inning is the enforcement. An ejection is the judgment that this hand had crossed the line.\n\nThe entry is that judgment, and Scherzer's answer to it. The ten games are what the league added after the night was over.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/max-scherzer-ejected-in-4th",
+        "title": "Scherzer ejected in the fourth",
+        "description": "Umpires inspect Max Scherzer's glove in the fourth inning and eject him.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/upload/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/z2w5yioi5xzslhizy7t2",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "mets",
+      "dodgers",
+      "sticky-stuff",
+      "ejection",
+      "dodger-stadium"
+    ],
+    "related": [
+      "belle-corked-bat",
+      "pine-tar-game",
+      "yamamoto-immaculate-inning"
+    ],
+    "featured": false
+  },
+  {
+    "id": "pitch-clock-strike-three",
+    "slug": "pitch-clock-strike-three",
+    "title": "A Game Ends on the Clock",
+    "date": "2023-02-25",
+    "year": 2023,
+    "era": "modern",
+    "categories": [
+      "rules"
+    ],
+    "teams": [
+      {
+        "id": "atlanta-braves",
+        "name": "Atlanta Braves"
+      },
+      {
+        "id": "boston-red-sox",
+        "name": "Boston Red Sox"
+      }
+    ],
+    "players": [
+      {
+        "id": "cal-conley",
+        "name": "Cal Conley"
+      },
+      {
+        "id": "robert-kwiatkowski",
+        "name": "Robert Kwiatkowski"
+      },
+      {
+        "id": "john-libka",
+        "name": "John Libka"
+      }
+    ],
+    "summary": "On the first full day of the pitch clock, Cal Conley was not set in the box at the eight-second mark with the bases loaded in the ninth. Umpire John Libka called an automatic strike three, and a spring game ended in a tie.",
+    "story": "February 25, 2023, a spring-training game in North Port, Florida, Braves against Red Sox. It was the first full day of the new pitch clock. The bases were loaded in the bottom of the ninth, the count was full, and there were two outs. Cal Conley, the batter, was not in the box and set when the eight-second clock ran out. John Libka called strike three. The game ended, 6–6.\n\nRobert Kwiatkowski was the pitcher. The clock recorded the last out before he had to throw another pitch. Spring training is where a rule is supposed to look strange before it looks ordinary, and this one announced itself by ending a game.\n\nThe entry is that ending: the first time a clock, rather than a swing or a call of the eye, recorded the last out of a major-league exhibition.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/game-ends-on-violation",
+        "title": "The clock ends the game",
+        "description": "Cal Conley is called out on a pitch-clock violation with the bases loaded, and the game ends tied.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/upload/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/ttmhxywpmqh28bzuldxo",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "pitch-clock",
+      "spring-training",
+      "braves",
+      "red-sox",
+      "rules"
+    ],
+    "related": [
+      "pine-tar-game",
+      "scherzer-sticky-stuff",
+      "trea-turner-interference"
+    ],
+    "featured": false
+  },
+  {
+    "id": "mizuhara-and-ohtani",
+    "slug": "mizuhara-and-ohtani",
+    "title": "Mizuhara's Debts",
+    "date": "2024-03-20",
+    "year": 2024,
+    "era": "modern",
+    "categories": [
+      "personalities"
+    ],
+    "teams": [
+      {
+        "id": "los-angeles-dodgers",
+        "name": "Los Angeles Dodgers"
+      }
+    ],
+    "players": [
+      {
+        "id": "ippei-mizuhara",
+        "name": "Ippei Mizuhara"
+      },
+      {
+        "id": "shohei-ohtani",
+        "name": "Shohei Ohtani"
+      }
+    ],
+    "summary": "During the Seoul Series, the Dodgers fired Ippei Mizuhara, Shohei Ohtani's interpreter. Mizuhara had stolen about $17 million from Ohtani's account to pay illegal gambling debts. He pleaded guilty. Prosecutors cleared Ohtani.",
+    "story": "March 20, 2024, during the season-opening series in Seoul. The Dodgers fired Ippei Mizuhara, who had been Shohei Ohtani's interpreter for years. What came out in the days around the firing was that Mizuhara had taken roughly $17 million from Ohtani's bank account to cover debts from illegal sports betting.\n\nHe pleaded guilty on June 4, 2024, to bank fraud and filing a false tax return. On February 6, 2025, he was sentenced to 57 months in federal prison. Federal prosecutors said Ohtani had not been involved. For about a week the bets were treated as a question about Ohtani. The charging documents and the plea put them on Mizuhara.\n\nThe entry is the theft and the gambling that the theft was for. The catalog's subject is the person who had the debts, the access, and the guilty plea.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "dodgers",
+      "gambling",
+      "interpreter",
+      "seoul"
+    ],
+    "related": [
+      "marcano-lifetime-ban",
+      "hoberg-is-fired",
+      "clase-and-ortiz-indicted"
+    ],
+    "featured": false
+  },
+  {
+    "id": "marcano-lifetime-ban",
+    "slug": "marcano-lifetime-ban",
+    "title": "Marcano's Lifetime Ban",
+    "date": "2024-06-04",
+    "year": 2024,
+    "era": "modern",
+    "categories": [
+      "personalities"
+    ],
+    "teams": [
+      {
+        "id": "san-diego-padres",
+        "name": "San Diego Padres"
+      },
+      {
+        "id": "pittsburgh-pirates",
+        "name": "Pittsburgh Pirates"
+      }
+    ],
+    "players": [
+      {
+        "id": "tucupita-marcano",
+        "name": "Tucupita Marcano"
+      }
+    ],
+    "summary": "Major League Baseball banned Tucupita Marcano for life for betting on baseball, including 25 bets on Pirates games while he was on Pittsburgh's roster. It was the first lifetime gambling ban since Pete Rose in 1989.",
+    "story": "June 4, 2024. Major League Baseball banned Tucupita Marcano for life. He had bet on baseball. Twenty-five of the bets were on Pittsburgh games while he was on the Pirates' roster, on the injured list. He was with the Padres by the time the ban was announced. Four other players were suspended for one year. Marcano was the one who did not get a return date.\n\nA lifetime ban for gambling on the game had not been issued since Pete Rose in 1989. The rule is older than either of them. A player does not bet on baseball, and he does not bet on his own club. Marcano had done both, from the injured list, which is still the roster.\n\nThe entry records the ban and the number of bets. It does not need the comparison to do the work. The comparison is why the date is in the catalog at all.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "gambling",
+      "padres",
+      "pirates",
+      "ban"
+    ],
+    "related": [
+      "mizuhara-and-ohtani",
+      "hoberg-is-fired",
+      "clase-and-ortiz-indicted"
+    ],
+    "featured": false
+  },
+  {
+    "id": "clase-and-ortiz-indicted",
+    "slug": "clase-and-ortiz-indicted",
+    "title": "Clase and Ortiz Are Indicted",
+    "date": "2025-11-09",
+    "year": 2025,
+    "era": "modern",
+    "categories": [
+      "personalities",
+      "pitching"
+    ],
+    "teams": [
+      {
+        "id": "cleveland-guardians",
+        "name": "Cleveland Guardians"
+      }
+    ],
+    "players": [
+      {
+        "id": "emmanuel-clase",
+        "name": "Emmanuel Clase"
+      },
+      {
+        "id": "luis-ortiz-guardians",
+        "name": "Luis Ortiz"
+      }
+    ],
+    "summary": "Federal prosecutors charged Emmanuel Clase and Luis Ortiz with rigging pitches for bettors. The indictment alleges the bettors won at least $450,000. Both pitchers had already been placed on leave. The case was not finished when the charges were made public.",
+    "story": "The indictment was returned on November 5, 2025, and unsealed on November 9, in federal court in Brooklyn. Prosecutors charged Cleveland pitchers Emmanuel Clase and Luis Ortiz with agreeing, in advance, to the speed and type of particular pitches so that bettors could wager on them. The indictment alleges that the arrangement with Clase went back to 2023, that the pitches often went in the dirt, and that Ortiz joined in June 2025. It alleges the bettors won at least $450,000.\n\nOrtiz had been placed on leave on July 3, 2025. Both pitchers were on leave through the summer. A superseding indictment was filed on February 12, 2026. An indictment is a set of charges. It is not a verdict. This entry states the charges and the leave. It does not state a result the court had not reached.\n\nWhat the catalog can file, on the date the charges were unsealed, is that two major-league pitchers were accused of selling the shape of a pitch. The pitches named in the indictment were not alleged to have decided a pennant. They were alleged to have been decided before they were thrown.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "guardians",
+      "gambling",
+      "indictment",
+      "pitches"
+    ],
+    "related": [
+      "marcano-lifetime-ban",
+      "mizuhara-and-ohtani",
+      "hoberg-is-fired"
+    ],
+    "featured": false
+  },
+  {
+    "id": "hoberg-is-fired",
+    "slug": "hoberg-is-fired",
+    "title": "Hoberg Is Fired",
+    "date": "2024-05-31",
+    "year": 2024,
+    "era": "modern",
+    "categories": [
+      "umpire",
+      "personalities"
+    ],
+    "teams": [],
+    "players": [
+      {
+        "id": "pat-hoberg",
+        "name": "Pat Hoberg"
+      }
+    ],
+    "summary": "Pat Hoberg, one of the league's most accurate ball-strike umpires, was fired for sharing legal betting accounts with a poker player who bet on baseball, and for deleting messages. Major League Baseball found no evidence he had bet on the game himself.",
+    "story": "The firing was effective May 31, 2024. Pat Hoberg had called a perfect plate game in the 2022 World Series and was, by the league's own tracking, among the most accurate ball-strike umpires working. He was dismissed for sharing legal sports-betting accounts with a professional poker player who bet on baseball, and for deleting messages that mattered to the investigation.\n\nMajor League Baseball said it found no evidence that Hoberg had bet on baseball or changed the outcome of a game. His appeal was denied on February 3, 2025. The finding and the firing are both part of the record. Accuracy behind the plate did not answer the question the league was asking, which was about the accounts and the deleted messages.\n\nThe entry is an umpire punished for the company of a bet, not for a call. The calls, including a perfect World Series plate, are why the punishment was news. They are not what he was fired for.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "umpires",
+      "gambling",
+      "firing"
+    ],
+    "related": [
+      "marcano-lifetime-ban",
+      "mizuhara-and-ohtani",
+      "denkinger-safe-call"
+    ],
+    "featured": false
+  },
+  {
+    "id": "martin-throw-hits-the-bat",
+    "slug": "martin-throw-hits-the-bat",
+    "title": "The Throw That Hit the Bat",
+    "date": "2015-10-14",
+    "year": 2015,
+    "era": "modern",
+    "categories": [
+      "rules",
+      "fan-crowd"
+    ],
+    "teams": [
+      {
+        "id": "texas-rangers",
+        "name": "Texas Rangers"
+      },
+      {
+        "id": "toronto-blue-jays",
+        "name": "Toronto Blue Jays"
+      }
+    ],
+    "players": [
+      {
+        "id": "russell-martin",
+        "name": "Russell Martin"
+      },
+      {
+        "id": "shin-soo-choo",
+        "name": "Shin-Soo Choo"
+      },
+      {
+        "id": "rougned-odor",
+        "name": "Rougned Odor"
+      },
+      {
+        "id": "dale-scott",
+        "name": "Dale Scott"
+      }
+    ],
+    "summary": "Russell Martin's throw back to the pitcher hit Shin-Soo Choo's bat. The ball was live, Rougned Odor scored from third, and the Rogers Centre threw trash.",
+    "story": "October 14, 2015, Game 5 of the American League Division Series, the top of the seventh at Rogers Centre. Russell Martin, the Toronto catcher, made the ordinary throw back to the pitcher. The ball hit Shin-Soo Choo's bat as Choo stood in the box and rolled away. Rougned Odor scored from third. Texas led, 3–2.\n\nThe ball was live. Dale Scott's crew let the run stand, which is what the rule required. Fans threw bottles and trash, and the game stopped. In the bottom of the inning Toronto made three errors, and then José Bautista homered and the Blue Jays took the lead. The series ended that night.\n\nThe throw is a routine that became a run because a bat was where a bat is allowed to be. The delay is the crowd. The entry is the rule, applied once, in a game that already had a lead to lose. It is a different night from the one, a season later, when Odor and Bautista fought.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/martin-s-stray-throw-scores-odor-c523068983",
+        "title": "Martin's throw scores Odor",
+        "description": "Russell Martin's return throw hits Shin-Soo Choo's bat, and Rougned Odor scores from third.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/spitbtaappvsshkextdp",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "alds",
+      "rangers",
+      "blue-jays",
+      "live-ball",
+      "rogers-centre"
+    ],
+    "related": [
+      "pine-tar-game",
+      "jeffrey-maier",
+      "bartman-game"
+    ],
+    "featured": false
+  },
+  {
+    "id": "oakland-reverse-boycott",
+    "slug": "oakland-reverse-boycott",
+    "title": "The Reverse Boycott",
+    "date": "2023-06-13",
+    "year": 2023,
+    "era": "modern",
+    "categories": [
+      "fan-crowd",
+      "front-office"
+    ],
+    "teams": [
+      {
+        "id": "oakland-athletics",
+        "name": "Oakland Athletics"
+      },
+      {
+        "id": "tampa-bay-rays",
+        "name": "Tampa Bay Rays"
+      }
+    ],
+    "players": [
+      {
+        "id": "john-fisher",
+        "name": "John Fisher"
+      }
+    ],
+    "summary": "On June 13, 2023, 27,759 people, the season's largest crowd, came to the Coliseum to tell John Fisher to sell the Athletics. They wore shirts that said SELL. The club left Oakland after the 2024 season.",
+    "story": "June 13, 2023, the Rays at the Oakland Coliseum. The announced crowd was 27,759, the largest of the Athletics' season. The point of the night was the crowd. Fans organized a reverse boycott of the planned move to Las Vegas: fill the park once, in shirts that read SELL, and chant for the owner to sell the team.\n\nJohn Fisher was the owner the chants named. The club played its last season in Oakland in 2024 and moved its home games to Sacramento while a Las Vegas ballpark was unfinished. The protest did not stop the move. It made the argument in the building the argument was about.\n\nA promotion fills a park by pricing beer or records. This one filled a park by asking the customers to show up and say the opposite of what the owner intended. The game was played. The entry is the reason the seats were full.",
+    "images": [],
+    "videos": [],
+    "tags": [
+      "athletics",
+      "oakland",
+      "ownership",
+      "coliseum"
+    ],
+    "related": [
+      "disco-demolition-night",
+      "ten-cent-beer-night",
+      "white-sox-121-losses"
+    ],
+    "featured": false
+  },
+  {
+    "id": "white-sox-121-losses",
+    "slug": "white-sox-121-losses",
+    "title": "The 121st Loss",
+    "date": "2024-09-27",
+    "year": 2024,
+    "era": "modern",
+    "categories": [
+      "front-office"
+    ],
+    "teams": [
+      {
+        "id": "chicago-white-sox",
+        "name": "Chicago White Sox"
+      },
+      {
+        "id": "detroit-tigers",
+        "name": "Detroit Tigers"
+      }
+    ],
+    "players": [
+      {
+        "id": "pedro-grifol",
+        "name": "Pedro Grifol"
+      },
+      {
+        "id": "grady-sizemore",
+        "name": "Grady Sizemore"
+      }
+    ],
+    "summary": "On September 27, 2024, the White Sox lost their 121st game and passed the 1962 Mets. They finished 41–121. The season included a franchise-record losing streak of 21.",
+    "story": "September 27, 2024, at Detroit. The White Sox lost, 4–1, and the loss was their 121st. The 1962 Mets had lost 120, which had been the modern record. Chicago finished 41–121. During the summer the club also lost 21 in a row, a franchise record. Pedro Grifol, the manager, was fired in August. Grady Sizemore finished the season.\n\nA hundred and twenty-one losses is not one play. It is a season that became a number, the way 120 had been a number since the Mets were new. The Mets of 1962 were an expansion club playing its first year. The White Sox of 2024 were not.\n\nThe entry is the record and the distinction. Passing an expansion team's first season, sixty-two years later, is the fact. The streak of 21 is the stretch inside it that did not need the final weekend to be obvious.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/white-sox-lose-121st-game-the-most-in-single-season",
+        "title": "The 121st loss",
+        "description": "The White Sox lose at Detroit and pass the 1962 Mets for the most losses in a modern season.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/upload/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/kjqgwfam4cg0qepzthrb",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "white-sox",
+      "tigers",
+      "losses",
+      "record"
+    ],
+    "related": [
+      "davis-oh-for-fifty-four",
+      "throneberry-missed-bases",
+      "phillies-collapse"
+    ],
+    "featured": false
+  },
+  {
+    "id": "bauer-over-the-fence",
+    "slug": "bauer-over-the-fence",
+    "title": "Bauer Throws It Over the Fence",
+    "date": "2019-07-28",
+    "year": 2019,
+    "era": "modern",
+    "categories": [
+      "personalities"
+    ],
+    "teams": [
+      {
+        "id": "cleveland-indians",
+        "name": "Cleveland Indians"
+      },
+      {
+        "id": "kansas-city-royals",
+        "name": "Kansas City Royals"
+      }
+    ],
+    "players": [
+      {
+        "id": "trevor-bauer",
+        "name": "Trevor Bauer"
+      },
+      {
+        "id": "terry-francona",
+        "name": "Terry Francona"
+      }
+    ],
+    "summary": "When Terry Francona came to take him out in the fifth, Trevor Bauer turned and threw the baseball over the center-field fence at Kauffman Stadium. He apologized after the game. Cleveland traded him within the week.",
+    "story": "July 28, 2019, the Indians at Kauffman Stadium. In the fifth inning Terry Francona came to the mound to remove Trevor Bauer. Bauer turned toward center field and threw the ball over the fence. The gesture was the outing. The inning, whatever it had been, ended as a picture of a pitcher dismissing the baseball he had been paid to throw.\n\nHe apologized after the game. Within days Cleveland traded him to Cincinnati. The apology and the trade are both on the record. The ball stayed in the seats beyond the wall.\n\nThe entry is the throw. A pitcher leaving a game walks off the mound. Bauer threw the baseball out of the park.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/bauer-throws-ball-over-fence",
+        "title": "Bauer throws the ball over the fence",
+        "description": "Trevor Bauer, on his way out of the game, throws the baseball over the center-field fence.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/z3ppr3h96ld3yaajpdhb",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "indians",
+      "royals",
+      "ejection",
+      "kauffman"
+    ],
+    "related": [
+      "lyons-drops-his-pants",
+      "randle-blows-it-foul",
+      "scherzer-sticky-stuff"
+    ],
+    "featured": false
+  },
+  {
+    "id": "giants-ninth-inning",
+    "slug": "giants-ninth-inning",
+    "title": "Five Relievers in the Ninth",
+    "date": "2016-10-11",
+    "year": 2016,
+    "era": "modern",
+    "categories": [
+      "managerial"
+    ],
+    "teams": [
+      {
+        "id": "chicago-cubs",
+        "name": "Chicago Cubs"
+      },
+      {
+        "id": "san-francisco-giants",
+        "name": "San Francisco Giants"
+      }
+    ],
+    "players": [
+      {
+        "id": "bruce-bochy",
+        "name": "Bruce Bochy"
+      },
+      {
+        "id": "santiago-casilla",
+        "name": "Santiago Casilla"
+      },
+      {
+        "id": "javier-baez",
+        "name": "Javier Báez"
+      },
+      {
+        "id": "matt-moore",
+        "name": "Matt Moore"
+      }
+    ],
+    "summary": "Matt Moore left Game 4 of the 2016 division series with a 5–2 lead after eight innings. Bruce Bochy used five relievers in the ninth and did not use Santiago Casilla. The Cubs scored four runs, the last on Javier Báez's single.",
+    "story": "October 11, 2016, Game 4 of the National League Division Series at AT&T Park. Matt Moore had pitched eight innings, and San Francisco led, 5–2, going to the ninth. Bruce Bochy used five relievers. None of them got the inning finished cleanly. The Cubs scored four runs. Javier Báez's single won it, and Chicago won the series.\n\nSantiago Casilla, the closer, stayed on the bench. He said afterward that he had been ready and had not been asked. A manager may have a reason to go away from his closer. Five pitchers in one inning, with a three-run lead and the series on the line, is a lot of reasons.\n\nMoore's eight innings are the part the retelling skips. The lead was real when he left. The ninth is the entry, and Casilla's absence from it is the decision with a name.",
+    "images": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/radio-call-baez-caps-comeback-c1205791883",
+        "title": "The call of Báez's single",
+        "description": "The radio call of Javier Báez's single, the hit that capped a four-run ninth.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/zup7ls3d64aq19ob2isf",
+        "credit": "MLB.com"
+      }
+    ],
+    "tags": [
+      "nlds",
+      "giants",
+      "cubs",
+      "bullpen",
+      "att-park"
+    ],
+    "related": [
+      "showalter-holds-britton",
+      "cash-pulls-snell",
+      "davis-off-chapman"
+    ],
+    "featured": false
   }
 ]

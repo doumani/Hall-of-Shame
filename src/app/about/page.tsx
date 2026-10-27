@@ -70,8 +70,9 @@ export default function AboutPage() {
       <section className="mt-16">
         <h2 className="font-serif text-3xl">Eras</h2>
         <p className="mt-3 max-w-2xl text-muted-foreground">
-          The era filter follows the game&apos;s own chapters, not round decades.
-          A sale announced in January 1920 belongs to the live-ball years.
+          Each era is a short chapter, not a round decade. A sale announced
+          in January 1920 belongs with the live-ball years. The full shelf
+          for any era is still in the catalog.
         </p>
         <ul className="mt-6 divide-y divide-border border-y border-border">
           {eras.map((era) => {
@@ -79,7 +80,7 @@ export default function AboutPage() {
             return (
               <li key={era.id} className="grid gap-2 py-4 md:grid-cols-[14rem_8rem_1fr] md:items-baseline">
                 <Link
-                  href={`/entries?era=${era.id}`}
+                  href={`/eras/${era.id}`}
                   className="font-serif text-2xl hover:underline hover:underline-offset-4"
                 >
                   {era.label}

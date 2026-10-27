@@ -17,8 +17,11 @@ import { cn } from "@/lib/utils"
 
 const links = [
   { href: "/entries", label: "The Catalog" },
+  { href: "/versus", label: "Versus" },
+  { href: "/rankings", label: "Rankings" },
   { href: "/players", label: "Players" },
   { href: "/teams", label: "Teams" },
+  { href: "/eras", label: "Eras" },
   { href: "/about", label: "About" },
   { href: "/submit", label: "Suggest" },
 ]
@@ -64,7 +67,7 @@ export function SiteHeader({ slugs }: { slugs: string[] }) {
             A catalog of baseball&apos;s lasting mistakes
           </span>
         </Link>
-        <nav className="hidden items-center gap-5 md:flex lg:gap-7" aria-label="Primary">
+        <nav className="hidden items-center gap-x-3.5 gap-y-1 md:flex lg:gap-x-5 xl:gap-x-7" aria-label="Primary">
           {links.map((link) => {
             const current = pathname === link.href || pathname.startsWith(`${link.href}/`)
             return (

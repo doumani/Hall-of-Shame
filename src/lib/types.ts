@@ -33,9 +33,31 @@ export const eraIds = [
 
 export const sortIds = ["newest", "oldest", "title", "shame"] as const
 
+export const leverageIds = [
+  "late-inning",
+  "one-out",
+  "clinch",
+  "elimination",
+  "postseason",
+  "the-record",
+  "roster-move",
+  "off-field",
+] as const
+
+export const consequenceIds = [
+  "the-play",
+  "the-game",
+  "the-series",
+  "the-season",
+  "the-franchise",
+  "the-record",
+] as const
+
 export type CategoryId = (typeof categoryIds)[number]
 export type EraId = (typeof eraIds)[number]
 export type SortId = (typeof sortIds)[number]
+export type LeverageId = (typeof leverageIds)[number]
+export type ConsequenceId = (typeof consequenceIds)[number]
 
 export interface PersonRef {
   id: string
@@ -61,6 +83,13 @@ export interface EntryVideo {
   thumbnail?: string
 }
 
+/** Optional context for how much a moment mattered, and what it cost. */
+export interface DamageReport {
+  leverage?: LeverageId
+  consequence?: ConsequenceId
+  stakes?: string
+}
+
 export interface Entry {
   id: string
   slug: string
@@ -78,6 +107,7 @@ export interface Entry {
   tags: string[]
   related: string[]
   featured: boolean
+  damage?: DamageReport
 }
 
 export interface EntryFilters {

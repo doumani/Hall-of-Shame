@@ -1,5 +1,7 @@
+import { Suspense } from "react"
 import Link from "next/link"
 import { EntryCard } from "@/components/entry-card"
+import { TeamShame, TeamShameFallback } from "@/components/team-shame"
 import type { RosterGroup } from "@/lib/entries"
 import { formatCount } from "@/lib/format"
 
@@ -40,6 +42,11 @@ export function RosterRecord({
           </p>
         </div>
       </header>
+      {kind === "team" ? (
+        <Suspense fallback={<TeamShameFallback />}>
+          <TeamShame entries={group.entries} />
+        </Suspense>
+      ) : null}
       <div className="mx-auto max-w-6xl px-5 py-12 md:py-16">
         <div className="grid gap-5 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
           {group.entries.map((entry) => (

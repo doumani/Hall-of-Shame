@@ -5,10 +5,12 @@ import { buttonVariants } from "@/components/ui/button"
 import { CategoryIndex } from "@/components/category-index"
 import { EntryCard } from "@/components/entry-card"
 import { OnThisDay, OnThisDayFallback } from "@/components/on-this-day"
+import { ShameOfTheDay, ShameOfTheDayFallback } from "@/components/shame-of-the-day"
 import {
   getAllEntries,
   getCategoryCounts,
   getEntryBySlug,
+  getEraCounts,
   homepageGridSlugs,
   homepageLeadSlug,
 } from "@/lib/entries"
@@ -114,6 +116,10 @@ export default function HomePage() {
         <OnThisDay />
       </Suspense>
 
+      <Suspense fallback={<ShameOfTheDayFallback />}>
+        <ShameOfTheDay />
+      </Suspense>
+
       <section className="border-b border-border bg-paper">
         <div className="mx-auto max-w-6xl px-5 py-14 md:py-16">
           <div className="mb-8 flex items-end justify-between gap-6 border-b border-border pb-5">
@@ -143,6 +149,39 @@ export default function HomePage() {
           >
             All {total} entries
           </Link>
+        </div>
+      </section>
+
+      <section className="border-b border-border">
+        <div className="mx-auto max-w-6xl px-5 py-14 md:py-16">
+          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+            <div className="max-w-2xl">
+              <p className="text-[11px] font-semibold tracking-[0.18em] text-cardinal uppercase">
+                Chapters
+              </p>
+              <h2 className="mt-2 font-serif text-4xl tracking-tight md:text-5xl">
+                Seven eras
+              </h2>
+            </div>
+            <Link href="/eras" className="text-sm underline-offset-4 hover:underline">
+              Open the chapters
+            </Link>
+          </div>
+          <ol className="grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
+            {getEraCounts().map((era) => (
+              <li key={era.id} className="bg-cream">
+                <Link href={`/eras/${era.id}`} className="block px-4 py-5 hover:bg-paper">
+                  <span className="text-[11px] font-semibold tracking-[0.16em] text-cardinal uppercase">
+                    {era.years}
+                  </span>
+                  <span className="mt-2 block font-serif text-2xl tracking-tight">{era.label}</span>
+                  <span className="mt-2 block text-sm leading-relaxed text-muted-foreground">
+                    {era.description}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 

@@ -3,7 +3,7 @@ import path from "path"
 import rawEntries from "@/data/entries.json"
 import { categories, eras, getCategory, getEra } from "@/lib/taxonomy"
 import type { CategoryId, Entry, EntryFilters, EraId, SortId } from "@/lib/types"
-import { categoryIds, eraIds, sortIds } from "@/lib/types"
+import { categoryIds, consequenceIds, eraIds, leverageIds, sortIds } from "@/lib/types"
 
 function isCategory(value: string | undefined): value is CategoryId {
   return categoryIds.includes(value as CategoryId)
@@ -15,6 +15,14 @@ function isEra(value: string | undefined): value is EraId {
 
 function isSort(value: string | undefined): value is SortId {
   return sortIds.includes(value as SortId)
+}
+
+function isLeverage(value: string): boolean {
+  return leverageIds.includes(value as (typeof leverageIds)[number])
+}
+
+function isConsequence(value: string): boolean {
+  return consequenceIds.includes(value as (typeof consequenceIds)[number])
 }
 
 function filterToken(value: string) {
@@ -63,6 +71,18 @@ function assertCatalog(entries: Entry[]) {
     for (const relatedId of entry.related) {
       if (!ids.has(relatedId)) {
         throw new Error(`Entry ${entry.id} relates to missing id ${relatedId}.`)
+      }
+    }
+    if (entry.damage) {
+      const { leverage, consequence, stakes } = entry.damage
+      if (!leverage && !consequence && !stakes?.trim()) {
+        throw new Error(`Entry ${entry.id} has an empty damage report.`)
+      }
+      if (leverage && !isLeverage(leverage)) {
+        throw new Error(`Entry ${entry.id} has unknown leverage ${leverage}.`)
+      }
+      if (consequence && !isConsequence(consequence)) {
+        throw new Error(`Entry ${entry.id} has unknown consequence ${consequence}.`)
       }
     }
   }

@@ -41,7 +41,7 @@ type ShameMeterValue = {
 
 const ShameMeterContext = createContext<ShameMeterValue | null>(null)
 
-function useShameMeter() {
+export function useShameMeter() {
   const value = useContext(ShameMeterContext)
   if (!value) throw new Error("Shame meter controls must render inside ShameMeter.")
   return value

@@ -2,7 +2,9 @@ import Image from "next/image"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { notFound } from "next/navigation"
+import { DamageReport } from "@/components/damage-report"
 import { RelatedEntries } from "@/components/related-entries"
+import { ShareEntry } from "@/components/share-entry"
 import { ShameMeter, ShameRating } from "@/components/shame-meter"
 import { Story } from "@/components/story"
 import { Separator } from "@/components/ui/separator"
@@ -10,28 +12,13 @@ import { getAllEntries, getEntryBySlug } from "@/lib/entries"
 import { catalogNumber, formatEntryDate, videoEmbedUrl } from "@/lib/format"
 import { getCategory, getEra } from "@/lib/taxonomy"
 import { localImageSize } from "@/lib/image-size"
+import { shareCardPath, shareLine } from "@/lib/share"
 import { getSiteUrl } from "@/lib/site"
 
 type Props = { params: Promise<{ slug: string }> }
 
 export function generateStaticParams() {
   return getAllEntries().map((entry) => ({ slug: entry.slug }))
-}
-
-const fallbackShareImage = {
-  path: "/og",
-  width: 1200,
-  height: 630,
-  alt: "Hall of Shame",
-  type: "image/png",
-} as const
-
-function imageMime(url: string) {
-  const ext = url.split("?")[0]?.split(".").pop()?.toLowerCase()
-  if (ext === "png") return "image/png"
-  if (ext === "webp") return "image/webp"
-  if (ext === "gif") return "image/gif"
-  return "image/jpeg"
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -41,22 +28,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const site = getSiteUrl()
   const pageUrl = `${site}/entries/${entry.slug}`
-  const photo = entry.images[0]
-  const photoSize = photo ? localImageSize(photo.url) : null
-  const image = photo
-    ? {
-        url: new URL(photo.url, site).toString(),
-        alt: photo.caption,
-        type: imageMime(photo.url),
-        ...(photoSize ?? {}),
-      }
-    : {
-        url: new URL(fallbackShareImage.path, site).toString(),
-        alt: fallbackShareImage.alt,
-        type: fallbackShareImage.type,
-        width: fallbackShareImage.width,
-        height: fallbackShareImage.height,
-      }
+  const image = {
+    url: new URL(shareCardPath(entry.slug), site).toString(),
+    alt: shareLine(entry.title, entry.year, null),
+    type: "image/png",
+    width: 1200,
+    height: 630,
+  }
   const title = { absolute: entry.title }
 
   return {
@@ -137,9 +115,12 @@ export default async function EntryPage({ params }: Props) {
               <ShameRating />
             </div>
             <div className="order-3 lg:col-start-1 lg:row-start-2">
-              <p className="text-sm text-cream/75">
-                <time dateTime={entry.date}>{formatEntryDate(entry.date)}</time>
-              </p>
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+                <p className="text-sm text-cream/75">
+                  <time dateTime={entry.date}>{formatEntryDate(entry.date)}</time>
+                </p>
+                <ShareEntry title={entry.title} year={entry.year} />
+              </div>
               <ul className="mt-5 flex flex-wrap gap-2">
                 {entry.categories.map((id) => {
                   const category = getCategory(id)
@@ -327,6 +308,7 @@ export default async function EntryPage({ params }: Props) {
               </div>
             </dl>
           </div>
+          <DamageReport damage={entry.damage} />
         </aside>
       </div>
 

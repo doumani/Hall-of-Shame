@@ -22,6 +22,16 @@ export function SiteFooter() {
               </Link>
             </li>
             <li>
+              <Link href="/versus" className="hover:underline">
+                Which was worse?
+              </Link>
+            </li>
+            <li>
+              <Link href="/rankings" className="hover:underline">
+                Rankings
+              </Link>
+            </li>
+            <li>
               <Link href="/players" className="hover:underline">
                 Players
               </Link>
@@ -29,6 +39,11 @@ export function SiteFooter() {
             <li>
               <Link href="/teams" className="hover:underline">
                 Teams
+              </Link>
+            </li>
+            <li>
+              <Link href="/eras" className="hover:underline">
+                Eras
               </Link>
             </li>
             <li>

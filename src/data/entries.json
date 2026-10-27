@@ -65,6 +65,11 @@
       "zimmerman-chase",
       "double-no-hitter"
     ],
+    "damage": {
+      "leverage": "late-inning",
+      "consequence": "the-season",
+      "stakes": "The Giants and Cubs were tied for first. The single would have won the game."
+    },
     "featured": true
   },
   {
@@ -132,6 +137,11 @@
       "zimmerman-chase",
       "owen-dropped-third-strike"
     ],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-series",
+      "stakes": "The deciding game of the World Series had gone to the tenth. The inning was just starting."
+    },
     "featured": true
   },
   {
@@ -298,6 +308,11 @@
       "seaver-to-cincinnati",
       "ruth-caught-stealing"
     ],
+    "damage": {
+      "leverage": "roster-move",
+      "consequence": "the-franchise",
+      "stakes": "Boston sold its best player for cash, paid in installments."
+    },
     "featured": true
   },
   {
@@ -460,6 +475,11 @@
       "willie-davis-three-errors",
       "buckner-game-six"
     ],
+    "damage": {
+      "leverage": "postseason",
+      "consequence": "the-game",
+      "stakes": "Game 4 of the World Series. Chicago led by eight runs in the seventh."
+    },
     "featured": false
   },
   {
@@ -574,6 +594,11 @@
       "snodgrass-muff",
       "shot-heard-round-the-world"
     ],
+    "damage": {
+      "leverage": "one-out",
+      "consequence": "the-game",
+      "stakes": "One strike from a win that would have tied the World Series."
+    },
     "featured": false
   },
   {
@@ -693,6 +718,11 @@
       "kim-consecutive-nights",
       "grady-little-game-seven"
     ],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-season",
+      "stakes": "The deciding playoff game, bottom of the ninth, with the Giants down by two."
+    },
     "featured": true
   },
   {
@@ -795,6 +825,11 @@
       "ryan-for-fregosi",
       "phillies-collapse"
     ],
+    "damage": {
+      "leverage": "roster-move",
+      "consequence": "the-franchise",
+      "stakes": "A six-player deal in June. The player who left had his career in front of him."
+    },
     "featured": true
   },
   {
@@ -952,6 +987,11 @@
       "pedro-for-deshields",
       "bagwell-for-andersen"
     ],
+    "damage": {
+      "leverage": "roster-move",
+      "consequence": "the-franchise",
+      "stakes": "A young pitcher traded for a veteran infielder the club wanted sooner."
+    },
     "featured": true
   },
   {
@@ -1135,6 +1175,11 @@
       "eddie-gaedel",
       "medwick-fruit-barrage"
     ],
+    "damage": {
+      "leverage": "off-field",
+      "consequence": "the-game",
+      "stakes": "The second game of a doubleheader had not been played. The crowd was on the field."
+    },
     "featured": true
   },
   {
@@ -1210,6 +1255,11 @@
       "galarraga-imperfect-game",
       "belle-corked-bat"
     ],
+    "damage": {
+      "leverage": "late-inning",
+      "consequence": "the-play",
+      "stakes": "A go-ahead homer in the ninth. The league put the homer back."
+    },
     "featured": true
   },
   {
@@ -1266,6 +1316,11 @@
       "bartman-game",
       "hack-wilson-sun-field"
     ],
+    "damage": {
+      "leverage": "one-out",
+      "consequence": "the-series",
+      "stakes": "One out from a pennant that was already slipping away."
+    },
     "featured": false
   },
   {
@@ -1340,6 +1395,11 @@
       "clark-and-niedenfuer",
       "infield-fly-wild-card"
     ],
+    "damage": {
+      "leverage": "one-out",
+      "consequence": "the-series",
+      "stakes": "Game 6, one out from a championship. The runner was out. The call said safe."
+    },
     "featured": true
   },
   {
@@ -1407,6 +1467,11 @@
       "denkinger-safe-call",
       "cruz-and-freese"
     ],
+    "damage": {
+      "leverage": "one-out",
+      "consequence": "the-game",
+      "stakes": "Game 6, two outs in the tenth. The score was already tied."
+    },
     "featured": true
   },
   {
@@ -1455,6 +1520,11 @@
       "brock-for-broglio",
       "ryan-for-fregosi"
     ],
+    "damage": {
+      "leverage": "roster-move",
+      "consequence": "the-franchise",
+      "stakes": "A deadline trade of a minor leaguer for a month of relief pitching."
+    },
     "featured": false
   },
   {
@@ -1595,6 +1665,11 @@
       "merkles-boner",
       "grady-little-game-seven"
     ],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-series",
+      "stakes": "Scoreless Game 7. The double was hit into the gap, and he stopped at third."
+    },
     "featured": true
   },
   {
@@ -1704,6 +1779,11 @@
       "bagwell-for-andersen",
       "robinson-for-pappas"
     ],
+    "damage": {
+      "leverage": "roster-move",
+      "consequence": "the-franchise",
+      "stakes": "A young pitcher traded for the second baseman the club wanted that year."
+    },
     "featured": false
   },
   {
@@ -2071,6 +2151,11 @@
       "durham-through-the-wicket",
       "grady-little-game-seven"
     ],
+    "damage": {
+      "leverage": "clinch",
+      "consequence": "the-game",
+      "stakes": "Five outs from the World Series, with a three-run lead."
+    },
     "featured": true
   },
   {
@@ -2131,6 +2216,11 @@
       "phillies-collapse",
       "kim-consecutive-nights"
     ],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-series",
+      "stakes": "Game 7 of the championship series. Boston led by three when the manager reached the mound."
+    },
     "featured": true
   },
   {
@@ -2211,6 +2301,11 @@
       "hawkins-no-hit-loss",
       "pine-tar-game"
     ],
+    "damage": {
+      "leverage": "the-record",
+      "consequence": "the-record",
+      "stakes": "Two outs in the ninth of a perfect game. The ground ball was an out."
+    },
     "featured": true
   },
   {
@@ -2277,6 +2372,11 @@
       "pine-tar-game",
       "schaefer-steals-first"
     ],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-season",
+      "stakes": "The one-game wild card, eighth inning, bases loaded and one out."
+    },
     "featured": false
   },
   {
@@ -3282,6 +3382,11 @@
       "roberts-kershaw-and-kelly",
       "showalter-holds-britton"
     ],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-series",
+      "stakes": "Game 6 of the World Series. Tampa Bay led, and a loss would end it."
+    },
     "featured": false
   },
   {
@@ -3625,6 +3730,11 @@
       "cash-pulls-snell",
       "davis-off-chapman"
     ],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-season",
+      "stakes": "The one-game wild card. The closer did not leave the bullpen."
+    },
     "featured": false
   },
   {

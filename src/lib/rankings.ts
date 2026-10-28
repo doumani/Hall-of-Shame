@@ -109,15 +109,8 @@ export function rankTrending(rows: ShameRatingRow[], entries: CatalogEntry[], no
     .slice(0, rankingListLimit)
 }
 
-export type MoverSpan = "7d" | "30d"
-
-export function rankMovers(
-  rows: ShameRatingRow[],
-  entries: CatalogEntry[],
-  now: Date,
-  span: MoverSpan = "30d",
-) {
-  const start = windowStart(span, now)?.getTime() ?? 0
+export function rankMovers(rows: ShameRatingRow[], entries: CatalogEntry[], now: Date) {
+  const start = windowStart("30d", now)?.getTime() ?? 0
   const older = scoresByEntry(rows, (row) => new Date(row.created_at).getTime() < start)
   const recent = scoresByEntry(rows, (row) => new Date(row.created_at).getTime() >= start)
   const current = scoresByEntry(rows, () => true)
@@ -137,14 +130,6 @@ export function rankMovers(
         a.title.localeCompare(b.title),
     )
     .slice(0, rankingListLimit)
-}
-
-export function biggestMover(rows: ShameRatingRow[], entries: CatalogEntry[], now: Date) {
-  const week = rankMovers(rows, entries, now, "7d")
-  if (week[0]) return { entry: week[0], span: "7d" as const }
-  const month = rankMovers(rows, entries, now, "30d")
-  if (month[0]) return { entry: month[0], span: "30d" as const }
-  return null
 }
 
 export function rankDivisive(rows: ShameRatingRow[], entries: CatalogEntry[]) {

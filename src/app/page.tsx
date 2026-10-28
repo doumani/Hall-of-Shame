@@ -3,9 +3,7 @@ import Link from "next/link"
 import { CategoryIndex } from "@/components/category-index"
 import { EntryCard } from "@/components/entry-card"
 import { HeroCard, HeroCardFallback } from "@/components/hero-card"
-import { BiggestMover, BiggestMoverFallback } from "@/components/biggest-mover"
 import { OnThisDay, OnThisDayFallback } from "@/components/on-this-day"
-import { ShameOfTheDay, ShameOfTheDayFallback } from "@/components/shame-of-the-day"
 import {
   getAllEntries,
   getCategoryCounts,
@@ -44,14 +42,6 @@ export default function HomePage() {
 
       <Suspense fallback={<OnThisDayFallback />}>
         <OnThisDay />
-      </Suspense>
-
-      <Suspense fallback={<ShameOfTheDayFallback />}>
-        <ShameOfTheDay />
-      </Suspense>
-
-      <Suspense fallback={<BiggestMoverFallback />}>
-        <BiggestMover />
       </Suspense>
 
       <section className="border-b border-border bg-paper">

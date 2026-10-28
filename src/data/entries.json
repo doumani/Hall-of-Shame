@@ -1900,7 +1900,15 @@
     "summary": "A twelve-year-old reached over the wall and turned Derek Jeter's fly ball into a home run. The umpire out there never saw the hand.",
     "story": "October 9, 1996, Yankee Stadium, Game 1 of the American League Championship Series. In the eighth inning Derek Jeter, a rookie, flew to right. Tony Tarasco camped under it. Jeffrey Maier, twelve years old and sitting in the front row, reached over the wall with his glove and deflected the ball into the stands. Right-field umpire Rich Garcia signaled a home run. The call tied the game. New York won it later, and won the series.\n\nGarcia said, after he saw the replay, that he probably would have called fan interference. Tarasco did not accept the companion claim that he had no chance at the ball. The rule is plain: a spectator who reaches into the field of play and touches a ball that a fielder has a play on has interfered. Maier was a child doing what children in the front row do. The missed call belonged to the umpire who was stationed there to see it.\n\nJeter's career made the homer look destined. On the night, it was a fly ball, a glove from the seats, and a signal that did not match the play.",
     "images": [],
-    "videos": [],
+    "videos": [
+      {
+        "url": "https://www.mlb.com/video/the-jeffrey-maier-home-run-c2685723",
+        "title": "The Jeffrey Maier home run",
+        "description": "Derek Jeter flies to right in Game 1 of the 1996 ALCS. Jeffrey Maier reaches over the wall, and Rich Garcia signals a home run.",
+        "thumbnail": "https://img.mlbstatic.com/mlb-images/image/private/ar_16:9,g_auto,q_auto:good,w_1536,c_fill,f_jpg/mlb/wxllguriwbwm1guk3was",
+        "credit": "MLB.com"
+      }
+    ],
     "tags": [
       "alcs",
       "yankees",

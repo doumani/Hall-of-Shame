@@ -1,7 +1,8 @@
 "use client"
 
+import { Suspense, useEffect, useState, type FormEvent } from "react"
 import Link from "next/link"
-import { usePathname, useRouter } from "next/navigation"
+import { usePathname, useRouter, useSearchParams } from "next/navigation"
 import { Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {
@@ -58,7 +59,8 @@ export function SiteHeader({ slugs }: { slugs: string[] }) {
           </span>
         </div>
       </div>
-      <div className="mx-auto flex max-w-6xl items-end justify-between gap-6 px-5 py-4 md:py-5">
+      <div className="mx-auto max-w-6xl">
+      <div className="flex items-end justify-between gap-6 px-5 pt-4 md:pt-5">
         <Link href="/" className="group min-w-0">
           <span className="block font-serif text-3xl leading-none tracking-tight italic md:text-4xl">
             Hall of Shame
@@ -116,6 +118,60 @@ export function SiteHeader({ slugs }: { slugs: string[] }) {
           </Sheet>
         </div>
       </div>
+      <Suspense fallback={<HeaderSearchFallback />}>
+        <HeaderSearch />
+      </Suspense>
+      </div>
     </header>
+  )
+}
+
+function HeaderSearch() {
+  const pathname = usePathname()
+  const params = useSearchParams()
+  const router = useRouter()
+  const query = params.get("q") ?? ""
+  const [value, setValue] = useState(query)
+
+  useEffect(() => {
+    setValue(query)
+  }, [query])
+
+  function submit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault()
+    const next = value.trim()
+    const search = new URLSearchParams(pathname === "/entries" ? params.toString() : "")
+    if (next) search.set("q", next)
+    else search.delete("q")
+    const href = search.size > 0 ? `/entries?${search.toString()}` : "/entries"
+    router.push(href)
+  }
+
+  return (
+    <form role="search" onSubmit={submit} className="mx-auto flex max-w-6xl items-center gap-2 px-5 pb-3">
+      <label htmlFor="header-search" className="sr-only">
+        Search the catalog
+      </label>
+      <input
+        id="header-search"
+        value={value}
+        onChange={(event) => setValue(event.target.value)}
+        placeholder="Player, team, year, or play"
+        autoComplete="off"
+        className="h-10 min-w-0 flex-1 rounded-sm border border-navy/15 bg-card px-3 text-sm text-navy outline-none placeholder:text-navy/45 focus-visible:border-navy focus-visible:ring-2 focus-visible:ring-navy/20"
+      />
+      <button type="submit" className="h-10 shrink-0 bg-navy px-3 text-sm text-cream hover:bg-navy/90">
+        Search
+      </button>
+    </form>
+  )
+}
+
+function HeaderSearchFallback() {
+  return (
+    <div className="mx-auto flex max-w-6xl items-center gap-2 px-5 pb-3" aria-hidden="true">
+      <div className="h-10 min-w-0 flex-1 rounded-sm border border-navy/15 bg-card" />
+      <div className="h-10 w-16 bg-navy/80" />
+    </div>
   )
 }

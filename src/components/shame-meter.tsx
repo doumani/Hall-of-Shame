@@ -182,23 +182,30 @@ export function ShameRating() {
 
   const mine = votes?.find((vote) => vote.voter_key === voterKey) ?? null
   const locked = Boolean(mine)
+  const loading = votes === null && !unavailable
   const scores = votes?.map((vote) => vote.score) ?? []
-  const average = averageOf(scores)
+  const average = votes === null ? null : averageOf(scores)
 
   return (
-    <section aria-label="Shame meter">
+    <section aria-label="Shame meter" aria-busy={loading}>
       <p className="text-[11px] font-semibold tracking-[0.18em] text-cream/65 uppercase">
         Shame meter
       </p>
-      <p className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-2">
-        <span className="font-serif text-5xl leading-none text-cream tabular-nums">
-          {average === null ? "—" : average.toFixed(1)}
-        </span>
-        <span className="text-[11px] font-semibold tracking-[0.16em] text-cream/60 uppercase">
-          All-time · {voteLabel(scores.length)}
-        </span>
-        <CrowdRating count={votes === null ? 0 : scores.length} tone="cream" />
-      </p>
+      {loading ? (
+        <p className="mt-2 text-sm text-cream/75" role="status">
+          Loading the votes.
+        </p>
+      ) : (
+        <p className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-2">
+          <span className="font-serif text-5xl leading-none text-cream tabular-nums">
+            {average === null ? "—" : average.toFixed(1)}
+          </span>
+          <span className="text-[11px] font-semibold tracking-[0.16em] text-cream/60 uppercase">
+            All-time · {voteLabel(scores.length)}
+          </span>
+          <CrowdRating count={scores.length} tone="cream" />
+        </p>
+      )}
 
       <div className="mt-4 flex gap-1.5" role="group" aria-label="Rate this entry from 1 to 5">
         {[1, 2, 3, 4, 5].map((score) => {
@@ -279,9 +286,10 @@ export function ShameRating() {
 }
 
 function ShameTrend() {
-  const { votes, windowId, setWindowId } = useShameMeter()
+  const { votes, unavailable, windowId, setWindowId } = useShameMeter()
+  const loading = votes === null && !unavailable
   const windowVotes = votes ? votesInWindow(votes, windowId) : []
-  const windowAverage = averageOf(windowVotes.map((vote) => vote.score))
+  const windowAverage = votes === null ? null : averageOf(windowVotes.map((vote) => vote.score))
 
   return (
     <div className="mt-6 border-t border-cream/15 pt-4" role="group" aria-label="Shame trend">
@@ -303,9 +311,13 @@ function ShameTrend() {
           </button>
         ))}
       </div>
-      <p className="mt-3 text-sm text-cream/65">
-        {windowAverage === null ? "No votes" : windowAverage.toFixed(1)} · {voteLabel(windowVotes.length)}
-      </p>
+      {loading ? (
+        <p className="mt-3 text-sm text-cream/65">Loading the votes.</p>
+      ) : votes === null ? null : (
+        <p className="mt-3 text-sm text-cream/65">
+          {windowAverage === null ? "No votes" : windowAverage.toFixed(1)} · {voteLabel(windowVotes.length)}
+        </p>
+      )}
       <Sparkline scores={windowVotes.map((vote) => vote.score)} />
     </div>
   )

@@ -139,13 +139,13 @@ function Board({
             <li key={entry.id} className="border-t border-border">
               <Link
                 href={`/entries/${entry.slug}`}
-                className={`grid items-baseline gap-x-3 px-1 py-3 hover:bg-paper ${columns}`}
+                className={`grid items-start gap-x-3 px-1 py-3 hover:bg-paper ${columns}`}
               >
                 <span className="text-xs text-muted-foreground tabular-nums">
                   {String(index + 1).padStart(2, "0")}
                 </span>
                 <span className="text-sm font-semibold text-cardinal tabular-nums">{entry.year}</span>
-                <span className="truncate font-serif text-xl leading-tight tracking-tight sm:overflow-visible sm:whitespace-normal">
+                <span className="min-w-0 font-serif text-xl leading-tight tracking-tight break-words">
                   {entry.title}
                 </span>
                 {showDelta && entry.delta !== undefined ? (

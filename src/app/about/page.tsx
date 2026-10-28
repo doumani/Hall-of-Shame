@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Link from "next/link"
 import { categories, eras } from "@/lib/taxonomy"
-import { getAllEntries, getCategoryCounts, getEraCounts } from "@/lib/entries"
+import { getCategoryCounts, getEraCounts } from "@/lib/entries"
 
 export const metadata: Metadata = {
   title: "About",
@@ -10,7 +10,6 @@ export const metadata: Metadata = {
 }
 
 export default function AboutPage() {
-  const total = getAllEntries().length
   const eraCounts = getEraCounts()
   const categoryCounts = getCategoryCounts()
 
@@ -30,40 +29,34 @@ export default function AboutPage() {
       <div className="mx-auto max-w-6xl px-5 py-12 md:py-16">
       <div className="max-w-3xl">
         <div className="story">
+          <p>This catalog was built to celebrate baseball.</p>
           <p>
-            The Hall of Shame is a catalog of {total} classic major-league
-            blunders: the missed base, the uncovered plate, the trade that
-            only looks obvious afterward, the promotion that ended in a
-            forfeit. The tone is editorial. The standard is the box score.
+            It is a museum, not a roast. The entries gathered here are not
+            golden-glove plays or game-winning grand slams. They are the other
+            kind of notable moment — the ones that altered the course of a
+            game, a series, a season, or, in a few cases, the way the sport is
+            remembered.
           </p>
           <p>
-            An entry starts with what happened, then with what the retelling
-            added. Fred Snodgrass dropped a fly and, in the same inning, made
-            a difficult catch. Bill Buckner&apos;s error came after the Red Sox
-            had already lost the lead. Don Denkinger missed a call, and the
-            Cardinals then missed a popup, a pitch, and the next day. Where a
-            nickname outruns the evidence — the &quot;$30,000 muff,&quot; the
-            1908 version of Germany Schaefer stealing first, a soaked glove in
-            a Chicago dugout — the entry says so.
+            Many of the players, managers, umpires, and clubs in these pages
+            had long and celebrated careers. Their presence here is not a
+            judgment on those careers. It is an acknowledgment of a single
+            moment that did not go as planned, set beside the larger record of
+            who they were.
           </p>
+          <p>The mistake is the subject. The person is not the punch line.</p>
           <p>
-            Some famous shame is not in this volume on purpose. Ray
-            Chapman&apos;s death is a tragedy, not a blooper. Donnie Moore&apos;s
-            1986 pitch is bound up with a suicide, and reducing a life to one
+            Some famous moments are not in this volume on purpose. Ray
+            Chapman’s death is a tragedy, not a blooper. Donnie Moore’s 1986
+            pitch is bound up with a suicide, and reducing a life to one
             slider would be a second cruelty. On-field assaults are left out.
-            The Black Sox scandal was a crime. Those subjects deserve a
-            different room.
+            The Black Sox scandal was a crime. Those subjects are not what
+            this is about.
           </p>
           <p>
-            The catalog is a local JSON file, with stable ids on every entry,
-            player, and team, so it can move later to a database without
-            renaming the public record. A player page or a team page gathers
-            the entries that already name that id. A suggestion, a
-            correction, or a public-domain image can be offered on the{" "}
-            <Link href="/submit" className="underline">
-              suggestion page
-            </Link>
-            . Notes are saved for review and are not published on their own.
+            The record is checked against contemporary accounts, Retrosheet,
+            and the Society for American Baseball Research. Where a legend has
+            outrun the evidence, the entry says so.
           </p>
         </div>
       </div>

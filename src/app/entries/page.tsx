@@ -94,7 +94,11 @@ async function Listing({ searchParams }: { searchParams: Promise<CatalogSearch> 
             ) : (
               <>
                 <p className="font-serif text-3xl">
-                  {filters.votes === "low" ? "Nothing here needs votes." : "Nothing on this shelf."}
+                  {filters.q
+                    ? "Nothing on this shelf matches that search."
+                    : filters.votes === "low"
+                      ? "Nothing here needs votes."
+                      : "Nothing on this shelf."}
                 </p>
                 <p className="mt-3 text-muted-foreground">
                   Try a player, a club, or a year, or clear the filters.

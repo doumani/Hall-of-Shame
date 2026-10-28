@@ -275,25 +275,64 @@ export function getEraCounts() {
   }))
 }
 
+/** Extra words for a club whose usual name or abbreviation is not already in the team name. */
+const teamSearchTerms: Record<string, readonly string[]> = {
+  "arizona-diamondbacks": ["dbacks", "d-backs"],
+  "boston-red-sox": ["bosox", "red sox"],
+  "california-angels": ["halos"],
+  "chicago-cubs": ["cubs"],
+  "chicago-white-sox": ["chisox", "white sox"],
+  "cleveland-guardians": ["tribe"],
+  "cleveland-indians": ["tribe"],
+  "los-angeles-angels-of-anaheim": ["halos"],
+  "new-york-yankees": ["yankees", "yanks", "nyy"],
+  "pittsburgh-pirates": ["bucs"],
+  "st-louis-cardinals": ["cards"],
+  "washington-nationals": ["nats"],
+}
+
+/** Words a reader types for a category when the label says it differently. */
+const categorySearchTerms: Partial<Record<CategoryId, readonly string[]>> = {
+  baserunning: ["baserunning", "base running", "baserunner"],
+  umpire: ["umpire", "umpires"],
+  "front-office": ["trade", "trades"],
+  personalities: ["off field"],
+}
+
+function searchText(value: string) {
+  return foldName(value)
+    .replace(/['’,]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+}
+
 function haystack(entry: Entry) {
   const categoryLabels = entry.categories
-    .map((id) => getCategory(id)?.label ?? id)
+    .map((id) => {
+      const category = getCategory(id)
+      const extra = categorySearchTerms[id] ?? []
+      return [category?.label ?? id, id, ...extra].join(" ")
+    })
     .join(" ")
   const eraLabel = getEra(entry.era)?.label ?? entry.era
-
-  return [
-    entry.title,
-    entry.summary,
-    entry.story,
-    entry.tags.join(" "),
-    entry.players.map((player) => player.name).join(" "),
-    entry.teams.map((team) => team.name).join(" "),
-    categoryLabels,
-    eraLabel,
-    String(entry.year),
-  ]
+  const teamNames = entry.teams
+    .map((team) => [team.name, ...(teamSearchTerms[team.id] ?? [])].join(" "))
     .join(" ")
-    .toLowerCase()
+
+  return searchText(
+    [
+      entry.title,
+      entry.summary,
+      entry.story,
+      entry.tags.join(" "),
+      entry.players.map((player) => player.name).join(" "),
+      teamNames,
+      categoryLabels,
+      eraLabel,
+      String(entry.year),
+    ].join(" "),
+  )
 }
 
 export function parseFilters(params: {
@@ -340,7 +379,7 @@ export function filterEntries(
   shameAverages?: ReadonlyMap<string, number>,
   voteCounts?: ReadonlyMap<string, number>,
 ) {
-  const query = filters.q?.toLowerCase()
+  const query = filters.q ? searchText(filters.q) : ""
 
   const matched = entries.filter((entry) => {
     if (filters.category && !entry.categories.includes(filters.category)) {
@@ -363,8 +402,6 @@ export function filterEntries(
     return byRecency(a, b)
   })
 }
-
-export const homepageLeadSlug = "merkles-boner"
 
 export const homepageGridSlugs = [
   "sale-of-babe-ruth",

@@ -8,7 +8,12 @@ import {
   passwordsMatch,
   setAdminCookie,
 } from "@/lib/admin-auth"
-import { setSubmissionStatus } from "@/lib/admin-submissions"
+import {
+  canTransition,
+  isSubmissionStatus,
+  reviewHref,
+  setSubmissionStatus,
+} from "@/lib/admin-submissions"
 
 export async function login(_prev: { error?: string } | null, formData: FormData) {
   const expected = process.env.ADMIN_PASSWORD
@@ -30,12 +35,19 @@ export async function reviewSubmission(formData: FormData) {
   if (!(await isAdmin())) redirect("/admin")
 
   const id = String(formData.get("id") ?? "")
+  const from = String(formData.get("from") ?? "")
   const status = String(formData.get("status") ?? "")
-  if (!/^[0-9a-f-]{36}$/i.test(id) || (status !== "approved" && status !== "rejected")) {
-    redirect("/admin?error=update")
+  const current = isSubmissionStatus(from) ? from : "pending"
+  if (
+    !/^[0-9a-f-]{36}$/i.test(id) ||
+    !isSubmissionStatus(from) ||
+    !isSubmissionStatus(status) ||
+    !canTransition(from, status)
+  ) {
+    redirect(reviewHref(current, true))
   }
 
-  const result = await setSubmissionStatus(id, status)
+  const result = await setSubmissionStatus(id, from, status)
   revalidatePath("/admin")
-  redirect(result.ok ? "/admin" : "/admin?error=update")
+  redirect(result.ok ? reviewHref(status) : reviewHref(from, true))
 }

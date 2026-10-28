@@ -1,20 +1,49 @@
 import { Suspense } from "react"
 import type { Metadata } from "next"
+import Link from "next/link"
 import { io } from "next/cache"
 import { logout, reviewSubmission } from "@/app/admin/actions"
 import { PasswordForm } from "@/app/admin/password-form"
 import { isAdmin } from "@/lib/admin-auth"
-import { adminConfigured, loadPendingSubmissions } from "@/lib/admin-submissions"
+import {
+  adminConfigured,
+  loadSubmissions,
+  parseReviewStatus,
+  reviewHref,
+  submissionStatuses,
+  type SubmissionStatus,
+} from "@/lib/admin-submissions"
 
 export const metadata: Metadata = {
   title: "Review",
   robots: { index: false, follow: false },
 }
 
+const tabLabels: Record<SubmissionStatus, string> = {
+  pending: "Pending",
+  approved: "Approved",
+  rejected: "Rejected",
+  completed: "Completed",
+}
+
+const headings: Record<SubmissionStatus, string> = {
+  pending: "Pending notes",
+  approved: "Approved notes",
+  rejected: "Rejected notes",
+  completed: "Completed notes",
+}
+
+const emptyCopy: Record<SubmissionStatus, string> = {
+  pending: "No notes are waiting.",
+  approved: "Nothing has been approved.",
+  rejected: "Nothing has been rejected.",
+  completed: "Nothing is complete.",
+}
+
 export default function AdminPage({
   searchParams,
 }: {
-  searchParams: Promise<{ error?: string }>
+  searchParams: Promise<{ error?: string; status?: string }>
 }) {
   return (
     <Suspense fallback={<AdminFallback />}>
@@ -23,10 +52,15 @@ export default function AdminPage({
   )
 }
 
-async function Admin({ searchParams }: { searchParams: Promise<{ error?: string }> }) {
+async function Admin({
+  searchParams,
+}: {
+  searchParams: Promise<{ error?: string; status?: string }>
+}) {
   await io()
   const authed = await isAdmin()
-  const { error } = await searchParams
+  const params = await searchParams
+  const status = parseReviewStatus(params.status)
 
   return (
     <div>
@@ -37,7 +71,9 @@ async function Admin({ searchParams }: { searchParams: Promise<{ error?: string 
               <span className="h-px w-8 bg-cardinal" />
               Review
             </p>
-            <h1 className="mt-4 font-serif text-4xl tracking-tight md:text-5xl">Pending notes</h1>
+            <h1 className="mt-4 font-serif text-4xl tracking-tight md:text-5xl">
+              {authed ? headings[status] : "Pending notes"}
+            </h1>
           </div>
           {authed ? (
             <form action={logout}>
@@ -49,13 +85,13 @@ async function Admin({ searchParams }: { searchParams: Promise<{ error?: string 
         </div>
       </header>
       <div className="mx-auto max-w-6xl px-5 py-10">
-        {authed ? <Queue failed={error === "update"} /> : <PasswordForm />}
+        {authed ? <Queue status={status} failed={params.error === "update"} /> : <PasswordForm />}
       </div>
     </div>
   )
 }
 
-async function Queue({ failed }: { failed: boolean }) {
+async function Queue({ status, failed }: { status: SubmissionStatus; failed: boolean }) {
   if (!adminConfigured()) {
     return (
       <p className="max-w-xl text-sm leading-relaxed text-muted-foreground">
@@ -65,10 +101,11 @@ async function Queue({ failed }: { failed: boolean }) {
     )
   }
 
-  const { rows, error } = await loadPendingSubmissions()
+  const { rows, error } = await loadSubmissions(status)
 
   return (
     <div>
+      <StatusTabs current={status} />
       {failed ? (
         <p className="mb-6 text-sm text-cardinal" role="alert">
           The status could not be updated.
@@ -76,10 +113,10 @@ async function Queue({ failed }: { failed: boolean }) {
       ) : null}
       {error ? (
         <p className="max-w-xl text-sm leading-relaxed text-muted-foreground">
-          The pending list could not be loaded.
+          This list could not be loaded.
         </p>
       ) : rows.length === 0 ? (
-        <p className="text-sm text-muted-foreground">No notes are waiting.</p>
+        <p className="text-sm text-muted-foreground">{emptyCopy[status]}</p>
       ) : (
         <ol className="grid gap-6">
           {rows.map((row) => (
@@ -99,30 +136,94 @@ async function Queue({ failed }: { failed: boolean }) {
                 <Field term="Why it belongs" value={row.why_it_belongs} wide />
                 <Field term="Notes" value={row.notes} wide />
               </dl>
-              <div className="mt-5 flex flex-wrap gap-3">
-                <form action={reviewSubmission}>
-                  <input type="hidden" name="id" value={row.id} />
-                  <input type="hidden" name="status" value="approved" />
-                  <button type="submit" className="h-10 bg-navy px-4 text-sm text-cream">
-                    Approve
-                  </button>
-                </form>
-                <form action={reviewSubmission}>
-                  <input type="hidden" name="id" value={row.id} />
-                  <input type="hidden" name="status" value="rejected" />
-                  <button
-                    type="submit"
-                    className="h-10 border border-border bg-card px-4 text-sm text-cardinal"
-                  >
-                    Reject
-                  </button>
-                </form>
-              </div>
+              <RowActions id={row.id} status={status} />
             </li>
           ))}
         </ol>
       )}
     </div>
+  )
+}
+
+function StatusTabs({ current }: { current: SubmissionStatus }) {
+  return (
+    <nav aria-label="Status" className="mb-8 flex flex-wrap gap-2">
+      {submissionStatuses.map((status) => {
+        const active = status === current
+        return (
+          <Link
+            key={status}
+            href={reviewHref(status)}
+            aria-current={active ? "page" : undefined}
+            className={
+              active
+                ? "inline-flex h-10 items-center bg-navy px-4 text-sm text-cream"
+                : "inline-flex h-10 items-center border border-border bg-card px-4 text-sm text-foreground"
+            }
+          >
+            {tabLabels[status]}
+          </Link>
+        )
+      })}
+    </nav>
+  )
+}
+
+function RowActions({ id, status }: { id: string; status: SubmissionStatus }) {
+  if (status === "completed") {
+    return <p className="mt-5 text-sm text-muted-foreground">This note is complete.</p>
+  }
+
+  return (
+    <div className="mt-5 flex flex-wrap gap-3">
+      {status === "pending" ? (
+        <>
+          <StatusButton id={id} from="pending" to="approved" label="Approve" tone="primary" />
+          <StatusButton id={id} from="pending" to="rejected" label="Reject" tone="danger" />
+        </>
+      ) : null}
+      {status === "approved" ? (
+        <>
+          <StatusButton id={id} from="approved" to="completed" label="Mark complete" tone="primary" />
+          <StatusButton id={id} from="approved" to="pending" label="Return to pending" tone="quiet" />
+        </>
+      ) : null}
+      {status === "rejected" ? (
+        <StatusButton id={id} from="rejected" to="pending" label="Return to pending" tone="quiet" />
+      ) : null}
+    </div>
+  )
+}
+
+function StatusButton({
+  id,
+  from,
+  to,
+  label,
+  tone,
+}: {
+  id: string
+  from: SubmissionStatus
+  to: SubmissionStatus
+  label: string
+  tone: "primary" | "danger" | "quiet"
+}) {
+  const className =
+    tone === "primary"
+      ? "h-10 bg-navy px-4 text-sm text-cream"
+      : tone === "danger"
+        ? "h-10 border border-border bg-card px-4 text-sm text-cardinal"
+        : "h-10 border border-border bg-card px-4 text-sm text-foreground"
+
+  return (
+    <form action={reviewSubmission}>
+      <input type="hidden" name="id" value={id} />
+      <input type="hidden" name="from" value={from} />
+      <input type="hidden" name="status" value={to} />
+      <button type="submit" className={className}>
+        {label}
+      </button>
+    </form>
   )
 }
 

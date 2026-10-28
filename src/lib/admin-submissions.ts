@@ -1,6 +1,10 @@
 import { createClient } from "@supabase/supabase-js"
 
-export type PendingSubmission = {
+export const submissionStatuses = ["pending", "approved", "rejected", "completed"] as const
+
+export type SubmissionStatus = (typeof submissionStatuses)[number]
+
+export type SubmissionRow = {
   id: string
   created_at: string
   title: string | null
@@ -11,6 +15,33 @@ export type PendingSubmission = {
   name: string | null
   email: string | null
   notes: string | null
+}
+
+const transitions: Record<SubmissionStatus, readonly SubmissionStatus[]> = {
+  pending: ["approved", "rejected"],
+  approved: ["completed", "pending"],
+  rejected: ["pending"],
+  completed: [],
+}
+
+export function isSubmissionStatus(value: string): value is SubmissionStatus {
+  return (submissionStatuses as readonly string[]).includes(value)
+}
+
+export function parseReviewStatus(value: string | undefined): SubmissionStatus {
+  return value && isSubmissionStatus(value) ? value : "pending"
+}
+
+export function canTransition(from: SubmissionStatus, to: SubmissionStatus) {
+  return transitions[from].includes(to)
+}
+
+export function reviewHref(status: SubmissionStatus = "pending", failed = false) {
+  const params = new URLSearchParams()
+  if (status !== "pending") params.set("status", status)
+  if (failed) params.set("error", "update")
+  const query = params.toString()
+  return query ? `/admin?${query}` : "/admin"
 }
 
 function serviceRoleKey() {
@@ -34,29 +65,35 @@ function adminClient() {
   })
 }
 
-export async function loadPendingSubmissions() {
+export async function loadSubmissions(status: SubmissionStatus) {
   const client = adminClient()
-  if (!client) return { rows: [] as PendingSubmission[], error: "missing-key" as const }
+  if (!client) return { rows: [] as SubmissionRow[], error: "missing-key" as const }
 
   const { data, error } = await client
     .from("submissions")
     .select("id, created_at, title, year, teams, description, why_it_belongs, name, email, notes")
-    .eq("status", "pending")
+    .eq("status", status)
     .order("created_at", { ascending: false })
 
-  if (error) return { rows: [] as PendingSubmission[], error: "query" as const }
-  return { rows: (data ?? []) as PendingSubmission[], error: null }
+  if (error) return { rows: [] as SubmissionRow[], error: "query" as const }
+  return { rows: (data ?? []) as SubmissionRow[], error: null }
 }
 
-export async function setSubmissionStatus(id: string, status: "approved" | "rejected") {
+export async function setSubmissionStatus(
+  id: string,
+  from: SubmissionStatus,
+  status: SubmissionStatus,
+) {
   const client = adminClient()
-  if (!client) return { ok: false as const, error: "missing-key" as const }
+  if (!client || !canTransition(from, status)) {
+    return { ok: false as const, error: "update" as const }
+  }
 
   const { data, error } = await client
     .from("submissions")
     .update({ status })
     .eq("id", id)
-    .eq("status", "pending")
+    .eq("status", from)
     .select("id")
     .maybeSingle()
 

@@ -3,14 +3,14 @@ import type { Metadata } from "next"
 import Link from "next/link"
 import { EntryCard } from "@/components/entry-card"
 import { EntryFilters } from "@/components/entry-filters"
-import { filterEntries, getAllEntries, parseFilters } from "@/lib/entries"
-import { loadAllTimeShameAverages } from "@/lib/shame-averages"
+import { filterEntries, getAllEntries, needsVotesBelow, parseFilters } from "@/lib/entries"
+import { loadShameTallies } from "@/lib/shame-averages"
 import { categories, eras, getCategory, getEra } from "@/lib/taxonomy"
 
 export const metadata: Metadata = {
   title: "The Catalog",
   description:
-    "Search and filter classic MLB blunders by player, team, category, era, and date. Results live in the URL, so a shelf of the record can be shared.",
+    "Search and filter classic MLB blunders by player, team, category, era, date, and entries that still need votes. Results live in the URL, so a shelf of the record can be shared.",
 }
 
 type CatalogSearch = {
@@ -18,6 +18,7 @@ type CatalogSearch = {
   category?: string
   era?: string
   sort?: string
+  votes?: string
 }
 
 export default function EntriesPage({
@@ -34,9 +35,15 @@ export default function EntriesPage({
 
 async function Listing({ searchParams }: { searchParams: Promise<CatalogSearch> }) {
   const filters = parseFilters(await searchParams)
-  const shameAverages =
-    filters.sort === "shame" ? await loadAllTimeShameAverages() : undefined
-  const results = filterEntries(filters, shameAverages)
+  const tallies =
+    filters.sort === "shame" || filters.votes === "low" ? await loadShameTallies() : undefined
+  const shameAverages = tallies
+    ? new Map([...tallies].map(([id, tally]) => [id, tally.sum / tally.count]))
+    : undefined
+  const voteCounts = tallies
+    ? new Map([...tallies].map(([id, tally]) => [id, tally.count]))
+    : undefined
+  const results = filterEntries(filters, shameAverages, voteCounts)
   const total = getAllEntries().length
   const category = filters.category ? getCategory(filters.category) : undefined
   const era = filters.era ? getEra(filters.era) : undefined
@@ -69,6 +76,7 @@ async function Listing({ searchParams }: { searchParams: Promise<CatalogSearch> 
             Showing {results.length} of {total}
             {category ? ` · ${category.label}` : ""}
             {era ? ` · ${era.label}` : ""}
+            {filters.votes === "low" ? " · Needs votes" : ""}
             {filters.q ? ` · “${filters.q}”` : ""}
           </p>
           <span aria-hidden="true" className="h-px flex-1 bg-border" />
@@ -76,10 +84,23 @@ async function Listing({ searchParams }: { searchParams: Promise<CatalogSearch> 
 
         {results.length === 0 ? (
           <div className="mt-8 border border-dashed border-border bg-paper px-6 py-16 text-center">
-            <p className="font-serif text-3xl">Nothing on this shelf.</p>
-            <p className="mt-3 text-muted-foreground">
-              Try a player, a club, or a year, or clear the filters.
-            </p>
+            {filters.votes === "low" && !filters.q && !filters.category && !filters.era ? (
+              <>
+                <p className="font-serif text-3xl">All entries have been rated.</p>
+                <p className="mt-3 text-muted-foreground">
+                  Each one has at least {needsVotesBelow} scores.
+                </p>
+              </>
+            ) : (
+              <>
+                <p className="font-serif text-3xl">
+                  {filters.votes === "low" ? "Nothing here needs votes." : "Nothing on this shelf."}
+                </p>
+                <p className="mt-3 text-muted-foreground">
+                  Try a player, a club, or a year, or clear the filters.
+                </p>
+              </>
+            )}
             <Link href="/entries" className="mt-6 inline-block text-sm text-cardinal underline-offset-4 hover:underline">
               Return to the full catalog
             </Link>

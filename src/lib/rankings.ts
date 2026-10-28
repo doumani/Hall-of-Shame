@@ -5,6 +5,9 @@ export const highestShameMinimum = 5
 export const trendingMinimum = 3
 export const moverBaselineMinimum = 3
 export const moverRecentMinimum = 2
+export const divisiveMinimum = 8
+export const divisiveSpreadMinimum = 1
+export const divisiveBoardMinimum = 3
 
 export type ShameRatingRow = {
   entry_id: string
@@ -20,6 +23,8 @@ export type RankedEntry = {
   average: number
   votes: number
   delta?: number
+  low?: number
+  high?: number
 }
 
 type CatalogEntry = {
@@ -31,6 +36,13 @@ type CatalogEntry = {
 
 function mean(scores: number[]) {
   return scores.reduce((sum, score) => sum + score, 0) / scores.length
+}
+
+function standardDeviation(scores: number[]) {
+  const average = mean(scores)
+  const variance =
+    scores.reduce((sum, score) => sum + (score - average) ** 2, 0) / scores.length
+  return Math.sqrt(variance)
 }
 
 function scoresByEntry(rows: ShameRatingRow[], include: (row: ShameRatingRow) => boolean) {
@@ -97,8 +109,15 @@ export function rankTrending(rows: ShameRatingRow[], entries: CatalogEntry[], no
     .slice(0, rankingListLimit)
 }
 
-export function rankMovers(rows: ShameRatingRow[], entries: CatalogEntry[], now: Date) {
-  const start = windowStart("30d", now)?.getTime() ?? 0
+export type MoverSpan = "7d" | "30d"
+
+export function rankMovers(
+  rows: ShameRatingRow[],
+  entries: CatalogEntry[],
+  now: Date,
+  span: MoverSpan = "30d",
+) {
+  const start = windowStart(span, now)?.getTime() ?? 0
   const older = scoresByEntry(rows, (row) => new Date(row.created_at).getTime() < start)
   const recent = scoresByEntry(rows, (row) => new Date(row.created_at).getTime() >= start)
   const current = scoresByEntry(rows, () => true)
@@ -118,4 +137,50 @@ export function rankMovers(rows: ShameRatingRow[], entries: CatalogEntry[], now:
         a.title.localeCompare(b.title),
     )
     .slice(0, rankingListLimit)
+}
+
+export function biggestMover(rows: ShameRatingRow[], entries: CatalogEntry[], now: Date) {
+  const week = rankMovers(rows, entries, now, "7d")
+  if (week[0]) return { entry: week[0], span: "7d" as const }
+  const month = rankMovers(rows, entries, now, "30d")
+  if (month[0]) return { entry: month[0], span: "30d" as const }
+  return null
+}
+
+export function rankDivisive(rows: ShameRatingRow[], entries: CatalogEntry[]) {
+  const catalog = catalogById(entries)
+  const qualified = [...scoresByEntry(rows, () => true).entries()].flatMap(([id, scores]) => {
+    const entry = catalog.get(id)
+    const spread = standardDeviation(scores)
+    if (!entry || scores.length < divisiveMinimum || spread < divisiveSpreadMinimum) return []
+    return [
+      {
+        id,
+        slug: entry.slug,
+        title: entry.title,
+        year: entry.year,
+        average: mean(scores),
+        votes: scores.length,
+        low: Math.min(...scores),
+        high: Math.max(...scores),
+        spread,
+      },
+    ]
+  })
+
+  if (qualified.length < divisiveBoardMinimum) return []
+
+  return qualified
+    .sort((a, b) => b.spread - a.spread || b.votes - a.votes || a.title.localeCompare(b.title))
+    .slice(0, rankingListLimit)
+    .map((entry) => ({
+      id: entry.id,
+      slug: entry.slug,
+      title: entry.title,
+      year: entry.year,
+      average: entry.average,
+      votes: entry.votes,
+      low: entry.low,
+      high: entry.high,
+    }))
 }

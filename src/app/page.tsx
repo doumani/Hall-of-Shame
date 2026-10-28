@@ -4,6 +4,7 @@ import Link from "next/link"
 import { buttonVariants } from "@/components/ui/button"
 import { CategoryIndex } from "@/components/category-index"
 import { EntryCard } from "@/components/entry-card"
+import { BiggestMover, BiggestMoverFallback } from "@/components/biggest-mover"
 import { OnThisDay, OnThisDayFallback } from "@/components/on-this-day"
 import { ShameOfTheDay, ShameOfTheDayFallback } from "@/components/shame-of-the-day"
 import {
@@ -118,6 +119,10 @@ export default function HomePage() {
 
       <Suspense fallback={<ShameOfTheDayFallback />}>
         <ShameOfTheDay />
+      </Suspense>
+
+      <Suspense fallback={<BiggestMoverFallback />}>
+        <BiggestMover />
       </Suspense>
 
       <section className="border-b border-border bg-paper">

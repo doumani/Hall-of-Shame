@@ -37,19 +37,22 @@ function FilterControls({
       category: filters.category,
       era: filters.era,
       sort: filters.sort,
+      votes: filters.votes,
       ...next,
     }
     const params = new URLSearchParams()
     if (merged.q) params.set("q", merged.q)
     if (merged.category) params.set("category", merged.category)
     if (merged.era) params.set("era", merged.era)
+    if (merged.votes) params.set("votes", merged.votes)
     if (merged.sort && merged.sort !== "newest") params.set("sort", merged.sort)
     const search = params.toString()
     router.replace(search ? `${pathname}?${search}` : pathname, { scroll: false })
   }
 
   const active =
-    Boolean(filters.q || filters.category || filters.era) || filters.sort !== "newest"
+    Boolean(filters.q || filters.category || filters.era || filters.votes) ||
+    filters.sort !== "newest"
 
   return (
     <form
@@ -60,7 +63,7 @@ function FilterControls({
         push({ q: query.trim() || undefined })
       }}
     >
-      <div className="md:col-span-5">
+      <div className="md:col-span-6 lg:col-span-4">
         <label
           htmlFor="catalog-search"
           className="mb-1.5 block text-[11px] font-semibold tracking-[0.16em] text-muted-foreground uppercase"
@@ -76,7 +79,7 @@ function FilterControls({
           autoComplete="off"
         />
       </div>
-      <div className="md:col-span-3">
+      <div className="md:col-span-3 lg:col-span-2">
         <label
           htmlFor="catalog-category"
           className="mb-1.5 block text-[11px] font-semibold tracking-[0.16em] text-muted-foreground uppercase"
@@ -101,7 +104,7 @@ function FilterControls({
           ))}
         </select>
       </div>
-      <div className="md:col-span-2">
+      <div className="md:col-span-3 lg:col-span-2">
         <label
           htmlFor="catalog-era"
           className="mb-1.5 block text-[11px] font-semibold tracking-[0.16em] text-muted-foreground uppercase"
@@ -124,7 +127,26 @@ function FilterControls({
           ))}
         </select>
       </div>
-      <div className="md:col-span-2">
+      <div className="md:col-span-6 lg:col-span-2">
+        <label
+          htmlFor="catalog-votes"
+          className="mb-1.5 block text-[11px] font-semibold tracking-[0.16em] text-muted-foreground uppercase"
+        >
+          Votes
+        </label>
+        <select
+          id="catalog-votes"
+          className={fieldClass}
+          value={filters.votes ?? ""}
+          onChange={(event) =>
+            push({ votes: (event.target.value || undefined) as EntryFilters["votes"] })
+          }
+        >
+          <option value="">All entries</option>
+          <option value="low">Needs votes</option>
+        </select>
+      </div>
+      <div className="md:col-span-6 lg:col-span-2">
         <label
           htmlFor="catalog-sort"
           className="mb-1.5 block text-[11px] font-semibold tracking-[0.16em] text-muted-foreground uppercase"

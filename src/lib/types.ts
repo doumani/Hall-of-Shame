@@ -33,6 +33,8 @@ export const eraIds = [
 
 export const sortIds = ["newest", "oldest", "title", "shame"] as const
 
+export const voteSampleIds = ["low"] as const
+
 export const leverageIds = [
   "late-inning",
   "one-out",
@@ -56,6 +58,7 @@ export const consequenceIds = [
 export type CategoryId = (typeof categoryIds)[number]
 export type EraId = (typeof eraIds)[number]
 export type SortId = (typeof sortIds)[number]
+export type VoteSampleId = (typeof voteSampleIds)[number]
 export type LeverageId = (typeof leverageIds)[number]
 export type ConsequenceId = (typeof consequenceIds)[number]
 
@@ -115,4 +118,5 @@ export interface EntryFilters {
   category?: CategoryId
   era?: EraId
   sort: SortId
+  votes?: VoteSampleId
 }

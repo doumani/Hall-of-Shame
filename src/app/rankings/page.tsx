@@ -4,9 +4,11 @@ import Link from "next/link"
 import { io } from "next/cache"
 import { getAllEntries } from "@/lib/entries"
 import {
+  divisiveMinimum,
   highestShameMinimum,
   moverBaselineMinimum,
   moverRecentMinimum,
+  rankDivisive,
   rankHighestShame,
   rankMovers,
   rankTrending,
@@ -18,7 +20,7 @@ import { loadShameRatings } from "@/lib/shame-averages"
 export const metadata: Metadata = {
   title: "Rankings",
   description:
-    "Shame-meter standings: the highest averages, the last seven days, and the biggest moves over thirty days.",
+    "Shame-meter standings: the highest averages, the last seven days, the biggest moves over thirty days, and the widest splits.",
 }
 
 export default function RankingsPage() {
@@ -76,6 +78,14 @@ async function Rankings() {
         empty="Nothing has moved yet. A change needs votes from before the last 30 days, and votes inside that window."
         showDelta
       />
+      <Board
+        id="most-divisive"
+        title="Most divisive"
+        note={`Widest split in the scores. An entry needs at least ${divisiveMinimum} votes, and the ballots have to disagree.`}
+        rows={rankDivisive(rows, entries)}
+        empty={`Not enough disagreement yet. The list appears once three entries have at least ${divisiveMinimum} votes and a real split in the scores.`}
+        showSpread
+      />
     </div>
   )
 }
@@ -88,6 +98,7 @@ function Board({
   empty,
   averageLabel = "Average",
   showDelta = false,
+  showSpread = false,
 }: {
   id: string
   title: string
@@ -96,7 +107,12 @@ function Board({
   empty: string
   averageLabel?: string
   showDelta?: boolean
+  showSpread?: boolean
 }) {
+  const columns = showDelta || showSpread
+    ? "grid-cols-[2rem_3.25rem_minmax(0,1fr)_3.25rem_3.25rem] sm:grid-cols-[2rem_3.25rem_minmax(0,1fr)_3.5rem_4rem_5.5rem]"
+    : "grid-cols-[2rem_3.25rem_minmax(0,1fr)_3.25rem] sm:grid-cols-[2rem_3.25rem_minmax(0,1fr)_4rem_5.5rem]"
+
   return (
     <section aria-labelledby={id}>
       <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2 border-b border-navy pb-3">
@@ -110,17 +126,12 @@ function Board({
         <p className="mt-5 max-w-xl text-sm leading-relaxed text-muted-foreground">{empty}</p>
       ) : (
         <ol className="mt-2">
-          <li
-            className={`grid items-baseline gap-x-3 px-1 py-2 text-[11px] font-semibold tracking-[0.14em] text-muted-foreground uppercase ${
-              showDelta
-                ? "grid-cols-[2rem_3.25rem_minmax(0,1fr)_3.25rem_3.25rem] sm:grid-cols-[2rem_3.25rem_minmax(0,1fr)_3.5rem_4rem_5.5rem]"
-                : "grid-cols-[2rem_3.25rem_minmax(0,1fr)_3.25rem] sm:grid-cols-[2rem_3.25rem_minmax(0,1fr)_4rem_5.5rem]"
-            }`}
-          >
+          <li className={`grid items-baseline gap-x-3 px-1 py-2 text-[11px] font-semibold tracking-[0.14em] text-muted-foreground uppercase ${columns}`}>
             <span className="sr-only">Place</span>
             <span className="col-start-2">Year</span>
             <span>Entry</span>
             {showDelta ? <span className="text-right">Change</span> : null}
+            {showSpread ? <span className="text-right">Spread</span> : null}
             <span className="text-right">{averageLabel}</span>
             <span className="hidden text-right sm:block">Votes</span>
           </li>
@@ -128,11 +139,7 @@ function Board({
             <li key={entry.id} className="border-t border-border">
               <Link
                 href={`/entries/${entry.slug}`}
-                className={`grid items-baseline gap-x-3 px-1 py-3 hover:bg-paper ${
-                  showDelta
-                    ? "grid-cols-[2rem_3.25rem_minmax(0,1fr)_3.25rem_3.25rem] sm:grid-cols-[2rem_3.25rem_minmax(0,1fr)_3.5rem_4rem_5.5rem]"
-                    : "grid-cols-[2rem_3.25rem_minmax(0,1fr)_3.25rem] sm:grid-cols-[2rem_3.25rem_minmax(0,1fr)_4rem_5.5rem]"
-                }`}
+                className={`grid items-baseline gap-x-3 px-1 py-3 hover:bg-paper ${columns}`}
               >
                 <span className="text-xs text-muted-foreground tabular-nums">
                   {String(index + 1).padStart(2, "0")}
@@ -143,6 +150,11 @@ function Board({
                 </span>
                 {showDelta && entry.delta !== undefined ? (
                   <span className="text-right text-sm text-cardinal tabular-nums">{formatDelta(entry.delta)}</span>
+                ) : null}
+                {showSpread && entry.low !== undefined && entry.high !== undefined ? (
+                  <span className="text-right text-sm text-cardinal tabular-nums">
+                    {entry.low}–{entry.high}
+                  </span>
                 ) : null}
                 <span className="text-right text-sm tabular-nums">{entry.average.toFixed(1)}</span>
                 <span className="col-span-full text-right text-[11px] text-muted-foreground tabular-nums sm:col-span-1 sm:text-sm">

@@ -250,6 +250,11 @@
       "snodgrass-muff",
       "three-men-on-third"
     ],
+    "damage": {
+      "leverage": "postseason",
+      "consequence": "the-game",
+      "stakes": "Game 6 of the World Series, fourth inning. The catcher had left the plate, and nobody else covered it."
+    },
     "featured": false
   },
   {
@@ -662,6 +667,11 @@
       "herb-washington-pickoff",
       "ten-cent-beer-night"
     ],
+    "damage": {
+      "leverage": "off-field",
+      "consequence": "the-play",
+      "stakes": "The second game of a doubleheader. He walked on four pitches and never took the bat off his shoulder."
+    },
     "featured": true
   },
   {
@@ -940,6 +950,11 @@
       "pedro-for-deshields",
       "sale-of-babe-ruth"
     ],
+    "damage": {
+      "leverage": "roster-move",
+      "consequence": "the-franchise",
+      "stakes": "A thirty-year-old outfielder, traded for pitching. The next season he won the Triple Crown."
+    },
     "featured": false
   },
   {
@@ -1051,6 +1066,11 @@
       "medwick-fruit-barrage",
       "eddie-gaedel"
     ],
+    "damage": {
+      "leverage": "off-field",
+      "consequence": "the-game",
+      "stakes": "Beer was a dime, and the limit was not kept. The umpires forfeited the game in the ninth."
+    },
     "featured": true
   },
   {
@@ -1893,6 +1913,11 @@
       "denkinger-safe-call",
       "medwick-fruit-barrage"
     ],
+    "damage": {
+      "leverage": "postseason",
+      "consequence": "the-game",
+      "stakes": "Game 1 of the championship series, eighth inning. A glove came over the wall and turned a fly ball into the tying home run."
+    },
     "featured": false
   },
   {
@@ -2076,6 +2101,11 @@
       "canseco-head-homer",
       "buckner-game-six"
     ],
+    "damage": {
+      "leverage": "one-out",
+      "consequence": "the-game",
+      "stakes": "A one-run lead, two outs in the ninth. The popup was an out."
+    },
     "featured": false
   },
   {
@@ -2404,6 +2434,11 @@
     "videos": [],
     "tags": ["highlanders", "americans", "wild-pitch", "pennant", "spitball"],
     "related": ["double-no-hitter", "sale-of-babe-ruth", "ruth-caught-stealing"],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-season",
+      "stakes": "Two out in the ninth of the pennant game, the score tied, a runner on third."
+    },
     "featured": false
   },
   {
@@ -2462,6 +2497,11 @@
     "videos": [],
     "tags": ["yankees", "cardinals", "world-series", "caught-stealing", "alexander"],
     "related": ["sale-of-babe-ruth", "slaughter-scores-from-first", "chesbro-wild-pitch"],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-series",
+      "stakes": "Game 7, the Cardinals led by a run in the ninth. Gehrig was on deck."
+    },
     "featured": false
   },
   {
@@ -2489,6 +2529,11 @@
     "videos": [],
     "tags": ["cardinals", "red-sox", "world-series", "sportsman's-park", "relay"],
     "related": ["buckner-game-six", "ruth-caught-stealing", "lonnie-smith-game-seven"],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-series",
+      "stakes": "Game 7, eighth inning, the score tied. He was on first when the ball was hit to center."
+    },
     "featured": false
   },
   {
@@ -2518,6 +2563,11 @@
     "videos": [],
     "tags": ["pirates", "braves", "perfect-game", "county-stadium", "giles"],
     "related": ["galarraga-imperfect-game", "double-no-hitter", "hawkins-no-hit-loss"],
+    "damage": {
+      "leverage": "the-record",
+      "consequence": "the-record",
+      "stakes": "He had retired thirty-six in a row. The perfect game and the game itself ended in the thirteenth."
+    },
     "featured": false
   },
   {
@@ -2625,6 +2675,11 @@
     "videos": [],
     "tags": ["yankees", "red-sox", "fenway", "playoff", "green-monster"],
     "related": ["buckner-game-six", "slaughter-scores-from-first", "phillies-collapse"],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-season",
+      "stakes": "A one-game playoff. Boston led by two with two out in the seventh."
+    },
     "featured": false
   },
   {
@@ -2703,6 +2758,11 @@
     "videos": [],
     "tags": ["dodgers", "cardinals", "nlcs", "dodger-stadium", "intentional-walk"],
     "related": ["denkinger-safe-call", "grady-little-game-seven", "dent-over-the-monster"],
+    "damage": {
+      "leverage": "one-out",
+      "consequence": "the-series",
+      "stakes": "Game 6, two out in the ninth, first base open. A walk would have brought up the next hitter."
+    },
     "featured": false
   },
   {
@@ -2756,6 +2816,11 @@
     "videos": [],
     "tags": ["phillies", "blue-jays", "world-series", "skydome", "walk-off"],
     "related": ["kim-consecutive-nights", "grady-little-game-seven", "dent-over-the-monster"],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-series",
+      "stakes": "Game 6, ninth inning, a one-run lead. A win would have forced a seventh game."
+    },
     "featured": false
   },
   {
@@ -2809,6 +2874,11 @@
     "videos": [],
     "tags": ["red-sox", "yankees", "alcs", "fenway", "stolen-base"],
     "related": ["dent-over-the-monster", "buckner-game-six", "carter-off-williams"],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-game",
+      "stakes": "Down three games to none, and a run, in the ninth. The steal tied the game."
+    },
     "featured": false
   },
   {
@@ -2836,6 +2906,11 @@
     "videos": [],
     "tags": ["rangers", "cardinals", "world-series", "busch", "ninth-inning"],
     "related": ["buckner-game-six", "willie-davis-three-errors", "slaughter-scores-from-first"],
+    "damage": {
+      "leverage": "one-out",
+      "consequence": "the-game",
+      "stakes": "Game 6, one out left in the ninth. Texas led by two."
+    },
     "featured": false
   },
   {
@@ -2869,6 +2944,11 @@
     ],
     "tags": ["cubs", "indians", "world-series", "progressive-field", "closer"],
     "related": ["grady-little-game-seven", "clark-and-niedenfuer", "black-cat-at-shea"],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-game",
+      "stakes": "Game 7, eighth inning, a three-run lead. The homer tied it."
+    },
     "featured": false
   },
   {
@@ -2900,6 +2980,11 @@
     "videos": [],
     "tags": ["trade", "tigers", "braves", "deadline"],
     "related": ["ryan-for-fregosi", "johnson-for-langston", "brock-for-broglio"],
+    "damage": {
+      "leverage": "roster-move",
+      "consequence": "the-franchise",
+      "stakes": "A game and a half out in August. A 20-year-old in Double-A for a pitcher the club wanted that month."
+    },
     "featured": false
   },
   {
@@ -3148,6 +3233,11 @@
     ],
     "tags": ["alcs", "white-sox", "angels", "third-strike", "cellular-field"],
     "related": ["owen-dropped-third-strike", "denkinger-safe-call", "pine-tar-game"],
+    "damage": {
+      "leverage": "postseason",
+      "consequence": "the-game",
+      "stakes": "Game 2 of the championship series, two out in the ninth, the score tied. Strike three reached the catcher, and the Angels started off the field."
+    },
     "featured": false
   },
   {
@@ -3598,6 +3688,11 @@
       "phillips-arozarena-walk-off",
       "willie-davis-three-errors"
     ],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-series",
+      "stakes": "Game 5 of the World Series. New York led by five runs in the fifth."
+    },
     "featured": false
   },
   {
@@ -4104,6 +4199,11 @@
       "denkinger-safe-call",
       "trea-turner-interference"
     ],
+    "damage": {
+      "leverage": "elimination",
+      "consequence": "the-season",
+      "stakes": "The ninth inning of a winner-take-all game. The tying run was on, and replay does not review a check swing."
+    },
     "featured": false
   },
   {

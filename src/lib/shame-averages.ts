@@ -19,9 +19,9 @@ function shameClient() {
   })
 }
 
-export async function loadAllTimeShameAverages() {
+async function loadScoreRows() {
   const client = shameClient()
-  if (!client) return new Map<string, number>()
+  if (!client) return []
 
   const rows: { entry_id: string; score: number }[] = []
   for (let from = 0; ; from += pageSize) {
@@ -44,8 +44,16 @@ export async function loadAllTimeShameAverages() {
     if (!data || data.length < pageSize) break
   }
 
+  return rows
+}
+
+export async function loadShameTallies() {
+  return tallyShameScores(await loadScoreRows())
+}
+
+export async function loadAllTimeShameAverages() {
   const averages = new Map<string, number>()
-  for (const [id, tally] of tallyShameScores(rows)) {
+  for (const [id, tally] of await loadShameTallies()) {
     averages.set(id, tally.sum / tally.count)
   }
   return averages

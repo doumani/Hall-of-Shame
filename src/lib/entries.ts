@@ -2,8 +2,10 @@ import fs from "fs"
 import path from "path"
 import rawEntries from "@/data/entries.json"
 import { categories, eras, getCategory, getEra } from "@/lib/taxonomy"
-import type { CategoryId, Entry, EntryFilters, EraId, SortId } from "@/lib/types"
-import { categoryIds, consequenceIds, eraIds, leverageIds, sortIds } from "@/lib/types"
+import type { CategoryId, Entry, EntryFilters, EraId, SortId, VoteSampleId } from "@/lib/types"
+import { categoryIds, consequenceIds, eraIds, leverageIds, sortIds, voteSampleIds } from "@/lib/types"
+
+export const needsVotesBelow = 3
 
 function isCategory(value: string | undefined): value is CategoryId {
   return categoryIds.includes(value as CategoryId)
@@ -15,6 +17,10 @@ function isEra(value: string | undefined): value is EraId {
 
 function isSort(value: string | undefined): value is SortId {
   return sortIds.includes(value as SortId)
+}
+
+function isVoteSample(value: string | undefined): value is VoteSampleId {
+  return voteSampleIds.includes(value as VoteSampleId)
 }
 
 function isLeverage(value: string): boolean {
@@ -295,6 +301,7 @@ export function parseFilters(params: {
   category?: string | string[]
   era?: string | string[]
   sort?: string | string[]
+  votes?: string | string[]
 }): EntryFilters {
   const first = (value?: string | string[]) =>
     Array.isArray(value) ? value[0] : value
@@ -302,6 +309,7 @@ export function parseFilters(params: {
   const category = resolveListedId(first(params.category), categories)
   const era = resolveListedId(first(params.era), eras)
   const sort = first(params.sort)
+  const votes = first(params.votes)
   const q = first(params.q)?.trim()
 
   return {
@@ -309,6 +317,7 @@ export function parseFilters(params: {
     category: isCategory(category) ? category : undefined,
     era: isEra(era) ? era : undefined,
     sort: isSort(sort) ? sort : "newest",
+    votes: isVoteSample(votes) ? votes : undefined,
   }
 }
 
@@ -329,6 +338,7 @@ function byShame(a: Entry, b: Entry, averages: ReadonlyMap<string, number> | und
 export function filterEntries(
   filters: EntryFilters,
   shameAverages?: ReadonlyMap<string, number>,
+  voteCounts?: ReadonlyMap<string, number>,
 ) {
   const query = filters.q?.toLowerCase()
 
@@ -337,6 +347,9 @@ export function filterEntries(
       return false
     }
     if (filters.era && entry.era !== filters.era) return false
+    if (filters.votes === "low" && (voteCounts?.get(entry.id) ?? 0) >= needsVotesBelow) {
+      return false
+    }
     if (query && !haystack(entry).includes(query)) return false
     return true
   })

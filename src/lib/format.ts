@@ -25,6 +25,19 @@ export function formatCount(count: number, noun: string) {
   return `${count} ${count === 1 ? noun : pluralize(noun)}`
 }
 
+export function filmWatchLabel(url: string) {
+  try {
+    const host = new URL(url).hostname.replace(/^www\./, "")
+    if (host === "mlb.com" || host.endsWith(".mlb.com")) return "Watch on MLB.com"
+    if (host === "youtube.com" || host === "m.youtube.com" || host === "youtu.be") {
+      return "Watch on YouTube"
+    }
+  } catch {
+    return "Watch"
+  }
+  return "Watch"
+}
+
 /** Turns a YouTube or Internet Archive page URL into an embeddable src. */
 export function videoEmbedUrl(url: string) {
   try {

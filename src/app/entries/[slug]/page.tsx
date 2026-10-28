@@ -9,7 +9,7 @@ import { ShameMeter, ShameRating } from "@/components/shame-meter"
 import { Story } from "@/components/story"
 import { Separator } from "@/components/ui/separator"
 import { getAllEntries, getEntryBySlug } from "@/lib/entries"
-import { catalogNumber, formatEntryDate, videoEmbedUrl } from "@/lib/format"
+import { catalogNumber, filmWatchLabel, formatEntryDate, videoEmbedUrl } from "@/lib/format"
 import { getCategory, getEra } from "@/lib/taxonomy"
 import { localImageSize } from "@/lib/image-size"
 import { shareCardPath, shareLine } from "@/lib/share"
@@ -194,15 +194,22 @@ export default async function EntryPage({ params }: Props) {
               {entry.videos.map((video) => {
                 const embed = videoEmbedUrl(video.url)
                 if (video.thumbnail) {
+                  const portrait = /\/shorts\//.test(video.url)
                   return (
                     <figure key={video.url} className="border border-border bg-paper">
                       <a href={video.url} target="_blank" rel="noopener noreferrer" className="block">
-                        <div className="relative aspect-video w-full bg-navy">
+                        <div
+                          className={
+                            portrait
+                              ? "relative mx-auto aspect-[9/16] w-full max-w-[260px] bg-navy"
+                              : "relative aspect-video w-full bg-navy"
+                          }
+                        >
                           <Image
                             src={video.thumbnail}
                             alt={video.title}
                             fill
-                            sizes="(min-width: 1024px) 640px, 100vw"
+                            sizes={portrait ? "1080px" : "(min-width: 1024px) 640px, 100vw"}
                             className="object-cover"
                           />
                         </div>
@@ -220,15 +227,15 @@ export default async function EntryPage({ params }: Props) {
                           rel="noopener noreferrer"
                           className="mt-4 inline-block text-[11px] font-semibold tracking-[0.16em] text-cardinal uppercase"
                         >
-                          Watch on MLB.com
+                          {filmWatchLabel(video.url)}
                         </a>
                       </figcaption>
                     </figure>
                   )
                 }
-                return (
-                  <figure key={video.url}>
-                    {embed ? (
+                if (embed) {
+                  return (
+                    <figure key={video.url}>
                       <div className="aspect-video border border-border bg-navy">
                         <iframe
                           src={embed}
@@ -238,16 +245,30 @@ export default async function EntryPage({ params }: Props) {
                           allowFullScreen
                         />
                       </div>
-                    ) : (
-                      <a href={video.url} className="text-cardinal underline-offset-4 hover:underline">
+                      <figcaption className="mt-2 text-sm text-muted-foreground">
                         {video.title}
-                      </a>
-                    )}
-                    <figcaption className="mt-2 text-sm text-muted-foreground">
+                        {video.credit ? ` · ${video.credit}` : ""}
+                      </figcaption>
+                    </figure>
+                  )
+                }
+
+                return (
+                  <p key={video.url}>
+                    <a
+                      href={video.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-[11px] font-semibold tracking-[0.16em] text-cardinal uppercase"
+                    >
                       {video.title}
-                      {video.credit ? ` · ${video.credit}` : ""}
-                    </figcaption>
-                  </figure>
+                    </a>
+                    {video.description ? (
+                      <span className="mt-2 block text-sm leading-relaxed text-muted-foreground">
+                        {video.description}
+                      </span>
+                    ) : null}
+                  </p>
                 )
               })}
             </div>

@@ -5,7 +5,10 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   images: {
-    remotePatterns: [new URL("https://img.mlbstatic.com/mlb-images/**")],
+    remotePatterns: [
+      new URL("https://img.mlbstatic.com/mlb-images/**"),
+      new URL("https://i.ytimg.com/vi/**"),
+    ],
   },
   turbopack: {
     rules: {

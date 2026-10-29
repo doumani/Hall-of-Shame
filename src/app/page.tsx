@@ -1,5 +1,6 @@
 import { Suspense } from "react"
 import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 import { CategoryIndex } from "@/components/category-index"
 import { EntryCard } from "@/components/entry-card"
 import { HeroCard, HeroCardFallback } from "@/components/hero-card"
@@ -21,18 +22,26 @@ export default function HomePage() {
   return (
     <>
       <section className="bg-navy text-cream">
-        <div className="mx-auto grid max-w-6xl items-center gap-6 px-5 py-8 lg:grid-cols-2 lg:gap-12 lg:py-8">
+        <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-12 lg:grid-cols-2 lg:gap-14 lg:py-16">
           <div className="min-w-0 max-w-xl">
-            <h1 className="display text-5xl leading-[0.88] text-cream sm:text-6xl lg:text-7xl">
-              Hall of
-              <br />
-              Shame
+            <span aria-hidden="true" className="block h-px w-10 bg-cardinal" />
+            <p className="mt-4 text-[11px] font-semibold tracking-[0.2em] text-cream/75 uppercase">
+              An archive of baseball&apos;s infamous moments
+            </p>
+            <h1 className="display mt-4 text-5xl leading-[0.92] text-cream sm:text-6xl lg:text-[4.5rem]">
+              Hall of Shame
             </h1>
-            <span aria-hidden="true" className="mt-4 block h-[3px] w-12 bg-cardinal" />
-            <p className="mt-4 max-w-sm text-base leading-relaxed text-cream/85">
+            <p className="mt-5 max-w-md text-base leading-relaxed text-cream/80 sm:text-lg">
               A living archive of baseball&apos;s most infamous moments, players, and
               blunders. Preserving the plays history tried to forget.
             </p>
+            <Link
+              href="/entries"
+              className="mt-8 inline-flex items-center gap-2.5 bg-cardinal px-5 py-3 text-[12px] font-semibold tracking-[0.16em] text-cream uppercase transition-colors hover:bg-[#751e29] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cream"
+            >
+              Explore the archive
+              <ArrowRight aria-hidden="true" className="size-4" />
+            </Link>
           </div>
           <Suspense fallback={<HeroCardFallback />}>
             <HeroCard />
@@ -44,20 +53,20 @@ export default function HomePage() {
         <OnThisDay />
       </Suspense>
 
-      <section className="border-b border-border bg-paper">
-        <div className="mx-auto max-w-6xl px-5 py-14 md:py-16">
-          <div className="mb-8 flex items-end justify-between gap-6 border-b border-border pb-5">
+      <section className="border-b border-border/80 bg-paper">
+        <div className="mx-auto max-w-6xl px-5 py-12 md:py-14">
+          <div className="mb-7 flex items-end justify-between gap-6 border-b border-border/80 pb-4">
             <div>
               <p className="text-[11px] font-semibold tracking-[0.18em] text-cardinal uppercase">
                 From the collection
               </p>
-              <h2 className="mt-2 font-serif text-4xl tracking-tight md:text-5xl">
+              <h2 className="mt-2 font-serif text-3xl tracking-tight md:text-4xl">
                 Featured entries
               </h2>
             </div>
             <Link
               href="/entries"
-              className="hidden text-sm underline-offset-4 hover:underline sm:inline"
+              className="hidden text-sm tracking-wide text-navy/80 underline-offset-4 hover:text-cardinal hover:underline sm:inline"
             >
               All {total} entries
             </Link>
@@ -76,25 +85,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-b border-border">
-        <div className="mx-auto max-w-6xl px-5 py-14 md:py-16">
-          <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+      <section className="border-b border-border/80">
+        <div className="mx-auto max-w-6xl px-5 py-12 md:py-14">
+          <div className="mb-7 flex flex-wrap items-end justify-between gap-4">
             <div className="max-w-2xl">
               <p className="text-[11px] font-semibold tracking-[0.18em] text-cardinal uppercase">
                 Chapters
               </p>
-              <h2 className="mt-2 font-serif text-4xl tracking-tight md:text-5xl">
+              <h2 className="mt-2 font-serif text-3xl tracking-tight md:text-4xl">
                 Seven eras
               </h2>
             </div>
-            <Link href="/eras" className="text-sm underline-offset-4 hover:underline">
+            <Link
+              href="/eras"
+              className="text-sm tracking-wide text-navy/80 underline-offset-4 hover:text-cardinal hover:underline"
+            >
               Open the chapters
             </Link>
           </div>
-          <ol className="grid gap-px bg-border sm:grid-cols-2 lg:grid-cols-3">
+          <ol className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {getEraCounts().map((era) => (
-              <li key={era.id} className="bg-cream">
-                <Link href={`/eras/${era.id}`} className="block px-4 py-5 hover:bg-paper">
+              <li key={era.id}>
+                <Link
+                  href={`/eras/${era.id}`}
+                  className="block h-full border border-border bg-paper/50 px-4 py-5 transition-colors hover:border-navy/20 hover:bg-paper"
+                >
                   <span className="text-[11px] font-semibold tracking-[0.16em] text-cardinal uppercase">
                     {era.years}
                   </span>
@@ -109,12 +124,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-5 py-14 md:py-16">
-        <div className="mb-8 max-w-2xl">
+      <section className="mx-auto max-w-6xl px-5 py-12 md:py-14">
+        <div className="mb-7 max-w-2xl">
           <p className="text-[11px] font-semibold tracking-[0.18em] text-cardinal uppercase">
             Table of contents
           </p>
-          <h2 className="mt-2 font-serif text-4xl tracking-tight md:text-5xl">
+          <h2 className="mt-2 font-serif text-3xl tracking-tight md:text-4xl">
             Eleven ways to get it wrong
           </h2>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">

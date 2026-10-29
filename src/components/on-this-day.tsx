@@ -11,12 +11,12 @@ export async function OnThisDay() {
   const matches = entriesOnThisDay(getAllEntries(), today)
 
   return (
-    <section className="border-b border-border" aria-labelledby="on-this-day-heading">
-      <div className="mx-auto max-w-6xl px-5 py-7 md:py-8">
+    <section className="border-b border-border/80" aria-labelledby="on-this-day-heading">
+      <div className="mx-auto max-w-6xl px-5 py-6 md:py-7">
         <div className="flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
           <h2
             id="on-this-day-heading"
-            className="flex items-center gap-3 font-serif text-2xl tracking-tight text-navy md:text-3xl"
+            className="flex items-center gap-3 font-serif text-2xl tracking-tight text-navy"
           >
             <span aria-hidden="true" className="h-px w-6 bg-cardinal" />
             On this day

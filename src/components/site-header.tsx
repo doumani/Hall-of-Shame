@@ -42,7 +42,7 @@ export function SiteHeader({ slugs }: { slugs: string[] }) {
   }
 
   return (
-    <header className="sticky top-0 z-40 border-b-[3px] border-cardinal bg-cream/95 backdrop-blur-md">
+    <header className="sticky top-0 z-40 border-b border-cardinal bg-cream/95 backdrop-blur-md">
       <div className="bg-navy text-cream">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-2 text-[11px] font-semibold tracking-[0.2em] uppercase">
           <span>The Record</span>

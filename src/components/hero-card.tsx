@@ -1,10 +1,20 @@
 import Image from "next/image"
 import Link from "next/link"
+import { Bookmark } from "lucide-react"
 import { io } from "next/cache"
 import { getAllEntries } from "@/lib/entries"
-import { catalogNumber, formatEntryDate } from "@/lib/format"
 import { heroImage, heroOfTheDay } from "@/lib/hero-of-the-day"
 import { localImageSize } from "@/lib/image-size"
+
+function filedStamp(iso: string) {
+  const [year, month, day] = iso.split("-").map(Number)
+  if (!year || !month || !day) return null
+  const monthLabel = new Intl.DateTimeFormat("en-US", {
+    month: "long",
+    timeZone: "UTC",
+  }).format(new Date(Date.UTC(year, month - 1, day)))
+  return { year: String(year), when: `${monthLabel} ${day}`.toUpperCase() }
+}
 
 export async function HeroCard() {
   await io()
@@ -16,45 +26,66 @@ export async function HeroCard() {
 
   const size = localImageSize(portrait.url)
   const tall = size !== null && size.height > size.width * 1.15
-  const filing = [lead.teams[0]?.name, formatEntryDate(lead.date)].filter(Boolean).join(" • ")
+  const stamp = filedStamp(lead.date)
 
   return (
     <Link
       href={`/entries/${lead.slug}`}
-      className="group mx-auto block w-full max-w-md rounded-xl border-2 border-[#7c624c] bg-cream px-4 py-3 text-center text-navy shadow-[0_28px_60px_-32px_rgba(0,0,0,0.7)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cream sm:px-5"
+      className="group block bg-cream p-4 text-navy shadow-[0_28px_50px_-28px_rgba(0,0,0,0.65)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_32px_56px_-26px_rgba(0,0,0,0.75)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cream sm:p-5"
     >
-      <p className="text-[12px] font-semibold tracking-[0.16em] text-navy/80">
-        No. {catalogNumber(lead.date)}
-      </p>
-      <div className="relative mx-auto mt-2 h-36 w-full overflow-hidden border border-navy/20 bg-[#e6dccb] sm:h-40">
+      <div className="flex items-center gap-3">
+        <p className="text-[11px] font-semibold tracking-[0.18em] text-navy/70 uppercase">
+          Featured archive
+        </p>
+        <span aria-hidden="true" className="h-px min-w-8 flex-1 bg-cardinal" />
+      </div>
+      <div className="relative mt-3 aspect-[16/10] overflow-hidden bg-[#e6dccb]">
         <Image
           src={portrait.url}
           alt={portrait.caption}
           fill
           priority
-          sizes="(min-width: 1024px) 420px, 90vw"
-          className={tall ? "object-cover object-[center_42%]" : "object-cover object-center"}
+          sizes="(min-width: 1024px) 560px, 100vw"
+          className={
+            tall
+              ? "object-cover object-[center_22%] transition duration-700 ease-out group-hover:scale-[1.03]"
+              : "object-cover object-center transition duration-700 ease-out group-hover:scale-[1.03]"
+          }
         />
+        {stamp ? (
+          <p className="absolute bottom-3 left-3 bg-navy px-3 py-2 text-cream">
+            <span className="block font-serif text-[1.65rem] leading-none tracking-tight">
+              {stamp.year}
+            </span>
+            <span className="mt-1 block text-[10px] font-semibold tracking-[0.14em]">
+              {stamp.when}
+            </span>
+          </p>
+        ) : null}
       </div>
-      <p className="mt-2 font-serif text-3xl leading-none tracking-tight text-cardinal">{lead.year}</p>
-      <h2 className="mt-1 font-serif text-2xl leading-tight tracking-tight group-hover:underline group-hover:decoration-1 group-hover:underline-offset-4">
+      <h2 className="mt-4 font-serif text-3xl leading-tight tracking-tight md:text-[2rem]">
         {lead.title}
       </h2>
-      {filing ? <p className="mt-1 text-sm text-navy/75">{filing}</p> : null}
+      <p className="mt-2 line-clamp-3 text-[15px] leading-relaxed text-navy/70">{lead.summary}</p>
+      <div className="mt-4 flex items-center justify-between gap-4">
+        <p className="text-[12px] font-semibold tracking-[0.14em] text-cardinal uppercase group-hover:underline group-hover:underline-offset-4">
+          View archive entry
+          <span aria-hidden="true"> →</span>
+        </p>
+        <Bookmark aria-hidden="true" className="size-5 text-cardinal" strokeWidth={1.75} />
+      </div>
     </Link>
   )
 }
 
 export function HeroCardFallback() {
   return (
-    <div
-      className="mx-auto w-full max-w-md rounded-xl border-2 border-[#7c624c] bg-cream px-4 py-3 sm:px-5"
-      aria-hidden="true"
-    >
-      <div className="mx-auto h-3 w-28 bg-navy/10" />
-      <div className="mt-2 h-36 w-full bg-[#e6dccb] sm:h-40" />
-      <div className="mx-auto mt-2 h-8 w-16 bg-cardinal/15" />
-      <div className="mx-auto mt-2 h-6 w-48 bg-navy/10" />
+    <div className="bg-cream p-4 sm:p-5" aria-hidden="true">
+      <div className="h-3 w-36 bg-navy/10" />
+      <div className="mt-3 aspect-[16/10] bg-[#e6dccb]" />
+      <div className="mt-4 h-8 w-3/4 bg-navy/10" />
+      <div className="mt-3 h-4 w-full bg-navy/10" />
+      <div className="mt-2 h-4 w-5/6 bg-navy/10" />
     </div>
   )
 }

@@ -21,13 +21,13 @@ export function EntryCard({
     <Link
       href={`/entries/${entry.slug}`}
       className={cn(
-        "group relative flex h-full flex-col bg-paper text-foreground shadow-[0_0_0_1px_rgba(10,22,40,0.1)] transition duration-300 hover:-translate-y-0.5 hover:shadow-[0_22px_44px_-28px_rgba(10,22,40,0.65),0_0_0_1px_#0A1628] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cardinal",
+        "group relative flex h-full flex-col border border-border bg-paper text-foreground transition duration-300 hover:-translate-y-px hover:border-navy/20 hover:shadow-[0_14px_28px_-22px_rgba(10,22,40,0.4)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cardinal",
         className,
       )}
     >
       <span
         aria-hidden="true"
-        className="absolute inset-x-0 top-0 z-10 h-0.5 origin-left scale-x-0 bg-cardinal transition duration-300 group-hover:scale-x-100"
+        className="absolute inset-x-0 top-0 z-10 h-px origin-left scale-x-0 bg-cardinal transition duration-300 group-hover:scale-x-100"
       />
       <div className="relative aspect-[5/4] overflow-hidden bg-[#07111e]">
         {image ? (
@@ -37,7 +37,7 @@ export function EntryCard({
               alt={image.caption}
               fill
               sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-              className="object-cover object-center transition duration-700 ease-out group-hover:scale-[1.04]"
+              className="object-cover object-center transition duration-700 ease-out group-hover:scale-[1.02]"
             />
             <span
               aria-hidden="true"
@@ -53,7 +53,7 @@ export function EntryCard({
           <span className="text-cardinal">{category?.label}</span>
           <span className="text-muted-foreground tabular-nums">{entry.year}</span>
         </div>
-        <h3 className="mt-2.5 font-serif text-[1.55rem] leading-[1.12] tracking-tight group-hover:underline group-hover:decoration-1 group-hover:underline-offset-4">
+        <h3 className="mt-2 font-serif text-2xl leading-[1.15] tracking-tight group-hover:underline group-hover:decoration-1 group-hover:underline-offset-4">
           {entry.title}
         </h3>
         <p className="mt-2.5 line-clamp-3 flex-1 text-sm leading-relaxed text-muted-foreground">

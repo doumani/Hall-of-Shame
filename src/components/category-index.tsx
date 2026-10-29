@@ -12,7 +12,7 @@ export function CategoryIndex({
         <li key={category.id}>
           <Link
             href={`/entries?category=${category.id}`}
-            className="group grid grid-cols-[auto_1fr_auto] items-baseline gap-4 px-1 py-4 transition-colors hover:bg-paper md:grid-cols-[4rem_16rem_1fr_auto] md:gap-6 md:px-3 md:py-5"
+            className="group grid grid-cols-[auto_1fr_auto] items-baseline gap-4 border-l-2 border-transparent px-1 py-3.5 transition-colors hover:border-cardinal hover:bg-paper md:grid-cols-[4rem_16rem_1fr_auto] md:gap-6 md:px-3 md:py-4"
           >
             <span className="text-[11px] font-semibold tracking-[0.16em] text-cardinal">
               {String(index + 1).padStart(2, "0")}

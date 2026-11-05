@@ -325,6 +325,7 @@ function haystack(entry: Entry) {
       entry.title,
       entry.summary,
       entry.story,
+      entry.counterfactual ?? "",
       entry.tags.join(" "),
       entry.players.map((player) => player.name).join(" "),
       teamNames,

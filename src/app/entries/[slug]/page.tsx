@@ -7,6 +7,7 @@ import { RelatedEntries } from "@/components/related-entries"
 import { ShareEntry } from "@/components/share-entry"
 import { ShameMeter, ShameRating } from "@/components/shame-meter"
 import { Story } from "@/components/story"
+import { WhatCouldHaveBeen } from "@/components/what-could-have-been"
 import { Separator } from "@/components/ui/separator"
 import { getAllEntries, getEntryBySlug } from "@/lib/entries"
 import { catalogNumber, filmWatchLabel, formatEntryDate, videoEmbedUrl } from "@/lib/format"
@@ -187,6 +188,7 @@ export default async function EntryPage({ params }: Props) {
       >
         <div className="lg:col-span-8">
           <Story markdown={entry.story} />
+          <WhatCouldHaveBeen markdown={entry.counterfactual} />
 
           {entry.videos.length > 0 ? (
             <div className="mt-12 space-y-6">

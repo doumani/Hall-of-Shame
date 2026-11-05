@@ -105,6 +105,11 @@ export interface Entry {
   players: PersonRef[]
   summary: string
   story: string
+  /**
+   * Alternate-history branch shown beneath the story.
+   * Labeled as such on the page. It is not the record.
+   */
+  counterfactual?: string
   images: EntryImage[]
   videos: EntryVideo[]
   tags: string[]
